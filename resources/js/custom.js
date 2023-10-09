@@ -1,11 +1,9 @@
-import 'bootstrap';
-import './bootstrap';
-
 (function() {
 	'use strict';
 
 	var tinyslider = function() {
 		var el = document.querySelectorAll('.testimonial-slider');
+
 		if (el.length > 0) {
 			var slider = tns({
 				container: '.testimonial-slider',
@@ -25,7 +23,7 @@ import './bootstrap';
 	};
 	tinyslider();
 
-
+	
 
 
 	var sitePlusMinus = function() {
@@ -65,12 +63,11 @@ import './bootstrap';
 
 	        quantityAmount.value = value;
 	    }
-
+	    
 	    init();
-
+		
 	};
 	sitePlusMinus();
 
 
 })()
-
