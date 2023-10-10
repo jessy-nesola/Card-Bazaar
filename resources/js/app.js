@@ -1,34 +1,7 @@
 import 'bootstrap';
 import './bootstrap';
 
-(function() {
-	'use strict';
-
-	var tinyslider = function() {
-		var el = document.querySelectorAll('.testimonial-slider');
-		if (el.length > 0) {
-			var slider = tns({
-				container: '.testimonial-slider',
-				items: 1,
-				axis: "horizontal",
-				controlsContainer: "#testimonial-nav",
-				swipeAngle: false,
-				speed: 700,
-				nav: true,
-				controls: true,
-				autoplay: true,
-				autoplayHoverPause: true,
-				autoplayTimeout: 3500,
-				autoplayButtonOutput: false
-			});
-		}
-	};
-	tinyslider();
-
-
-
-
-	var sitePlusMinus = function() {
+var sitePlusMinus = function() {
 
 		var value,
     		quantity = document.getElementsByClassName('quantity-container');
@@ -71,6 +44,29 @@ import './bootstrap';
 	};
 	sitePlusMinus();
 
+    document.addEventListener('DOMContentLoaded', () => {
+        "use strict";
 
-})()
+    new Swiper('.slides-1', {
+        speed: 600,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        slidesPerView: 'auto',
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      });
 
+      window.addEventListener('load', () => {
+        aos_init();
+      });
+    });
