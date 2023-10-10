@@ -19,7 +19,7 @@
 <body>
 
     <!-- Header/Navigation -->
-    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark fixed-top" arial-label="Furni navigation bar">
 
         <div class="container">
             <a class="navbar-brand" href="index.html">CardBazaar<span>.</span></a>
@@ -51,7 +51,7 @@
     <!-- End Header/Navigation -->
 
     <!-- Start Hero Section -->
-    <div class="hero">
+    <div class="hero" style="margin-top: 80px;">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-5">
@@ -90,7 +90,7 @@
                 <!-- Start Column 2 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="assets/images/product-1.png" class="img-fluid product-thumbnail">
+                        <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Nordic Chair</h3>
                         <strong class="product-price">$50.00</strong>
 
@@ -104,7 +104,7 @@
                 <!-- Start Column 3 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="assets/images/product-2.png" class="img-fluid product-thumbnail">
+                        <img src="assets/images/yugioh (2).jpg" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Kruzo Aero Chair</h3>
                         <strong class="product-price">$78.00</strong>
 
@@ -118,7 +118,7 @@
                 <!-- Start Column 4 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <a class="product-item" href="cart.html">
-                        <img src="assets/images/product-3.png" class="img-fluid product-thumbnail">
+                        <img src="assets/images/yugioh (3).jpg" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Ergonomic Chair</h3>
                         <strong class="product-price">$43.00</strong>
 
@@ -461,7 +461,7 @@
     <!-- End Blog Section -->
 
     <!-- Start Footer Section -->
-    <footer class="footer-section">
+    <footer class="footer-section" style="margin-top: 50px;">
         <div class="container relative">
 
             <div class="sofa-img">
@@ -576,6 +576,7 @@
     </footer>
     <!-- End Footer Section -->
     @livewireScripts
+    <script src="{{ asset('js/navbar-scroll.js') }}"></script>
 </body>
 
 </html>

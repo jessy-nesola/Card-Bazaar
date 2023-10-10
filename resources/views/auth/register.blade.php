@@ -19,7 +19,7 @@
 <body>
 
     <!-- Header/Navigation -->
-    <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark fixed-top" arial-label="Furni navigation bar">
 
         <div class="container">
             <a class="navbar-brand" href="index.html">CardBazaar<span>.</span></a>
@@ -51,7 +51,7 @@
     <!-- End Header/Navigation -->
 
     <!-- Start Register Section -->
-    <div class="register-section" style="margin-top: 50px;">
+    <div class="register-section" style="margin-top: 130px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
