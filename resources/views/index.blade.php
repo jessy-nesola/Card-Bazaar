@@ -13,6 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Furni</title>
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style.css', 'resources/css/bootstrap.min.css', 'resources\css\tiny-slider.css', 'resources/js/app.js', 'resources/js/bootstrap.bundle.min.js', 'resources/js/bootstrap.js', 'resources\js\custom.js', 'resources\js\tiny-slider.js', 'resources/scss/style.scss'])
+    @livewireStyles
 </head>
 
 <body>
@@ -573,7 +574,7 @@
         </div>
     </footer>
     <!-- End Footer Section -->
-
+    @livewireScripts
 </body>
 
 </html>
