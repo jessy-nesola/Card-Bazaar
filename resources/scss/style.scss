@@ -207,12 +207,12 @@ a {
 	padding: 12px 30px;
 	border-radius: 30px;
 	color: $white;
-	background: $dark;
-	border-color: $dark;
+	background: #5BC0F8;
+	border-color: #5BC0F8;
 	&:hover {
 		color: $white;
-		background: darken($dark, 5%);
-		border-color: darken($dark, 5%);
+		background: darken(#5BC0F8, 10%);
+		border-color: darken(#5BC0F8, 10%);
 	}
 	&:active, &:focus {
 		outline: none!important;
