@@ -280,12 +280,13 @@
         </div>
     </div>
     <!-- End Popular Product -->
+    
 
     <!-- Start Testimonial Slider -->
     <div class="testimonial-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-7 mx-auto text-center">
+            <div class="row swiper-slide">
+                <div class="col-lg-7 mx-auto text-center swiper-slide">
                     <h2 class="section-title">Testimonials</h2>
                 </div>
             </div>
