@@ -40,6 +40,6 @@ class CreateAnnouncementForm extends Component
 
     public function render()
     {
-        return view('livewire.create-announcement-form', ['categories'=>Category::all()]);
+        return view('livewire.create-announcement-form');
     }
 }
