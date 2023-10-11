@@ -280,13 +280,12 @@
         </div>
     </div>
     <!-- End Popular Product -->
-    
 
-    <!-- Start Testimonial Slider -->
-    <div class="testimonial-section">
+   <!-- Start Testimonial Section -->
+	<div class="testimonial-section">
         <div class="container">
-            <div class="row swiper-slide">
-                <div class="col-lg-7 mx-auto text-center swiper-slide">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
                     <h2 class="section-title">Testimonials</h2>
                 </div>
             </div>
@@ -297,8 +296,7 @@
 
                         <div id="testimonial-nav">
                             <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
-                            <span class="next" data-controls="next"><span
-                                    class="fa fa-chevron-right"></span></span>
+                            <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
                         </div>
 
                         <div class="testimonial-slider">
@@ -309,18 +307,12 @@
 
                                         <div class="testimonial-block text-center">
                                             <blockquote class="mb-5">
-                                                <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-                                                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                                    vulputate velit imperdiet dolor tempor tristique. Pellentesque
-                                                    habitant morbi tristique senectus et netus et malesuada fames ac
-                                                    turpis egestas. Integer convallis volutpat dui quis
-                                                    scelerisque.&rdquo;</p>
+                                                <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
                                             </blockquote>
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="assets/images/person-1.png" alt="Maria Jones"
-                                                        class="img-fluid">
+                                                    <img src="/assets/images/person-1.png" alt="Maria Jones" class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Maria Jones</h3>
                                                 <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -338,21 +330,15 @@
 
                                         <div class="testimonial-block text-center">
                                             <blockquote class="mb-5">
-                                                <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-                                                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                                    vulputate velit imperdiet dolor tempor tristique. Pellentesque
-                                                    habitant morbi tristique senectus et netus et malesuada fames ac
-                                                    turpis egestas. Integer convallis volutpat dui quis
-                                                    scelerisque.&rdquo;</p>
+                                                <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
                                             </blockquote>
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="assets/images/person-1.png" alt="Maria Jones"
-                                                        class="img-fluid">
+                                                    <img src="/public/assets/images/person_1.jpg" alt="Anna Jones" class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Maria Jones</h3>
-                                                <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                                <span class="position d-block mb-3">Founder, XYZ Inc.</span>
                                             </div>
                                         </div>
 
@@ -361,27 +347,21 @@
                             </div>
                             <!-- END item -->
 
-                            <div class="item">
+                            <div class="item badge-dark">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-8 mx-auto">
 
                                         <div class="testimonial-block text-center">
                                             <blockquote class="mb-5">
-                                                <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-                                                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                                                    vulputate velit imperdiet dolor tempor tristique. Pellentesque
-                                                    habitant morbi tristique senectus et netus et malesuada fames ac
-                                                    turpis egestas. Integer convallis volutpat dui quis
-                                                    scelerisque.&rdquo;</p>
+                                                <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
                                             </blockquote>
 
                                             <div class="author-info">
                                                 <div class="author-pic">
-                                                    <img src="assets/images/person-1.png" alt="Maria Jones"
-                                                        class="img-fluid">
+                                                    <img src="/public/assets/images/person_2.jpg" alt="Jhon Karlate" class="img-fluid">
                                                 </div>
-                                                <h3 class="font-weight-bold">Maria Jones</h3>
-                                                <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                                <h3 class="font-weight-bold">Jhon Karlate</h3>
+                                                <span class="position d-block mb-3">Developer, Co-Founder, ABC Corp.</span>
                                             </div>
                                         </div>
 
@@ -397,7 +377,7 @@
             </div>
         </div>
     </div>
-    <!-- End Testimonial Slider -->
+    <!-- End Testimonial Section -->
 
     <!-- Start Blog Section -->
     <div class="blog-section">

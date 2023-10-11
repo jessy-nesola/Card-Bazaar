@@ -895,3 +895,28 @@ textarea {
 .bg-color {
     color: #0081c9;
 }
+
+/* Aggiungi un'opacità predefinita ai testimoni */
+.item {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Quando un testimone è attivo, mostra con opacità completa */
+.item.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Stile dei controlli del carosello per dispositivi con larghezza minore di 768px */
+@media (max-width: 767px) {
+    #testimonial-nav {
+        text-align: center;
+    }
+
+    #testimonial-nav span {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+}
