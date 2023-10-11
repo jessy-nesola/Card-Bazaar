@@ -43,7 +43,7 @@
                             </button>
                         </form>
                     </li>
-                    <li><a href="#" class="btn btn-secondary btn-sm">Inserisci annuncio</a></li>
+                    <li><a href="{{route('announcements.create')}}" class="btn btn-secondary btn-sm">Inserisci annuncio</a></li>
                     @endguest
                 </ul>
             </div>
