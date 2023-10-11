@@ -208,11 +208,11 @@
     <!-- End Popular Product -->
     
 
-    <!-- Start Testimonial Slider -->
+    <!-- Start Testimonial Section -->
     <div class="testimonial-section">
         <div class="container">
-            <div class="row swiper-slide">
-                <div class="col-lg-7 mx-auto text-center swiper-slide">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
                     <h2 class="section-title">Testimonials</h2>
                 </div>
             </div>
@@ -249,7 +249,7 @@
                                                         class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Maria Jones</h3>
-                                                <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                                <span class="position d-block mb-3">Founder, XYZ Inc.</span>
                                             </div>
                                         </div>
 
@@ -277,8 +277,8 @@
                                                     <img src="assets/images/person-1.png" alt="Maria Jones"
                                                         class="img-fluid">
                                                 </div>
-                                                <h3 class="font-weight-bold">Maria Jones</h3>
-                                                <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                                <h3 class="font-weight-bold">Jhon Karlate</h3>
+                                                <span class="position d-block mb-3">Developer, Co-Founder, ABC Corp.</span>
                                             </div>
                                         </div>
 
