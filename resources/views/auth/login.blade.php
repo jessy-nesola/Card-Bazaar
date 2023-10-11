@@ -6,7 +6,9 @@
                 <div class="col-md-6">
                     <div class="login-form">
                         <h2 class="mb-4">Login</h2>
-                        <form action="#" method="post">
+                        <form action="{{route('login')}}" method="POST">
+                            @csrf
+                            @method('POST')
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email address</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
@@ -20,7 +22,7 @@
                             </div>
                         </form>
                         <p class="mt-3"><a href="#">Forgot your password?</a></p>
-                        <p class="mt-3">Don't have an account? <a href="#">Sign up</a></p>
+                        <p class="mt-3">Don't have an account? <a href="{{route('register')}}">Sign up</a></p>
                     </div>
                 </div>
             </div>
