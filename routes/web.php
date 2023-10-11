@@ -25,3 +25,7 @@ Route::get('/announcement/create', [AnnouncementController::class, 'create'])->m
 // Route::get('/register', function () {
 //     return view('auth.register');
 // });
+
+Route::get('/show', function () {
+    return view('categories.show');
+});

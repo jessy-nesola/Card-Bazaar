@@ -15,7 +15,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/bootstrap.min.css', 'resources\css\tiny-slider.css', 'resources/js/app.js', 'resources/js/bootstrap.bundle.min.js', 'resources/js/bootstrap.js', 'resources\js\custom.js', 'resources\js\tiny-slider.js','resources/scss/style.scss'])
     @livewireStyles
 </head>
-
+<x-navbar/>
 <body>
     {{ $slot }}
     @livewireScripts
