@@ -47,29 +47,37 @@ var sitePlusMinus = function () {
 };
 sitePlusMinus();
 
-document.addEventListener("DOMContentLoaded", () => {
-    "use strict";
+// Trova gli elementi del carosello
+const testimonialSlider = document.querySelector('.testimonial-slider');
+const testimonialItems = testimonialSlider.querySelectorAll('.item');
+const testimonialNavPrev = document.querySelector('[data-controls="prev"]');
+const testimonialNavNext = document.querySelector('[data-controls="next"]');
 
-    new Swiper(".slides-1", {
-        speed: 600,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        slidesPerView: "auto",
-        pagination: {
-            el: ".swiper-pagination",
-            type: "bullets",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+let currentIndex = 0;
+
+function showTestimonial(index) {
+    // Nascondi tutti gli elementi del carosello
+    testimonialItems.forEach(item => {
+        item.classList.remove('active');
     });
 
-    window.addEventListener("load", () => {
-        aos_init();
-    });
-});
+    // Mostra l'elemento corrente
+    testimonialItems[index].classList.add('active');
+}
+
+function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % testimonialItems.length;
+    showTestimonial(currentIndex);
+}
+
+function prevTestimonial() {
+    currentIndex = (currentIndex - 1 + testimonialItems.length) % testimonialItems.length;
+    showTestimonial(currentIndex);
+}
+
+// Inizializza il carosello mostrando il primo elemento
+showTestimonial(currentIndex);
+
+// Aggiungi gestori di eventi per i pulsanti di navigazione
+testimonialNavNext.addEventListener('click', nextTestimonial);
+testimonialNavPrev.addEventListener('click', prevTestimonial);
