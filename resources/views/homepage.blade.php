@@ -185,7 +185,7 @@
 
 
     <!-- Start Testimonial Section -->
-    <div class="testimonial-section">
+    {{-- <div class="testimonial-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 mx-auto text-center">
@@ -299,11 +299,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End Testimonial Slider -->
 
     <!-- Start Blog Section -->
-    <div class="blog-section">
+    {{-- <div class="blog-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-6">
@@ -360,7 +360,8 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End Blog Section -->
+
     <x-footer />
 </x-layout>
