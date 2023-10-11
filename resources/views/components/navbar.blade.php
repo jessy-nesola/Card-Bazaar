@@ -32,10 +32,10 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#"></a>Action 1</li>
-                            <li><a class="dropdown-item" href="#"></a>Action 2</li> 
+                            <li><a class="dropdown-item" href="#"></a>Action 2</li>
                         </ul>
                     </li> --}}
-                    <li>                
+                    <li>
                         <form action="{{ route('logout') }}" method="POST">
                         @csrf
                             <button class="nav-link active" onclick="event.preventDefault(); this.closest('form').submit();">
