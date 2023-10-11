@@ -48,10 +48,10 @@ a {
 
 .custom-navbar {
 	background: $primary!important;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+    padding-bottom: 10px;
 	.navbar-brand {
-		font-size: 32px;
+		font-size: 24px;
 		font-weight: 600;
 		> span {
 			opacity: .4;
@@ -67,8 +67,8 @@ a {
 	.custom-navbar-nav {
 		li {
 			@media (min-width: $lg) {
-				margin-left: 15px;
-				margin-right: 15px;
+				margin-left: 10px;
+				margin-right: 10px;
 			}
 			a {
 				font-weight: 500;

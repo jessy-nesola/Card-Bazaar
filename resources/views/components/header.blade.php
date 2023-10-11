@@ -1,5 +1,5 @@
     <!-- Start Hero Section -->
-    <div class="hero" style="margin-top: 80px;">
+    <div class="hero" style="margin-top: 60px;">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-5">
