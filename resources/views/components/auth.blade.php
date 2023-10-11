@@ -16,6 +16,8 @@
     @livewireStyles
 </head>
 
+<x-navbar />
+
 <body>
     {{ $slot }}
     @livewireScripts
