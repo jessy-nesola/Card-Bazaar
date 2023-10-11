@@ -1,4 +1,9 @@
-<body>
+<x-layout>
+
+    <x-navbar />
+
+    <x-header />
+
     <!-- Start Product Section -->
     <div class="product-section">
         <div class="container">
@@ -14,17 +19,19 @@
                 <!-- End Column 1 -->
 
                 <!-- Start Column 2 -->
-                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Nordic Chair</h3>
-                        <strong class="product-price">$50.00</strong>
+                @foreach ($announcements as $announcement)
+                    <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                        <a class="product-item" href="cart.html">
+                            <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
+                            <h3 class="product-title">{{ $announcement->title }}</h3>
+                            <strong class="product-price">{{ $announcement->price }}</strong>
 
-                        <span class="icon-cross">
-                            <img src="assets/images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
-                </div>
+                            <span class="icon-cross">
+                                <img src="assets/images/cross.svg" class="img-fluid">
+                            </span>
+                        </a>
+                    </div>
+                @endforeach
                 <!-- End Column 2 -->
 
                 <!-- Start Column 3 -->
@@ -206,7 +213,7 @@
         </div>
     </div>
     <!-- End Popular Product -->
-    
+
 
     <!-- Start Testimonial Section -->
     <div class="testimonial-section">
@@ -278,7 +285,8 @@
                                                         class="img-fluid">
                                                 </div>
                                                 <h3 class="font-weight-bold">Jhon Karlate</h3>
-                                                <span class="position d-block mb-3">Developer, Co-Founder, ABC Corp.</span>
+                                                <span class="position d-block mb-3">Developer, Co-Founder, ABC
+                                                    Corp.</span>
                                             </div>
                                         </div>
 
@@ -385,4 +393,5 @@
         </div>
     </div>
     <!-- End Blog Section -->
-</body>
+    <x-footer />
+</x-layout>

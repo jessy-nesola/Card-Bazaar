@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('homepage');
+Route::get('/', [FrontController::class, 'homepage'])->name('homepage');
 
 Route::get('/announcement/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcements.create');
 
