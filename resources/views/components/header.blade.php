@@ -5,10 +5,8 @@
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
                         <h1>Il tuo mondo, <span class="d-block">le tue carte!</span></h1>
-                        <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                            vulputate velit imperdiet dolor tempor tristique.</p>
-                        <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#"
-                                class="btn btn-white-outline">Explore</a></p>
+                        <p style="color: #86E5FF;" class="mb-4 ">Crea il Mazzo dei tuoi Sogni su CardBazaar: Magia, Collezione, Azione!</p>
+                        <p><a href="" class="btn btn-secondary me-2">Entra in famiglia!</a>
                     </div>
                 </div>
                 <div class="col-lg-7">

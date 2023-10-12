@@ -21,8 +21,8 @@ Route::get('/categories', [CategoryController::class, 'index'])->name('categorie
 
 Route::get('/categories/{name}/show', [CategoryController::class, 'show'])->name('categories.show');
 
-Route::get('/announcement/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcements.create');
-
 Route::get('/show', function () {
     return view('categories.show');
 });
+
+Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcements.index');
