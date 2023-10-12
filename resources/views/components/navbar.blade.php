@@ -14,9 +14,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
-                    <li><a class="nav-link" href="about.html">Explore</a>
-                    </li>
-                    <li><a class="nav-link" href="{{route('announcements.index')}}"> All Announcements</a>
+                    <li><a class="nav-link" href="{{route('announcements.index')}}">Explore</a>
                     </li>
                     {{-- COLLEGAMENTO TEMPORANEO ALLA PAGINA CATEGORIES.INDEX --}}
                     <li><a class="nav-link" href="{{route('categories.index')}}">Categories</a>
