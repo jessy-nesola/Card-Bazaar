@@ -1,5 +1,8 @@
 import "bootstrap";
-import "./bootstrap";
+// import "./bootstrap.js";
+// import "./bootstrap.bundle.min.js";
+// import "./custom.js";
+// import "./tiny-slider.js";
 
 var sitePlusMinus = function () {
     var value,
@@ -6796,4 +6799,3 @@ var tns = (function () {
     return aa;
 })();
 //# sourceMappingURL=../sourcemaps/tiny-slider.js.map
-
