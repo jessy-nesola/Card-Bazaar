@@ -47,37 +47,12 @@ var sitePlusMinus = function () {
 };
 sitePlusMinus();
 
-// Trova gli elementi del carosello
-const testimonialSlider = document.querySelector('.testimonial-slider');
-const testimonialItems = testimonialSlider.querySelectorAll('.item');
-const testimonialNavPrev = document.querySelector('[data-controls="prev"]');
-const testimonialNavNext = document.querySelector('[data-controls="next"]');
-
-let currentIndex = 0;
-
-function showTestimonial(index) {
-    // Nascondi tutti gli elementi del carosello
-    testimonialItems.forEach(item => {
-        item.classList.remove('active');
-    });
-
-    // Mostra l'elemento corrente
-    testimonialItems[index].classList.add('active');
-}
-
-function nextTestimonial() {
-    currentIndex = (currentIndex + 1) % testimonialItems.length;
-    showTestimonial(currentIndex);
-}
-
-function prevTestimonial() {
-    currentIndex = (currentIndex - 1 + testimonialItems.length) % testimonialItems.length;
-    showTestimonial(currentIndex);
-}
-
-// Inizializza il carosello mostrando il primo elemento
-showTestimonial(currentIndex);
-
-// Aggiungi gestori di eventi per i pulsanti di navigazione
-testimonialNavNext.addEventListener('click', nextTestimonial);
-testimonialNavPrev.addEventListener('click', prevTestimonial);
+var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+        delay: 3000, // Tempo in millisecondi tra le slide
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

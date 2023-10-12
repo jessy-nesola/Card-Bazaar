@@ -29,3 +29,6 @@ Route::get('/announcement/create', [AnnouncementController::class, 'create'])->m
 Route::get('/show', function () {
     return view('categories.show');
 });
+Route::get('/show-detail', function () {
+    return view('announcements.show');
+});
