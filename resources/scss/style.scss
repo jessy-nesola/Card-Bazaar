@@ -172,13 +172,13 @@ a {
 			}
 			@media (min-width: $lg) {
 				left: 0px;
-				top: -80px;
+				top: -45px;
 				position: absolute;
 				right: -50px;
 			}
 			@media (min-width: $xl) {
 				left: 0px;
-				top: -80px;
+				top: -45px;
 
 				right: -100px;
 			}
@@ -207,12 +207,12 @@ a {
 	padding: 12px 30px;
 	border-radius: 30px;
 	color: $white;
-	background: #5BC0F8;
-	border-color: #5BC0F8;
+	background: $primary;
+	border-color: $primary;
 	&:hover {
 		color: $white;
-		background: darken(#5BC0F8, 10%);
-		border-color: darken(#5BC0F8, 10%);
+		background: darken($primary, 5%);
+		border-color: darken($primary, 5%);
 	}
 	&:active, &:focus {
 		outline: none!important;
