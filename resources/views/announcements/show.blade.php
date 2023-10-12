@@ -21,9 +21,9 @@
             <!-- Swiper Section -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide mx-3 "><img src="/assets/images/card-1.png" alt="Image 1"></div>
-                    <div class="swiper-slide mx-3"><img src="/assets/images/card-2.png" alt="Image 2"></div>
-                    <div class="swiper-slide mx-3"><img src="/assets/images/card-3.png" alt="Image 3"></div>
+                    <div class="swiper-slide mx-3 "><img src="/assets/images/person-1.png" alt="Image 1"></div>
+                    <div class="swiper-slide mx-3"><img src="/assets/images/person_2.png" alt="Image 2"></div>
+                    <div class="swiper-slide mx-3"><img src="/assets/images/person_3.png" alt="Image 3"></div>
                 </div>
                 <!-- Add navigation buttons -->
                 <div class="swiper-button-next"></div>

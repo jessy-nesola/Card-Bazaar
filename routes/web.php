@@ -24,5 +24,9 @@ Route::get('/categories/{name}/show', [CategoryController::class, 'show'])->name
 Route::get('/show', function () {
     return view('categories.show');
 });
-
 Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcements.index');
+Route::get('/announcements/create', [AnnouncementController::class, 'create'])->name('announcements.create');
+
+Route::get('/show-detail', function () {
+    return view('announcements.show');
+});

@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/modules/effect-fade.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>CardBazaar</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/bootstrap.min.css', 'resources\css\tiny-slider.css', 'resources/js/app.js', 'resources/js/bootstrap.bundle.min.js', 'resources/js/bootstrap.js', 'resources\js\custom.js', 'resources\js\tiny-slider.js', 'resources/scss/style.scss', 'node_modules\swiper\swiper-bundle.min.js', 'node_modules\swiper\modules\effect-fade.min.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>
 <x-navbar />
@@ -22,9 +22,7 @@
 <body>
     {{ $slot }}
     @livewireScripts
-    <script src="
-https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js
-"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
 </body>
 
 </html>
