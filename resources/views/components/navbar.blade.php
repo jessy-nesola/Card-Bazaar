@@ -11,13 +11,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarsFurni">
                 <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item active">
+                    <li class="nav-item @if (Route::currentRouteName() == 'homepage') active @endif">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
-                    <li><a class="nav-link" href="{{route('announcements.index')}}">Explore</a>
+                    <li class="nav-item @if (Route::currentRouteName() == 'announcements.index') active @endif">
+                        <a class="nav-link " href="{{route('announcements.index')}}">Explore</a>
                     </li>
                     {{-- COLLEGAMENTO TEMPORANEO ALLA PAGINA CATEGORIES.INDEX --}}
-                    <li><a class="nav-link" href="{{route('categories.index')}}">Categories</a>
+                    <li class="nav-item @if (Route::currentRouteName() == 'categories.index') active @endif">
+                        <a class="nav-link" href="{{route('categories.index')}}">Categories</a>
                     </li>
                     
                     {{-- NON FUNZIONA STO CAZZO DI DROPDROWN --}}
