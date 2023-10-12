@@ -1,38 +1,33 @@
 <x-layout>
-    <!-- Start Hero Section -->
-    <div class="hero">
+
+    <div class="hero" style="margin-top: 60px;">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h1>{{ $category->name }}</h1>
+                        <h1>Categorie</h1>
+                        <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                            vulputate velit imperdiet dolor tempor tristique.</p>
                     </div>
-                </div>
-                <div class="col-lg-7">
-
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Hero Section -->
+
     <div class="product-section">
         <div class="container">
             <div class="row">
-                @forelse ($category->announcements as $announcement)
+                @foreach ($categories as $category)
                     <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
                         <div class="product-item">
                             <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
-                            <h3 class="product-title">{{ $announcement->title }}</h3>
-                            <strong class="product-price">{{ $announcement->price }}€</strong>
-
+                            <h3 class="product-title">{{ $category->name }}</h3>
                             <span class="icon-cross">
-                                <a href=""><img src="assets/images/cross.svg" class="img-fluid"></a>
+                                <a href="{{route('categories.show', $category->name)}}"><img src="assets/images/cross.svg" class="img-fluid"></a>
                             </span>
                         </div>
                     </div>
-                @empty
-                    <div>vuoto</div>
-                @endforelse
+                @endforeach
             </div>
         </div>
     </div>

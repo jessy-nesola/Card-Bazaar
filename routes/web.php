@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
 /*
@@ -16,19 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontController::class, 'homepage'])->name('homepage');
 
+Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
+
+Route::get('/categories/{name}/show', [CategoryController::class, 'show'])->name('categories.show');
+
 Route::get('/announcement/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcements.create');
-
-// Route::get('/login', function () {
-//     return view('auth.login');
-// });
-
-// Route::get('/register', function () {
-//     return view('auth.register');
-// });
 
 Route::get('/show', function () {
     return view('categories.show');
-});
-Route::get('/show-detail', function () {
-    return view('announcements.show');
 });

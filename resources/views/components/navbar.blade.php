@@ -16,9 +16,12 @@
                     </li>
                     <li><a class="nav-link" href="about.html">Explore</a>
                     </li>
+                    {{-- COLLEGAMENTO TEMPORANEO ALLA PAGINA CATEGORIES.INDEX --}}
+                    <li><a class="nav-link" href="{{route('categories.index')}}">Categories</a>
+                    </li>
                     
                     {{-- NON FUNZIONA STO CAZZO DI DROPDROWN --}}
-                    <li class="nav-item dropdown">
+                    {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Categories
                         </a>
@@ -28,7 +31,7 @@
                             <a class="dropdown-item" href="#">Category 3</a>
                             <!-- INSERT OTHER CATEGORIES -->
                         </div>
-                    </li>
+                    </li> --}}
 
 
                 </ul>
