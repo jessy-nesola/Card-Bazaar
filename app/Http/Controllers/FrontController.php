@@ -9,7 +9,7 @@ class FrontController extends Controller
 {
     public function homepage()
     {
-        $announcements = Announcement::take(7)->orderBy('created_at', 'desc')->get();
+        $announcements = Announcement::latest()->take(3)->get();
         return view('homepage', compact('announcements'));
     }
 }

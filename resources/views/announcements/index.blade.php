@@ -30,7 +30,7 @@
                     </div>
                 @endforeach
                 {{-- MENU NAVIGAZIONE --}}
-                {{-- {{$announcement->links()}} --}}
+                {{$announcements->links()}}
             </div>
         </div>
     </div>

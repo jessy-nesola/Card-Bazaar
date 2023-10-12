@@ -30,7 +30,7 @@ class CreateAnnouncementForm extends Component
             'title' => $this->title,
             'body' => $this->body,
             'price' => $this->price,
-            'uri' => Str::slug($this->title, '-')
+            'uri' => Str::slug($this->title . ' ' . Str::password(6,false,true,false,false), '-')
         ]);
         Auth::user()->announcements()->save($announcement);
 

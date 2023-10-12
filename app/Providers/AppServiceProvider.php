@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 // PER PAGINAZIONE NELLA INDEX DI ANNUNCI
-// use Illuminate\Pagination\Paginator;
+use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -30,6 +30,6 @@ class AppServiceProvider extends ServiceProvider
         }
 
         // PER PAGINAZIONE NELLA INDEX DI ANNUNCI
-        // Paginator::useBootstrapFive();
+        Paginator::useBootstrapFive();
     }
 }
