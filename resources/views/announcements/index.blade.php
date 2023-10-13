@@ -29,6 +29,7 @@
                         </div>
                     </div>
                 @endforeach
+                <div class="mb-5"></div>
                 {{-- MENU NAVIGAZIONE --}}
                 {{$announcements->links()}}
             </div>
