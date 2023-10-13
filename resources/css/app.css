@@ -11031,7 +11031,7 @@ fieldset:disabled .btn {
     position: fixed;
     visibility: hidden;
     opacity: 0;
-    right: 3%;
+    right: 4%;
     top: 90%;
     z-index: 99999;
     background: rgba(0, 129, 201, 0.6);
