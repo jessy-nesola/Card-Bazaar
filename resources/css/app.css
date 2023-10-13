@@ -10963,7 +10963,7 @@ fieldset:disabled .btn {
     width: -moz-calc(100% / 70);
     width: calc(100% / 70);
     height: 10px;
-    float: left;
+    float: center;
 }
 /*--------------------------------------------------------------
   # Gallery Single Section
@@ -11000,7 +11000,7 @@ fieldset:disabled .btn {
 
 .gallery-single .swiper-button-prev:after,
 .gallery-single .swiper-button-next:after {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 129, 201, 0.9);
     background-color: rgba(0, 129, 201, 0.2);
     font-size: 24px;
     border-radius: 50%;
