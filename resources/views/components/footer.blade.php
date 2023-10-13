@@ -92,7 +92,7 @@
                         <script>
                             document.write(new Date().getFullYear());
                         </script>.
-                        <a>All Rights Reserved. &mdash; Designed with love by develHOPErs</a
+                        <a>All Rights Reserved. &mdash; Designed with love by develHOPErs</a>
                     </p>
                 </div>
 

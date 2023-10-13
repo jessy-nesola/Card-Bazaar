@@ -363,5 +363,4 @@
     </div> --}}
     <!-- End Blog Section -->
 
-    <x-footer />
 </x-layout>

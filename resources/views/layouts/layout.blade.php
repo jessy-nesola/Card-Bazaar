@@ -10,19 +10,18 @@
     <meta name="description" content="" />
     <meta name="keywords" content="bootstrap, bootstrap5" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/modules/effect-fade.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>CardBazaar</title>
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/scss/style.scss'])
     @livewireStyles
 </head>
-<x-navbar />
-
 <body>
+    <x-navbar />
     {{ $slot }}
     @livewireScripts
     <script src="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
+    <x-footer />
 </body>
 
 </html>

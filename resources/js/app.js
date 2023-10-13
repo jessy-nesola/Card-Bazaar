@@ -3,8 +3,8 @@ import "bootstrap";
 // import "./bootstrap.bundle.min.js";
 // import "./custom.js";
 // import "./tiny-slider.js";
-import "/node_modules/swiper/swiper-bundle.min.js";
 import "./custom_swiper.js";
+import "/node_modules/swiper/swiper-bundle.min.js";
 var sitePlusMinus = function () {
     var value,
         quantity = document.getElementsByClassName("quantity-container");
@@ -88,3 +88,19 @@ new Swiper('.slides-1', {
         prevEl: '.swiper-button-prev',
     }
 });
+
+var swiper = new Swiper( '.swiper-container.two', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    effect: 'coverflow',
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflow: {
+        rotate: 0,
+        stretch: 100,
+        depth: 150,
+        modifier: 1.5,
+        slideShadows : false,
+    }
+} );

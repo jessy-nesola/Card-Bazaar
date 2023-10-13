@@ -195,7 +195,7 @@ a.more {
     position: absolute;
     width: 255px;
     height: 217px;
-    background-image: url("../images/dots-light.svg");
+    background-image: url("/public/assets/images/dots-light.svg");
     background-size: contain;
     background-repeat: no-repeat;
     right: -100px;
@@ -353,7 +353,7 @@ a.more {
     content: "";
     width: 255px;
     height: 217px;
-    background-image: url("../images/dots-yellow.svg");
+    background-image: url("assets/images/dots-yellow.svg");
     background-repeat: no-repeat;
     background-size: contain;
     -webkit-transform: translate(-40%, -40%);
@@ -407,7 +407,7 @@ a.more {
     content: "";
     width: 255px;
     height: 217px;
-    background-image: url("../images/dots-green.svg");
+    background-image: url("/public/assets/images/dots-green.svg");
     background-size: contain;
     background-repeat: no-repeat;
     -webkit-transform: translate(-40%, -40%);
@@ -10979,7 +10979,7 @@ fieldset:disabled .btn {
     border-radius: 50%;
     border: 5px solid rgba(0, 129, 201, 0.8);;
     margin: 0 auto;
-  }
+}
 
 .gallery-single .card-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
@@ -11031,8 +11031,8 @@ fieldset:disabled .btn {
     position: fixed;
     visibility: hidden;
     opacity: 0;
-    right: 130px;
-    top: 500px;
+    right: 60px;
+    top: 620px;
     z-index: 99999;
     background: rgba(0, 129, 201, 0.6);
     width: 50px;

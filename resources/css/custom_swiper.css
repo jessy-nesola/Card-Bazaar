@@ -13,7 +13,7 @@ img:not([draggable]), embed, object, video {
 }
 
 .swiper-container-no-flexbox .swiper-slide {
-    float: left
+    float: left;
 }
 
 .swiper-container-vertical>.swiper-wrapper {
@@ -167,7 +167,7 @@ img:not([draggable]), embed, object, video {
 }
 
 .swiper-pagination.swiper-pagination-hidden {
-    opacity: 0
+    opacity: 0;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets,
