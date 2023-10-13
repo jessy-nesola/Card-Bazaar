@@ -88,8 +88,7 @@
     </div>
     <!-- End Announcement Single-Detail -->
 
-    {{-- Top scroll button --}}
-    <div class="swiper-button"><a href="#" class="scroll-top d-flex align-items-center justify-content-center"></a></div>
+   
 
     <x-footer />
 </x-layout>
