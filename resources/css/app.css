@@ -10969,7 +10969,7 @@ fieldset:disabled .btn {
   # Gallery Single Section
   --------------------------------------------------------------*/
   .gallery-single .card-details-slider img {
-    width: 50%;
+    width: 75%;
     height: auto;
     justify-items: center;
 }

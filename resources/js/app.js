@@ -68,6 +68,7 @@ if (scrollTop) {
 /**
      * Init swiper slider with 1 slide at once in desktop view
      */
+
 new Swiper('.slides-1', {
     speed: 600,
     loop: true,

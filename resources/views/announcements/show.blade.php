@@ -2,7 +2,7 @@
     <x-navbar />
     <section id="gallery-single" class="gallery-single d-flex flex-column">
         <hr>
-        <div style="height:200px;" ></div>
+        <div style="height:100px;" ></div>
         <div class="container">
             <div class="position-relative h-100">
                 <div class="slides-1 card-details-slider swiper">
