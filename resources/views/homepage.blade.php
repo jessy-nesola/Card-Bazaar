@@ -12,7 +12,7 @@
                     <h2 class="mb-4 section-title">Ecco le ultime aggiunte da altri utenti!</h2>
                     <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
                         vulputate velit imperdiet dolor tempor tristique. </p>
-                    <p><a href="shop.html" class="btn">Mostra altro</a></p>
+                    <p><a href="{{route('announcements.index')}}" class="btn">Mostra altro</a></p>
                 </div>
                 <!-- End Column 1 -->
 
@@ -104,7 +104,7 @@
     </div>
     <!-- End Why Choose Us Section -->
 
-    <!-- Start We Help Section -->
+    {{-- <!-- Start We Help Section -->
     <div class="we-help-section">
         <div class="container">
             <div class="row justify-content-between">
@@ -180,7 +180,7 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End Popular Product -->
 
 

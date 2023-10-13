@@ -108,6 +108,6 @@
 
     </div>
      {{-- Top scroll button --}}
-     <div class="swiper-button border-primary"><a href="#" class="scroll-top d-flex align-items-center justify-content-center"></a></div>
+     {{-- <div class="swiper-button border-primary"><a href="#" class="scroll-top d-flex align-items-center justify-content-center"></a></div> --}}
 </footer>
 <!-- End Footer Section -->

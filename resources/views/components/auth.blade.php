@@ -22,5 +22,5 @@
     {{ $slot }}
     @livewireScripts
 </body>
-
+<x-footer/>
 </html>
