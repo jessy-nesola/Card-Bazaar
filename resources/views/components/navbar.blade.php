@@ -41,6 +41,7 @@
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}"><img src="/assets/images/user.svg"></a></li>
                         @else
+                            <li class="nav-link m-0 active">Benvenuto, {{Auth::user()->name}}</li>
                             <li>
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf
@@ -50,7 +51,7 @@
                                     </button>
                                 </form>
                             </li>
-                            <li><a href="{{ route('announcements.create') }}" class="btn btn-secondary btn-sm">Inserisci
+                            <li><a href="{{ route('announcements.create') }}" class="btn btn-secondary btn-sm fs-8 px-3 py-1 m-nav-btn">Inserisci
                                     annuncio</a></li>
                         @endguest
                     </ul>

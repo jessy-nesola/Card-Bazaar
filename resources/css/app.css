@@ -11058,4 +11058,6 @@ fieldset:disabled .btn {
     bottom: 15px;
 }
 
-
+.m-nav-btn {
+    margin: 5% 0%;
+}
