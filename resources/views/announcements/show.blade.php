@@ -29,7 +29,7 @@
                     <div class="col-lg-6 d-flex justify-content-center align-items-center">
                         <div class="card-description mx-5">
                             <h2 class="mb-3">{{ $announcement->title }}</h2>
-                            <div><strong>Categoria: {{ $announcement->category->name }}</strong></div>
+                            <div><strong>Categoria: <a href="{{route('categories.show', ['name'=>$announcement->category->name])}}">{{ $announcement->category->name }}</a></strong></div>
                             <div><strong>Pubblicato da: {{ $announcement->user->name }}</strong></div>
                             <div class="mb-3"><strong>Data pubblicazione: {{ $announcement->created_at->format('d/m/Y') }}</strong></div>
                             <div><strong>Descrizione:</strong></div>
