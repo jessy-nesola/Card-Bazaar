@@ -3,7 +3,8 @@ import "bootstrap";
 // import "./bootstrap.bundle.min.js";
 // import "./custom.js";
 // import "./tiny-slider.js";
-import "./custom_swiper";
+import "/node_modules/swiper/swiper-bundle.min.js";
+import "./custom_swiper.js";
 var sitePlusMinus = function () {
     var value,
         quantity = document.getElementsByClassName("quantity-container");
