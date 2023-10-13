@@ -91,7 +91,7 @@
                     <p class="mb-2 text-center text-lg-start">Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script>. 
+                        </script>.
                         <a>All Rights Reserved. &mdash; Designed with love by develHOPErs</a
                     </p>
                 </div>
@@ -107,5 +107,7 @@
         </div>
 
     </div>
+     {{-- Top scroll button --}}
+     <div class="swiper-button border-primary"><a href="#" class="scroll-top d-flex align-items-center justify-content-center"></a></div>
 </footer>
 <!-- End Footer Section -->
