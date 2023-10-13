@@ -31,7 +31,9 @@
                         </div>
                     </div>
                 @empty
-                    <div>vuoto</div>
+                    <h3 class="mb-3">Al momento non ci sono annunci caricati!</div>
+                    <div><a href="{{ route('announcements.create') }}" class="btn btn-secondary btn-sm">Inserisci
+                        annuncio</a></div>
                 @endforelse
             </div>
         </div>
