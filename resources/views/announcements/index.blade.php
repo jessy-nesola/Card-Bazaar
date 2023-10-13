@@ -24,7 +24,7 @@
                             <h3 class="product-title">{{ $announcement->title }}</h3>
                             <strong class="product-price">{{ $announcement->price }}€</strong>
                             <span class="icon-cross">
-                                <a href="{{route('categories.show', $announcement->uri)}}"><img src="assets/images/cross.svg" class="img-fluid"></a>
+                                <a href="{{route('announcements.show', $announcement->uri)}}"><img src="assets/images/cross.svg" class="img-fluid"></a>
                             </span>
                         </div>
                     </div>

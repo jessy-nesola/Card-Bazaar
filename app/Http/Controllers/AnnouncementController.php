@@ -39,9 +39,17 @@ class AnnouncementController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Announcement $announcement)
+    public function show($uri)
     {
-        //
+        $announcements = Announcement::all();
+        foreach ($announcements as $announcement)
+        {
+            if ($announcement->uri == $uri)
+            {
+                return view('announcements.show', compact('announcement'));
+            }
+        }
+        abort(404);
     }
 
     /**
