@@ -5,7 +5,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="register-form">
-                        <h2 class="mb-4">Register</h2>
+                        <h2 class="mb-5 text-center">Register</h2>
                         <form action="{{ route('register') }}" method="POST">
                             @csrf
                             @method('POST')
