@@ -21,12 +21,12 @@
                 @forelse ($category->announcements as $announcement)
                     <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
                         <div class="product-item">
-                            <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
+                            <img src="/assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
                             <h3 class="product-title">{{ $announcement->title }}</h3>
                             <strong class="product-price">{{ $announcement->price }}€</strong>
 
                             <span class="icon-cross">
-                                <a href=""><img src="assets/images/cross.svg" class="img-fluid"></a>
+                                <a href=""><img src="/assets/images/cross.svg" class="img-fluid"></a>
                             </span>
                         </div>
                     </div>

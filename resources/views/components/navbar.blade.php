@@ -21,7 +21,7 @@
                     <li class="nav-item @if (Route::currentRouteName() == 'categories.index') active @endif">
                         <a class="nav-link" href="{{route('categories.index')}}">Categories</a>
                     </li>
-                    
+
                     {{-- NON FUNZIONA STO CAZZO DI DROPDROWN --}}
                     {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,7 +39,7 @@
                 </ul>
                     <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                         @guest
-                            <li><a class="nav-link" href="{{ route('login') }}"><img src="assets/images/user.svg"></a></li>
+                            <li><a class="nav-link" href="{{ route('login') }}"><img src="/assets/images/user.svg"></a></li>
                         @else
                             <li>
                                 <form action="{{ route('logout') }}" method="POST">

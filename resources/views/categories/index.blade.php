@@ -20,7 +20,7 @@
                 @foreach ($categories as $category)
                     <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
                         <div class="product-item">
-                            <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
+                            <img src="/assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
                             <h3 class="product-title">{{ $category->name }}</h3>
                             <span class="icon-cross">
                                 <a href="{{route('categories.show', $category->name)}}"><img src="assets/images/cross.svg" class="img-fluid"></a>
