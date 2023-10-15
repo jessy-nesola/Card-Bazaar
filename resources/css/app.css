@@ -45,14 +45,9 @@ body {
   --animate-duration: 1.25s;
 }
 
-/* durata animazione testo "Esplora" */
-.animate__animated.animate__backInLeft {
-  --animate-duration: 900ms;
-}
-
-/* durata animazione testo "Categorie" */
-.animate__animated.animate__backInRight {
-  --animate-duration: 900ms;
+/* durata animazione testo "Esplora" e "Categorie" */
+.animate__animated.animate__pulse {
+  --animate-duration: 500ms;
 }
 
 /* sezione MAIN */

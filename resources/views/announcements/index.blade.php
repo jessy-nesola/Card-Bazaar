@@ -4,8 +4,8 @@
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h2 class="animate__animated animate__backInLeft">Esplora qua tutte le carte!</h2>
-                        <p class="animate__animated animate__backInLeft">Che testo mettiamo? Che testo mettiamo? Che testo mettiamo? Che testo mettiamo?</p>
+                        <h2 class="animate__animated animate__pulse">Esplora da qui tutte le carte!</h2>
+                        <p class="animate__animated animate__pulse">Che testo mettiamo? Che testo mettiamo? Che testo mettiamo? Che testo mettiamo?</p>
                     </div>
                 </div>
             </div>
