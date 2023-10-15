@@ -10,8 +10,7 @@
                 </div>
             </div>
             <div class="col-xl-5 col-xxl-6 text-center">
-                <img class="img-fluid rounded-3 my-5" src="/assets/images/cardhomepage.png"
-                    alt="Library" />
+                <img class="img-fluid rounded-3 my-5" src="/assets/images/cardhomepage.png" alt="Library" />
             </div>
         </div>
     </div>
