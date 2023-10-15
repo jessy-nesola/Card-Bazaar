@@ -8,14 +8,14 @@
             <div class="row">
 
                 <!-- Start Column 1 -->
-                
+
                 <div class="col-md-12 col-lg-3 my-5 mb-lg-0">
                     <h2 class="mb-4 section-title">Ecco le ultime carte aggiunte da altri utenti!</h2>
                     <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
                         vulputate velit imperdiet dolor tempor tristique. </p>
                     <p><a href="{{route('announcements.index')}}" class="btn">Mostra altro</a></p>
                 </div>
-                
+
                 <!-- End Column 1 -->
 
                 <!-- Start Column 2 -->
