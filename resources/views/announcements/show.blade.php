@@ -54,5 +54,4 @@
                     </div>
                 </div> --}}
     </div>
-    <!-- End Announcement Single-Detail -->
 </x-layout>

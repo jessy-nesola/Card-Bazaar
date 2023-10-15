@@ -1,20 +1,17 @@
 <x-layout>
-    <!-- Start Hero Section -->
-    <div class="hero">
+    <header class="hero" style="margin-top: 130px;">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
                         <h1>{{ $category->name }}</h1>
+                        <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                            vulputate velit imperdiet dolor tempor tristique.</p>
                     </div>
-                </div>
-                <div class="col-lg-7">
-
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Hero Section -->
+    </header>
     <div class="product-section">
         <div class="container">
             <div class="row">

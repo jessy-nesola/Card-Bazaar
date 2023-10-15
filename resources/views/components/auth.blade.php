@@ -2,25 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Project_by_DevelHOPErs">
-    <link rel="shortcut icon" href="favicon.png">
-
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap5" />
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CardBazaar</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style.css', 'resources/css/bootstrap.min.css', 'resources\css\tiny-slider.css', 'resources/js/app.js', 'resources/js/bootstrap.bundle.min.js', 'resources/js/bootstrap.js', 'resources\js\custom.js', 'resources\js\tiny-slider.js','resources/scss/style.scss'])
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>
 
-<x-navbar />
-
 <body>
+    <x-navbar />
     {{ $slot }}
     @livewireScripts
+    <x-footer />
 </body>
-<x-footer/>
+
 </html>

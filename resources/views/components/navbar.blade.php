@@ -1,62 +1,45 @@
-    <!-- Header/Navigation -->
-    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark fixed-top"
-        arial-label="Furni navigation bar">
-
-        <div class="container">
-            <a class="navbar-brand" href="{{ route('homepage') }}">CardBazaar<span>.</span></a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
-                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsFurni">
-                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item @if (Route::currentRouteName() == 'homepage') active @endif">
-                        <a class="nav-link" href="{{ route('homepage') }}">Home</a>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand text-light" href="{{ route('homepage') }}">
+            <h3>CardBazaar.</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item @if (Route::currentRouteName() == 'homepage')  @endif">
+                    <a class="nav-link text-light" href="{{ route('homepage') }}">Home</a>
+                </li>
+                <li class="nav-item @if (Route::currentRouteName() == 'announcements.index')  @endif">
+                    <a class="nav-link text-light" href="{{ route('announcements.index') }}">Esplora</a>
+                </li>
+                {{-- COLLEGAMENTO TEMPORANEO ALLA PAGINA CATEGORIES.INDEX --}}
+                <li class="nav-item @if (Route::currentRouteName() == 'categories.index')  @endif">
+                    <a class="nav-link text-light" href="{{ route('categories.index') }}">Categorie</a>
+                </li>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-md-0">
+                <li><a href="{{ route('announcements.create') }}" class="btn btn-outline-light m-2">Inserisci
+                        annuncio</a>
+                </li>
+                @guest
+                    <li><a class="nav-link" href="{{ route('login') }}"><img src="/assets/images/user.svg"
+                                style="width: 29px; height: 30;"></a></li>
+                @else
+                    <li class="btn btn-outline-light m-2">Utente: {{ Auth::user()->name }}</li>
+                    <li>
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button class="btn btn-outline-light m-2"
+                                onclick="event.preventDefault(); this.closest('form').submit();">
+                                Logout
+                            </button>
+                        </form>
                     </li>
-                    <li class="nav-item @if (Route::currentRouteName() == 'announcements.index') active @endif">
-                        <a class="nav-link " href="{{route('announcements.index')}}">Explore</a>
-                    </li>
-                    {{-- COLLEGAMENTO TEMPORANEO ALLA PAGINA CATEGORIES.INDEX --}}
-                    <li class="nav-item @if (Route::currentRouteName() == 'categories.index') active @endif">
-                        <a class="nav-link" href="{{route('categories.index')}}">Categories</a>
-                    </li>
-
-                    {{-- NON FUNZIONA STO CAZZO DI DROPDROWN --}}
-                    {{-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Categories
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                            <a class="dropdown-item" href="#">Category 1</a>
-                            <a class="dropdown-item" href="#">Category 2</a>
-                            <a class="dropdown-item" href="#">Category 3</a>
-                            <!-- INSERT OTHER CATEGORIES -->
-                        </div>
-                    </li> --}}
-
-
-                </ul>
-                    <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-                        @guest
-                            <li><a class="nav-link" href="{{ route('login') }}"><img src="/assets/images/user.svg"></a></li>
-                        @else
-                            <li class="nav-link m-0 active">Benvenuto, {{Auth::user()->name}}</li>
-                            <li>
-                                <form action="{{ route('logout') }}" method="POST">
-                                    @csrf
-                                    <button class="nav-link active"
-                                        onclick="event.preventDefault(); this.closest('form').submit();">
-                                        Logout
-                                    </button>
-                                </form>
-                            </li>
-                            <li><a href="{{ route('announcements.create') }}" class="btn btn-secondary btn-sm fs-8 px-3 py-1 m-nav-btn">Inserisci
-                                    annuncio</a></li>
-                        @endguest
-                    </ul>
-                </ul>
-            </div>
+                @endguest
+            </ul>
         </div>
-    </nav>
-    <!-- End Header/Navigation -->
+    </div>
+</nav>
