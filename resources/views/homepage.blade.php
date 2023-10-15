@@ -10,12 +10,12 @@
                 <!-- Start Column 1 -->
                 
                 <div class="col-md-12 col-lg-3 my-5 mb-lg-0">
-                    <h2 class="mb-4 section-title">Ecco le ultime aggiunte da altri utenti!</h2>
+                    <h2 class="mb-4 section-title">Ecco le ultime carte aggiunte da altri utenti!</h2>
                     <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
                         vulputate velit imperdiet dolor tempor tristique. </p>
                     <p><a href="{{route('announcements.index')}}" class="btn">Mostra altro</a></p>
                 </div>
-                </article>
+                
                 <!-- End Column 1 -->
 
                 <!-- Start Column 2 -->
@@ -37,7 +37,7 @@
         </div>
     </div>
 
-      <article>
+      {{-- <article>
         <img src="1.png" />
         <div>
           <name> Chris Hay, CTO at IBM iX </name>
@@ -72,7 +72,7 @@
             top of it off, it can also run as a graphdb. It's interesting.
           </p>
         </div>
-      </article>
+      </article> --}}
     </main>
   </body>
 
