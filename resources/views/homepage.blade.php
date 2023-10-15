@@ -10,17 +10,16 @@
                 <!-- Start Column 1 -->
                 
                 <div class="col-md-12 col-lg-3 my-5 mb-lg-0">
-                    <h2 class="mb-4 section-title">Ecco le ultime carte aggiunte da altri utenti!</h2>
-                    <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                        vulputate velit imperdiet dolor tempor tristique. </p>
-                    <p><a href="{{route('announcements.index')}}" class="btn">Mostra altro</a></p>
+                    <h3 class="mb-4 section-title">Ecco le ultime carte aggiunte da altri utenti!</h3>
+                    <p class="mb-4">Che testo mettiamo? Che testo mettiamo? Che testo mettiamo? Che testo mettiamo?</p>
+                    <p><a href="{{route('announcements.index')}}" class="btn btn btn-info">Esplora</a></p>
                 </div>
                 
                 <!-- End Column 1 -->
 
                 <!-- Start Column 2 -->
                 @foreach ($announcements as $announcement)
-                    <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
+                    <div class="testo-card col-12 col-md-4 col-lg-3 my-5 mb-md-0">
                         <div class="product-item">
                             <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
                             <h3 class="product-title">{{ $announcement->title }}</h3>

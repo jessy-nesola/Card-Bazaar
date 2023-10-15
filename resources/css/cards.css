@@ -17,7 +17,7 @@
     max-width: 100%; /* L'immagine si adatterà alla larghezza della card */
     height: auto; /* Imposta altezza automatica per mantenere il rapporto originale */
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 5px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 

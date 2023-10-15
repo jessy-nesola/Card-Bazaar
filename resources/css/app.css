@@ -79,6 +79,36 @@ article p {
   line-height: 1.6;
 }
 
+/* sezione 1 HOMEPAGE  */
+.col-md-12 {
+  gap: 16px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 32px;
+  border-radius: 16px;
+  background-color: #272e3c;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.col-md-12 img {
+  height: 60px;
+}
+
+.col-md-12 name {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.col-md-12 p {
+  margin: 8px 0 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.img-fluid {
+border-radius: 5px;
+}
+
   /* sezione LOGIN */
   .login-section {
     display: flex;
