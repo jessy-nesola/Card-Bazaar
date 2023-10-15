@@ -5,8 +5,8 @@
                 <div class="my-5 text-center text-xl-start text-light">
                     <h1 class="animate__animated animate__bounceIn">Benvenuto in CardBazaar.</h1>
                     <h5 class="animate__animated animate__bounceIn">Il tuo mondo, le tue carte!</h5>
-                    <p style="color: #86E5FF;" class="mb-4 ">Crea il Mazzo dei tuoi sogni su CardBazaar: Magia, Collezione, Azione!</p>
-                    <p><a href="{{route('register')}}" class="btn btn-warning me-2">Entra in famiglia!</a>
+                    <p style="color: #5BC0F8;" class="mb-4 ">Qua puoi creare il tuo mazzo dei sogni.. Magia, Collezione, Azione!</p>
+                    <p><a href="{{route('register')}}" class="btn btn-warning me-2">Entra nella famiglia!</a>
                 </div>
             </div>
             <div class="col-xl-5 col-xxl-6 text-center">

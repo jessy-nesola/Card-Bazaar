@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import 'animate.css';
+
 /* sezione NAVBAR */
 .navbar {
   height: 55px;
@@ -41,7 +42,17 @@ body {
 
 /* durata animazione testo "CardBazaar." */
 .animate__animated.animate__bounceIn {
-  --animate-duration: 800ms;
+  --animate-duration: 1.25s;
+}
+
+/* durata animazione testo "Esplora" */
+.animate__animated.animate__backInLeft {
+  --animate-duration: 900ms;
+}
+
+/* durata animazione testo "Categorie" */
+.animate__animated.animate__backInRight {
+  --animate-duration: 900ms;
 }
 
 /* sezione MAIN */

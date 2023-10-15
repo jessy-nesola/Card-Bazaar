@@ -1,11 +1,11 @@
 <x-layout>
-    <div class="hero" style="margin-top: 130px;">
+    <div class="hero" style="margin-top: 70px;">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h1>Esplora qua tutte le carte!</h1>
-                        <p class="mb-4">Che testo mettiamo? Che testo mettiamo? Che testo mettiamo? Che testo mettiamo?</p>
+                        <h2 class="animate__animated animate__backInLeft">Esplora qua tutte le carte!</h2>
+                        <p class="animate__animated animate__backInLeft">Che testo mettiamo? Che testo mettiamo? Che testo mettiamo? Che testo mettiamo?</p>
                     </div>
                 </div>
             </div>

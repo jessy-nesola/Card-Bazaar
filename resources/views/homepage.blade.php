@@ -1,6 +1,5 @@
 <x-layout>
     <x-header />
-<body>
     <main>
 
       <div class="product-section">
