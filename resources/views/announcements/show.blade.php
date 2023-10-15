@@ -5,33 +5,38 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="position-relative h-160 col-lg-6" style="overflow:hidden;">
-                        <div class="slides-1 card-details-slider swiper">
-                            <div class="swiper-wrapper align-items-center justify-content-center">
 
-                                <div class="swiper-slide mx-5">
-                                    <img src="{{ asset('/assets\images\card-1.png') }}" alt="">
-                                </div>
-                                <div class="swiper-slide mx-5">
-                                    <img src="{{ asset('/assets\images\card-2.png') }}" alt="">
-                                </div>
-                                <div class="swiper-slide mx-5">
-                                    <img src="{{ asset('/assets\images\card-3.png') }}" alt="">
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
+                    <div id="carouselExampleAutoplaying" class="col-lg-6 d-flex h-100 carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active justify-content-center">
+                            <img src="{{asset('assets/images/card-1.avif')}}" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item justify-content-center">
+                            <img src="{{asset('assets/images/card-2.avif')}}" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item justify-content-center">
+                            <img src="{{asset('assets/images/card-3.avif')}}" class="d-block w-100" alt="...">
+                          </div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
 
                     <div class="col-lg-6 d-flex justify-content-center align-items-center">
                         <div class="card-description mx-5">
                             <h2 class="mb-3">{{ $announcement->title }}</h2>
-                            <div><strong>Categoria: <a href="{{route('categories.show', ['name'=>$announcement->category->name])}}">{{ $announcement->category->name }}</a></strong></div>
+                            <div><strong>Categoria: <a
+                                        href="{{ route('categories.show', ['name' => $announcement->category->name]) }}">{{ $announcement->category->name }}</a></strong>
+                            </div>
                             <div><strong>Pubblicato da: {{ $announcement->user->name }}</strong></div>
-                            <div class="mb-3"><strong>Data pubblicazione: {{ $announcement->created_at->format('d/m/Y') }}</strong></div>
+                            <div class="mb-3"><strong>Data pubblicazione:
+                                    {{ $announcement->created_at->format('d/m/Y') }}</strong></div>
                             <div><strong>Descrizione:</strong></div>
                             <p class="mb-4">{{ $announcement->body }}</p>
                             <h5><strong>{{ $announcement->price }}€</strong></h5>
