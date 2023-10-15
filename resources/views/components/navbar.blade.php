@@ -15,10 +15,25 @@
                     <a class="nav-link text-light" href="{{ route('announcements.index') }}">Esplora</a>
                 </li>
                 {{-- COLLEGAMENTO TEMPORANEO ALLA PAGINA CATEGORIES.INDEX --}}
-                <li class="nav-item @if (Route::currentRouteName() == 'categories.index')  @endif">
+                {{-- <li class="nav-item @if (Route::currentRouteName() == 'categories.index')  @endif">
                     <a class="nav-link text-light" href="{{ route('categories.index') }}">Categorie</a>
                 </li>
-                </li>
+                </li> --}}
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Categorie</button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                      <li><button class="dropdown-item" type="button"  href="#" >Magic: the Gathering</button></li>
+                      <li><button class="dropdown-item" type="button"  href="#" >Pokémon</button></li>
+                      <li><button class="dropdown-item" type="button"  href="#" >Yu-Gi-Oh!</button></li>
+                      <li><button class="dropdown-item" type="button"  href="#" >Flesh and Blood</button></li>
+                      <li><button class="dropdown-item" type="button"  href="#" >Digimon</button></li>
+                      <li><button class="dropdown-item" type="button"  href="#" >Force of will</button></li>
+                      <li><button class="dropdown-item" type="button"  href="#" >One Piece</button></li>
+                      <li><button class="dropdown-item" type="button"  href="#" >Dragon Ball Super</button></li>
+                      <li><button class="dropdown-item" type="button"  href="#" >Disney Lorcana</button></li>
+                      <li><button class="dropdown-item" type="button"  href="#" >Final Fantasy</button></li>
+                    </ul>
+                  </div>
             </ul>
             <ul class="navbar-nav mb-2 mb-md-0">
                 <li><a href="{{ route('announcements.create') }}" class="nav-link text-light m-2">Inserisci

@@ -8,13 +8,13 @@
             <div class="row">
 
                 <!-- Start Column 1 -->
-                
+
                 <div class="col-md-12 col-lg-3 my-5 mb-lg-0">
                     <h3 class="mb-4 section-title">Ecco le ultime carte aggiunte da altri utenti!</h3>
                     <p class="mb-4">Che testo mettiamo? Che testo mettiamo? Che testo mettiamo? Che testo mettiamo?</p>
                     <p><a href="{{route('announcements.index')}}" class="btn btn btn-info">Esplora</a></p>
                 </div>
-                
+
                 <!-- End Column 1 -->
 
                 <!-- Start Column 2 -->
