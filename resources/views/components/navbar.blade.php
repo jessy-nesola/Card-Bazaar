@@ -20,7 +20,7 @@
                         <a class="nav-link text-light" href="{{ route('categories.index') }}">Categorie</a>
                     </li>
                     <div class="menu">
-                        <a href="#">Pokémon</a>
+                        <a href="">Pokémon</a>
                         <a href="#">Yu-Gi-Oh!</a>
                         <a href="#">Flesh and Blood</a>
                         <a href="#">Digimon</a>
@@ -33,7 +33,7 @@
                 </div>    
             </ul>
             <ul class="navbar-nav mb-2 mb-md-0">
-                <li><a href="{{ route('announcements.create') }}" class="nav-link text-light m-2">Inserisci
+                <li><a href="{{ route('announcements.create') }}" class="btn btn-outline-light m-2">Inserisci
                         annuncio</a>
                 </li>
                 @guest
