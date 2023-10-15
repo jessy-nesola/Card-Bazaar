@@ -51,7 +51,7 @@
                                 @enderror
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-primary">Registrati</button>
+                                <button type="submit" class="btn btn-outline-warning">Registrati</button>
                             </div>
                         </form>
                         <p class="mt-3">Hai giá un account? <a href="{{ route('login') }}"> Clicca qua</a></p>
