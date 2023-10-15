@@ -1,15 +1,9 @@
 @import "bootstrap";
 @import 'animate.css';
 
-/* durata animazione testo "CardBazaar." */
-.animate__animated.animate__tada {
-  --animate-duration: 800ms;
-}
-
-
-
 /* sezione NAVBAR */
 .navbar {
+  height: 55px;
   position: sticky;
   display: flex;
   align-items: center;
@@ -44,6 +38,11 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+/* durata animazione testo "CardBazaar." */
+.animate__animated.animate__tada {
+  --animate-duration: 800ms;
 }
 
 /* sezione MAIN */
