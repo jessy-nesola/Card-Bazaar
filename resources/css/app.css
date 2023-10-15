@@ -41,7 +41,7 @@ body {
 }
 
 /* durata animazione testo "CardBazaar." */
-.animate__animated.animate__tada {
+.animate__animated.animate__bounceIn {
   --animate-duration: 800ms;
 }
 

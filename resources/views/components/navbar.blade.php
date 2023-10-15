@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container">
         <a class="navbar-brand text-light" href="{{ route('homepage') }}">
-            <h3 class="animate__animated animate__tada">CardBazaar.</h3>
+            <h3>CardBazaar.</h3>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
@@ -21,7 +21,7 @@
                 </li>
             </ul>
             <ul class="navbar-nav mb-2 mb-md-0">
-                <li><a href="{{ route('announcements.create') }}" class="btn btn-outline-light m-2">Inserisci
+                <li><a href="{{ route('announcements.create') }}" class="nav-link text-light m-2">Inserisci
                         annuncio</a>
                 </li>
                 @guest
