@@ -18,7 +18,7 @@
                                 <input type="password" class="form-control" id="password" name="password" required>
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-outline-warning">Entra</button>
+                                <button type="submit" class="btn btn-primary">Entra</button>
                             </div>
                         </form>
                         {{-- <p class="mt-3"><a href="#">Forgot your password?</a></p> --}}
