@@ -1,4 +1,4 @@
-<x-auth>
+<x-layout>
     <!-- SEZIONE REGISTRAZIONE -->
     <div class="register-section" style="margin-top: 90px;">
         <div class="container">
@@ -61,4 +61,4 @@
         </div>
     </div>
     <!-- End Register Section -->
-</x-auth>
+</x-layout>

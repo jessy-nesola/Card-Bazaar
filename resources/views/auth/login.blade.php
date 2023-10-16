@@ -1,4 +1,4 @@
-<x-auth>
+<x-layout>
     <!-- SEZIONE LOGIN -->
     <div class="login-section" style="margin-top: 90px;">
         <div class="container">
@@ -29,4 +29,4 @@
         </div>
     </div>
     <!-- End Login Section -->
-</x-auth>
+</x-layout>
