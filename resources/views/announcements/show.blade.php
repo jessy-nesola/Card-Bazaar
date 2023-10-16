@@ -28,7 +28,7 @@
                         </button>
                       </div>
 
-                    <div class="col-md-12 col-lg-3 mb-lg-0 col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="col-md-12 col-lg-3 mb-lg-0 col-lg-6 d-flex justify-content-center">
                         <div class="card-description mx-5">
                             <h2 class="mb-3">{{ $announcement->title }}</h2>
                             <div><strong>Categoria: <a
