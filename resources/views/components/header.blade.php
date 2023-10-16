@@ -3,8 +3,8 @@
         <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
                 <div class="my-5 text-center text-xl-start text-light">
-                    <h1 class="animate__animated animate__bounceIn">Benvenuto in CardBazaar.</h1>
-                    <h5 class="animate__animated animate__bounceIn">Il tuo mondo, le tue carte!</h5>
+                    <h1 class="animate__animated animate__heartBeat">Benvenuto in CardBazaar.</h1>
+                    <h5 class="animate__animated animate__heartBeat">Il tuo mondo, le tue carte!</h5>
                     <p class="mb-4 ">Qua puoi creare il tuo mazzo dei sogni.. Magia, Collezione, Azione!</p>
                     <p><a href="{{route('register')}}" class="btn btn-primary me-2">Entra nella famiglia!</a>
                 </div>
