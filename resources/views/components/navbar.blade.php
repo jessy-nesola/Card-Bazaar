@@ -37,8 +37,7 @@
                         annuncio</a>
                 </li>
                 @guest
-                    <li><a class="nav-link" href="{{ route('login') }}"><img src="/assets/images/user.svg"
-                                style="width: 29px; height: 30;"></a></li>
+                    <li><a class="btn btn-outline-light m-2" href="{{ route('login') }}">Login/Logout</a></li>
                 @else
                     <li class="btn btn-outline-light m-2">Utente: {{ Auth::user()->name }}</li>
                     <li>
