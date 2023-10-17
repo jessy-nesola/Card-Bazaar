@@ -42,7 +42,7 @@ class CategoryController extends Controller
         foreach($categories as $category)
         {
             if ($category->name == $name)
-            {
+            { 
                 return view('categories.show', compact('category'));
             }
         }

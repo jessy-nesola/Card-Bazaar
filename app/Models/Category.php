@@ -14,4 +14,9 @@ class Category extends Model
     {
         return $this->hasMany(Announcement::class);
     }
+
+    public function orderByAndPaginate()
+    {
+        return $this->announcements()->where('is_accepted', true)->latest()->paginate(2);
+    }
 }

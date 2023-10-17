@@ -15,7 +15,7 @@
     <div class="product-section">
         <div class="container">
             <div class="row">
-                @forelse ($category->announcements->where('is_accepted', true) as $announcement)
+                @forelse ($category->orderByAndPaginate() as $announcement)
                     <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
                         <div class="product-item">
                             <img src="/assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
@@ -35,4 +35,6 @@
             </div>
         </div>
     </div>
+                    {{-- MENU NAVIGAZIONE --}}
+                    {{ $category->orderByAndPaginate()->links() }}
 </x-layout>
