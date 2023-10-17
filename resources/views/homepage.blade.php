@@ -6,7 +6,6 @@
         </div>
     @endif
     <x-header />
-    <main>
         <div class="product-section">
             <div class="container">
                 <div class="row">
@@ -50,5 +49,4 @@
                 </div>
             </div>
         </div>
-    </main>
 </x-layout>
