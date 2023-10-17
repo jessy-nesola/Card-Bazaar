@@ -41,3 +41,7 @@ Route::get('/revisor', [RevisorController::class, 'index'])->middleware('isRevis
 Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->middleware('isRevisor')->name('revisor.accept_announcement');
 
 Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor.reject_announcement');
+
+Route::get('/lavora-con-noi', function(){
+    return view('lavora');
+});
