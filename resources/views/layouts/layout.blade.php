@@ -13,7 +13,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
         referrerpolicy="no-referrer" />
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/cards.css', 'resources/css/navbar_dropdown.css', 'resources/css/carousel.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/cards.css', 'resources/css/navbar_dropdown.css'])
     @livewireStyles
 </head>
 
