@@ -1,0 +1,36 @@
+html, body, main {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+  }
+
+  /* Imposta il contenitore principale per allineare tutto a sinistra */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding-left: 20px; /* Spazio a sinistra */
+  }
+
+  #carousel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  /* Rimuovi il posizionamento verticale dal carosello */
+  #carousel {
+    top: 0;
+    transform: none;
+  }
+
+  /* Regola il posizionamento delle frecce a sinistra */
+  .buttons {
+    position: absolute; /* Utilizza "absolute" per posizionarle rispetto a "container" */
+    left: 20px; /* Spazio a sinistra */
+    bottom: 100px;
+  }
