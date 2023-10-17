@@ -23,7 +23,7 @@
                             <strong class="product-price">{{ $announcement->price }}€</strong>
 
                             <span class="icon-cross">
-                                <a href=""><img src="/assets/images/cross.svg" class="img-fluid"></a>
+                                <a href="{{ route('announcements.show', $announcement->uri) }}"><img src="/assets/images/cross.svg" class="img-fluid"></a>
                             </span>
                         </div>
                     </div>

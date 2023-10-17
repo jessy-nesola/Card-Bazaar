@@ -3,7 +3,7 @@
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FrontController;
-use App\Models\Announcement;
+use App\Http\Controllers\RevisorController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -16,17 +16,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// FRONT
+
 Route::get('/', [FrontController::class, 'homepage'])->name('homepage');
 
+// CATEGORIES
+
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
+
 Route::get('/categories/{name}/show', [CategoryController::class, 'show'])->name('categories.show');
 
+// ANNOUNCEMENTS
+
 Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcements.index');
+
 Route::get('/announcements/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcements.create');
+
 Route::get('/announcements/{uri}/show', [AnnouncementController::class, 'show'])->name('announcements.show');
 
-Route::get('/revisor/index', function()
-{
-    return view('revisor.index');
-});
+// REVISOR
 
+Route::get('/revisor', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
+
+Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->middleware('isRevisor')->name('revisor.accept_announcement');
+
+Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor.reject_announcement');

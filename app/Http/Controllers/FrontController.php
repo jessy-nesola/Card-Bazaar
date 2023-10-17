@@ -9,7 +9,7 @@ class FrontController extends Controller
 {
     public function homepage()
     {
-        $announcements = Announcement::latest()->take(3)->get();
+        $announcements = Announcement::where('is_accepted', true)->latest()->take(3)->get();
         return view('homepage', compact('announcements'));
     }
 }
