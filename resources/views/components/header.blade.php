@@ -8,9 +8,9 @@
                     <p class="mb-4 ">Qua puoi creare il tuo mazzo dei sogni.. Magia, Collezione, Azione!</p>
                     <p><a href="{{route('register')}}" class="btn btn-primary me-2">Entra nella famiglia!</a>
                         {{-- TASTO REVISOR --}}
-                        {{-- @if (Auth::user()->is_revisor)
+                        @if (Auth::user() && Auth::user()->is_revisor)
                             <p><a href="{{route('revisor.index')}}" class="btn btn-primary me-2">Revisor!</a>
-                        @endif --}}
+                        @endif
                 </div>
             </div>
             <div class="col-xl-5 col-xxl-6 text-center">

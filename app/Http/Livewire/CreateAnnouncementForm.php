@@ -25,6 +25,8 @@ class CreateAnnouncementForm extends Component
 
     public function store()
     {
+        $this->validate($this->rules);
+
         $category = Category::find($this->category);
         $announcement = $category->announcements()->create([
             'title' => $this->title,
