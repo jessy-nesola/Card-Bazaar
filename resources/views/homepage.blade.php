@@ -24,7 +24,7 @@
 
                     <!-- Start Column 2 -->
                     @foreach ($announcements as $announcement)
-                        <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
+                        <div class="col-12 col-md-4 col-lg-3 mx- my-5 mb-md-0">
                             <div class="product-item">
                                 <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
                                 <h3 class="product-title">{{ $announcement->title }}</h3>
@@ -37,6 +37,15 @@
                             </div>
                         </div>
                     @endforeach
+                    {{-- <div class="wrapper container">
+                        <div class="cardHome text-center col-1">
+                            <div class="image"> <img src="assets/images/yugioh (3).jpg" width="220"> </div>
+                            <div class="pr-3 about-product">
+                                <h3>{{ $announcement->title }}</h3>
+                                <h4>{{ $announcement->price }}</h4> <button href="{{ route('announcements.show', $announcement->uri) }}" class="btn btn-primary buy-now">Prova</button>
+                            </div>
+                        </div>
+                    </div> --}}
                     <!-- End Column 2 -->
                 </div>
             </div>
