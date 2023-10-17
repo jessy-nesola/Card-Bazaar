@@ -31,24 +31,20 @@
     display: grid;
     width: 180px;
     padding: 8px 0;
-    background: rgb(27 32 44 / 70%);
+    background-color: #272e3c;
     border-radius: 10px;
-    border: 1px solid #f9f9f9;
+    /* border: 1px solid #f9f9f9; */
     opacity: 0;
     visibility: hidden;
     transition: 0.2s;
-    -webkit-backdrop-filter: blur(5px);
-    -moz-backdrop-filter: blur(5px);
-    -ms-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
     backface-visibility: hidden;
 }
 
 .menu::before {
     content: "";
     background: inherit;
-    border-top: 1px solid #f9f9f9;
-    border-right: 1px solid #f9f9f9;
+    /* border-top: 1px solid #f9f9f9;
+    border-right: 1px solid #f9f9f9; */
     position: absolute;
     top: -7px;
     right: 22px;

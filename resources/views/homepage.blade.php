@@ -7,7 +7,7 @@
 
                       <!-- Start Column 1 -->
 
-                      <div class="col-md-12 col-lg-3 my-5 mb-lg-0">
+                      <div class="col-md-12 col-lg-3 my-5 mb-lg-0 shadow">
                           <h3 class="mb-4 section-title">Ecco le ultime carte aggiunte da altri utenti!</h3>
                           <p class="mb-4">Che testo mettiamo? Che testo mettiamo? Che testo mettiamo? Che testo mettiamo?
                           </p>
@@ -18,7 +18,7 @@
 
                       <!-- Start Column 2 -->
                       @foreach ($announcements as $announcement)
-                          <div class="testo-card col-12 col-md-4 col-lg-3 my-5 mb-md-0">
+                          <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
                               <div class="product-item">
                                   <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
                                   <h3 class="product-title">{{ $announcement->title }}</h3>

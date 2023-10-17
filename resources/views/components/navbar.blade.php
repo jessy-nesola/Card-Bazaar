@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top shadow">
     <div class="container">
         <a class="navbar-brand text-light" href="{{ route('homepage') }}">
             <h3>CardBazaar.</h3>
@@ -19,16 +19,16 @@
                     <li class="nav-item @if (Route::currentRouteName() == 'categories.index')  @endif">
                         <a class="nav-link text-light" href="{{ route('categories.index') }}">Categorie</a>
                     </li>
-                    <div class="menu">
-                        <a href="">Pokémon</a>
-                        <a href="#">Yu-Gi-Oh!</a>
-                        <a href="#">Flesh and Blood</a>
-                        <a href="#">Digimon</a>
-                        <a href="#">Force of will</a>
-                        <a href="#">One Piece</a>
-                        <a href="#">Dragon Ball Super</a>
-                        <a href="#">Disney Lorcana</a>
-                        <a href="#">Final Fantasy</a>
+                    <div class="menu shadow">
+                        <a>Pokémon</a>
+                        <a>Yu-Gi-Oh!</a>
+                        <a>Flesh and Blood</a>
+                        <a>Digimon</a>
+                        <a>Force of will</a>
+                        <a>One Piece</a>
+                        <a>Dragon Ball Super</a>
+                        <a>Disney Lorcana</a>
+                        <a>Final Fantasy</a>
                     </div>
                 </div>    
             </ul>
