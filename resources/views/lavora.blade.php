@@ -14,17 +14,19 @@
             </div>
         </div>
     </div>
-    <div class="login-section" style="margin-top: 15px;">
+    <div class="form-section" style="margin-top: 15px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <div class="login-form">
-                        <h2 class="mb-4 text-center">Raccontaci di te!</h2>
+                    <div class="">
+                        <h2 class="mb-4 text-center">Che scriviamo?</h2>
                         <div class="form-floating mb-4">
                             <textarea class="form-control mb-4" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                             <label for="floatingTextarea2">Comments</label>
                         </div>
+                        <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary">Invia</button>
+                        </div>
                     </div>
                     </form>
                 </div>
