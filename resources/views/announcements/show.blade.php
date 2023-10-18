@@ -1,67 +1,70 @@
 <x-layout>
     <div style="margin:80px;"></div>
-    <div class="row justify-content-between gy-4 mt-3 px-1">
-        <section id="gallery-single" class="gallery-single d-flex flex-column">
-
-            <div class="container">
-                <div class="row">
+    <div class="row justify-content-between gy-2 mt-3 px-1" style="width:100%;">
 
 
-                        <div id="carousel" class="carousel col-6 d-flex">
+        <div class="container col-md-11 px-3"
+            style=" display: flex;flex-direction: column; justify-content:center ;height: 100%;overflow:hidden;">
+            <div class="row justify-content-around">
 
-                            <div id='item_1' class="hideLeft">
-                              <img src="https://cdn.pixabay.com/photo/2017/08/15/08/23/stars-2643089__340.jpg">
-                            </div>
-                            <div id='item_2' class="prevLeftSecond">
-                              <img src="https://cdn.pixabay.com/photo/2012/11/28/11/28/rocket-launch-67723__340.jpg">
-                            </div>
-                            <div id='item_3' class="prev">
-                              <img src="https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_960_720.jpg">
-                            </div>
-                            <div id='item_4' class="selected">
-                              <img src="https://cdn.pixabay.com/photo/2020/06/17/09/28/wormhole-5308810__340.jpg">
-                            </div>
-                            <div id='item_5' class="next">
-                              <img src="https://cdn.pixabay.com/photo/2016/11/18/22/58/stars-1837306__340.jpg">
-                            </div>
-                            <div id='item_6' class="nextRightSecond">
-                              <img src="https://cdn.pixabay.com/photo/2017/02/09/09/11/starry-sky-2051448__340.jpg">
-                            </div>
-                            <div id='item_7' class="hideRight">
-                              <img src="https://cdn.pixabay.com/photo/2011/12/15/11/37/galaxy-11188__340.jpg">
-                            </div>
-                            <div id='item_8' class="hideRight">
-                              <img src="https://cdn.pixabay.com/photo/2011/12/15/11/32/pismis-24-11186__340.jpg">
-                            </div>
-                          </div>
+                <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade col-6 my-5 h-100"
+                style="display: flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;position: relative;height: 70vh;padding-top: 60px;"
+                    data-bs-ride="carousel">
 
-                          <div class="buttons">
-                            <button class="button-82-pushable" role="button" id="prev"><span class="button-82-shadow"></span><span
-                                class="button-82-edge"></span><span class="button-82-front text">Previous</span></button>
-
-
-                            <button class="button-82-pushable" role="button" id="next"><span class="button-82-shadow"></span><span
-                                class="button-82-edge"></span><span class="button-82-front text">Next</span></button>
-                          </div>
-
-                    <div class="col-md-12 col-lg-3 mb-lg-0 col-lg-6 d-flex justify-content-center">
-                        <div class="card-description mx-5">
-                            <h2 class="mb-3">{{ $announcement->title }}</h2>
-                            <div><strong>Categoria: <a
-                                        href="{{ route('categories.show', ['name' => $announcement->category->name]) }}">{{ $announcement->category->name }}</a></strong>
-                            </div>
-                            <div><strong>Pubblicato da: {{ $announcement->user->name }}</strong></div>
-                            <div class="mb-3"><strong>Data pubblicazione:
-                                    {{ $announcement->created_at->format('d/m/Y') }}</strong></div>
-                            <div><strong>Descrizione:</strong></div>
-                            <p class="mb-4">{{ $announcement->body }}</p>
-                            <h5><strong>{{ $announcement->price }}€</strong></h5>
-                            <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a>
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active col-6">
+                        <div class="carousel-container col-6">
+                            <h2 class="animate__animated animate__fadeInLeft col-6">Ragazzi <span>ci siamo quasi</span></h2>
+                            <p class="animate__animated animate__fadeInRight col-6">Speriamo.</p>
+                            
                         </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item active col-6">
+                        <div class="carousel-container col-6">
+                            <h2 class="animate__animated animate__fadeInLeft col-6">Ciao <span>BELLI</span></h2>
+                            <p class="animate__animated animate__fadeInRight col-6">Lo finiamo sto sito?!</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                                More</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+                    </a>
+
+                </div>
+
+
+                <div class="col-12 col-md-6 col-sm-6 my-5"
+                    style="max-width: 45%;max-height: 100%;padding: 20px;width: 100%;border-radius: 40px; background-color: #272e3c;overflow:hidden;">
+                    <div class="card-description mx-2">
+                        <h2 class="mb-3">{{ $announcement->title }}</h2>
+                        <div><strong>Categoria: <a
+                                    href="{{ route('categories.show', ['name' => $announcement->category->name]) }}">{{ $announcement->category->name }}</a></strong>
+                        </div>
+                        <div><strong>Pubblicato da: {{ $announcement->user->name }}</strong></div>
+                        <div class="mb-3"><strong>Data pubblicazione:
+                                {{ $announcement->created_at->format('d/m/Y') }}</strong></div>
+                        <div><strong>Descrizione:</strong></div>
+                        <p class="mb-4">{{ $announcement->body }}</p>
+                        <h5><strong>{{ $announcement->price }}€</strong></h5>
+                        <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
         {{-- <div class="testimonial-item">
                     <p>
                         <i class="bi bi-quote quote-icon-left"></i>
