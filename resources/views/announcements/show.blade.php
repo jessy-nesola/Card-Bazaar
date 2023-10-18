@@ -59,7 +59,7 @@
                         <div><strong>Descrizione:</strong></div>
                         <p class="mb-4">{{ $announcement->body }}</p>
                         <h5><strong>{{ $announcement->price }}€</strong></h5>
-                        <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a>
+                        {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}
                     </div>
                 </div>
             </div>
