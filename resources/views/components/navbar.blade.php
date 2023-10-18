@@ -34,10 +34,13 @@
                         <li><a class="dropdown-item" href="#">Visualizza pagina</a></li>
                     </ul>
                 </li>
+                @auth
                 <li class="nav-item">
                     <a class="nav-link " href="{{ route('announcements.create') }}" tabindex="-1"
                         aria-disabled="true">Inserisci annuncio</a>
                 </li>
+                @endauth
+                
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
