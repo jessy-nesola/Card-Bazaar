@@ -1,11 +1,11 @@
-<header class="text-light py-5" style="background-color: #272e3c">
+<header class="text-light py-5 header-card shadow" style="background-color: ">
     <div class="container px-5">
         <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
                 <div class="my-5 text-center text-xl-start text-light">
                     <h1 class="animate__animated animate__heartBeat">Benvenuto in CardBazaar.</h1>
-                    <h5 class="animate__animated animate__heartBeat">Il tuo mondo, le tue carte!</h5>
-                    <p class="mb-4 ">Qua puoi creare il tuo mazzo dei sogni.. Magia, Collezione, Azione!</p>
+                    <hr class="my-4" />
+                    <p class="lead">Qua puoi creare il tuo mazzo dei sogni... Magia, Collezione, Azione!</p>
                     @guest
                         <p><a href="{{ route('register') }}" class="btn btn-primary me-2">Entra nella famiglia!</a>
                         @endguest

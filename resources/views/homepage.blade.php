@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div>
-                    <h2 class="text-center mt-5">Ecco gli ultimi annunci degli utenti!</h2>
+                    <h3 class="text-center mt-5">Ecco gli ultimi annunci degli utenti:</h3>
                 </div>
                 @foreach ($announcements as $announcement)
                     <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
@@ -47,11 +47,11 @@
     </div>
 
     <div class="container col-xxl-8 px-4 py-5">
-        <hr class="my-4" />
+        <hr>
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Quale titolo?</h1>
-                <p class="lead">É il tuo bazar online per appassionati di carte da gioco. Scopri una vasta selezione
+                <h3>Quale titolo?</h3>
+                <p>É il tuo bazar online per appassionati di carte da gioco. Scopri una vasta selezione
                     di carte da collezione, mazzi personalizzati e accessori per migliorare la tua esperienza di gioco.
                     Trova le carte più rare e cerca tra le offerte esclusive. Soddisfa la tua sete di strategia e
                     competizione con CardBazaar.</p>
@@ -65,7 +65,7 @@
                     width="600" height="500" loading="lazy">
             </div>
         </div>
-        <hr class="my-4" />
+        <hr>
     </div>
 
     {{-- sezione da testare  --}}
