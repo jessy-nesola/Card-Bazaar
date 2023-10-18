@@ -22,13 +22,19 @@
                 </div>
                 @foreach ($announcements as $announcement)
                     <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
-                        <div class="custom-card">
-                            <div class="custom-card-content shadow">
+                        <div class="custom-card shadow">
+                            <div class="custom-card-content d-flex flex-column">
                                 <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
-                                <h3 class="name">{{ $announcement->title }}</h3>
-                                <strong class="product-price">{{ $announcement->price }}€</strong>
-                                <a href="{{ route('announcements.show', $announcement->uri) }}"
-                                    class="btn btn-primary">Visualizza</a>
+                                <div>
+                                    <h3 class="name">{{ $announcement->title }}</h3>
+                                </div>
+                                <div class="mt-1 mb-3">
+                                    <strong class="product-price">{{ $announcement->price }}€</strong>
+                                </div>
+                                <div>
+                                    <a href="{{ route('announcements.show', $announcement->uri) }}"
+                                        class="btn btn-primary">Visualizza</a>
+                                </div>
 
                             </div>
                         </div>
