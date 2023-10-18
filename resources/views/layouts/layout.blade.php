@@ -19,11 +19,12 @@
     @livewireStyles
 </head>
 <body class="body-background d-flex flex-column min-vh-100">
-    <main class="flex-grow-1 main-padding">
     <x-navbar />
+    <div style="height: 60px"></div>
+    <main class="flex-grow-1 main-padding">
     {{ $slot }}
-    @livewireScripts
     </main>
     <x-footer />
+    @livewireScripts
 </body>
 </html>
