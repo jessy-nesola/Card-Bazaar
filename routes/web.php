@@ -20,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontController::class, 'homepage'])->name('homepage');
 
+Route::get('/lavora-con-noi', [FrontController::class, 'workWithUs'])->middleware('auth')->name('workWithUs');
+
 // CATEGORIES
 
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
@@ -42,6 +44,6 @@ Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acc
 
 Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor.reject_announcement');
 
-Route::get('/lavora-con-noi', function(){
-    return view('lavora');
-});
+Route::post('/revisor/richiesta', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
+
+Route::get('/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');

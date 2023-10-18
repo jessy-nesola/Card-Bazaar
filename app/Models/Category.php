@@ -17,6 +17,6 @@ class Category extends Model
 
     public function orderByAndPaginate()
     {
-        return $this->announcements()->where('is_accepted', true)->latest()->paginate(2);
+        return $this->announcements()->where('is_accepted', true)->latest()->paginate(8);
     }
 }

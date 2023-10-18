@@ -1,10 +1,18 @@
 <x-layout>
     @if (session()->has('access.denied'))
-        <div class="text-center mt-5">
-            <h3 class="text-decoration-underline">{{ session()->get('access.denied') }}</h3>
-        </div>
+        <div>
+            <div class="text-center mt-5">
+                <h3 class="text-decoration-underline">{{ session()->get('access.denied') }}</h3>
+            </div>
         </div>
     @endif
+    @if (session()->has('send.ok'))
+    <div>
+        <div class="text-center mt-5">
+            <h3 class="text-decoration-underline">{{ session()->get('send.ok') }}</h3>
+        </div>
+    </div>
+@endif
     <x-header />
 
     {{-- sezione da testare  --}}
