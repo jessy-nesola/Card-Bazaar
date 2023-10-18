@@ -1,5 +1,5 @@
-// import './bootstrap';
-// import 'bootstrap';
+import './bootstrap';
+import 'bootstrap';
 
 // const $ = str => document.querySelector(str);
 
