@@ -22,7 +22,7 @@
 <body>
     <x-navbar />
     <div style="height: 60px"></div>
-    <main class="flex-grow-1 main-padding">
+    <main>
         {{ $slot }}
     </main>
     <x-footer />

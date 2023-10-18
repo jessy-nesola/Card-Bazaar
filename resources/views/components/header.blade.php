@@ -5,7 +5,7 @@
                 <div class="my-5 text-center text-xl-start text-light">
                     <h1 class="animate__animated animate__heartBeat">Benvenuto in CardBazaar.</h1>
                     <hr class="my-4" />
-                    <p class="lead">Qua puoi creare il tuo mazzo dei sogni... Magia, Collezione, Azione!</p>
+                    <p class="lead">Il tuo sito di riferimento per comprare e vendere giochi di carte</p>
                     @guest
                         <p><a href="{{ route('register') }}" class="btn btn-primary me-2">Entra nella famiglia!</a>
                         @endguest

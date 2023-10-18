@@ -31,7 +31,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Visualizza pagina</a></li>
+                        <li class="item @if (Route::currentRouteName() == 'categories.index')  @endif"><a class="dropdown-item" href="{{ route('categories.index') }}">Visualizza tutto</a></li>
                     </ul>
                 </li>
                 @auth

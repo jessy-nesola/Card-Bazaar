@@ -1,5 +1,5 @@
 <div>
-    <section class="login-section" style="margin-top: 130px;">
+    <section class="login-section shadow" style="margin-top: 130px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">

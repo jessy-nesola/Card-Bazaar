@@ -1,4 +1,5 @@
 <x-layout>
+
     @if (session()->has('access.denied'))
         <div>
             <div class="text-center mt-5">
@@ -13,12 +14,31 @@
             </div>
         </div>
     @endif
+
     <x-header />
-    <div class="product-section">
-        <div class="container">
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+                <h3></h3>
+                <p class="lead">É il tuo bazar online per appassionati di carte da gioco. Scopri una vasta selezione
+                    di carte da collezione, mazzi personalizzati e accessori per migliorare la tua esperienza di gioco.
+                    Trova le carte più rare e cerca tra le offerte esclusive. Soddisfa la tua sete di strategia e
+                    competizione con CardBazaar.</p>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="/assets/images/mix_cards.jpg" class="d-block mx-lg-auto img-fluid" alt="Mixed Cards"
+                    width="600" height="500" loading="lazy">
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <section class="product-section">
+        <div class="container-fluid text-center col-12 col-lg-10 m-auto">
             <div class="row d-flex justify-content-center">
                 <div>
-                    <h3 class="text-center mt-5">Ecco gli ultimi annunci degli utenti:</h3>
+                    <h3 class="text-center">Ecco gli ultimi annunci degli utenti:</h3>
                 </div>
                 @foreach ($announcements as $announcement)
                     <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
@@ -40,83 +60,38 @@
                         </div>
                     </div>
                 @endforeach
-                <div class="mb-5"></div>
-                {{-- MENU NAVIGAZIONE --}}
             </div>
         </div>
+    </section>
+    
+
+
+    <section>
+        <div class="py-4"></div>
+        <div class="container-fluid text-center col-12 col-lg-10 m-auto">
+    <h3 class="homepage__title--dark-blue h1--smaller mb-5">Vantaggi per i compratori e venditori:</h3>
+    <div class="row">
+      <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+        <span><i class="fa fa-3x fa-globe-americas" aria-hidden="true"></i><br></span>
+        <p class="font-weight-bold">Compra e vendi in tutto il mondo</p>
+        <p>I compratori internazionali potranno acquistare da te senza preoccuparsi delle spese di spedizione, consentendo a venditori e acquirenti di risparmiare in media oltre il 18% sugli acquisti.</p>
+      </div>
+      <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+        <span><i class="fa fa-3x fa-handshake" aria-hidden="true"></i><br></span>
+        <p class="font-weight-bold">Mai più controversie</p>
+        <p>Affrontiamo internamente problemi con carte, ritardi e spedizioni smarrite, garantendo al 100% la consegna dei tuoi ordini.</p>
+      </div>
+      <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+        <span><i class="fa fa-3x fa-headset" aria-hidden="true"></i><br></span>
+        <p class="font-weight-bold">100% Supporto clienti</p>
+        <p>CardBazaar offre un servizio di supporto attivo 24/7 per gestire i tuoi ordini, permettendoti di concentrarti sulla tua attività principale e lasciando il resto a noi.</p>
+      </div>
     </div>
-
-    <div class="container col-xxl-8 px-4 py-5">
-        <hr>
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-lg-6">
-                <h3>Quale titolo?</h3>
-                <p>É il tuo bazar online per appassionati di carte da gioco. Scopri una vasta selezione
-                    di carte da collezione, mazzi personalizzati e accessori per migliorare la tua esperienza di gioco.
-                    Trova le carte più rare e cerca tra le offerte esclusive. Soddisfa la tua sete di strategia e
-                    competizione con CardBazaar.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                </div>
-            </div>
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="/assets/images/mix_cards.jpg" class="d-block mx-lg-auto img-fluid" alt="Mixed Cards"
-                    width="600" height="500" loading="lazy">
-            </div>
-        </div>
-        <hr>
+    <div>
+      <a class="btn btn-primary rounded font-weight-bold my-5" href="{{ route('register') }}"">Registrati adesso</a>
     </div>
-
-    {{-- sezione da testare  --}}
-    {{-- <div class="container col-xxl-8 px-4 py-5">
-        <hr class="my-4"/>
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-lg-6"> --}}
-    {{-- <h1 class="display-5 fw-bold lh-1 mb-3">Quale titolo?</h1> --}}
-    {{-- <p class="lead">É il tuo bazar online per appassionati di carte da gioco. Scopri una vasta selezione di carte da collezione, mazzi personalizzati e accessori per migliorare la tua esperienza di gioco. Trova le carte più rare e cerca tra le offerte esclusive. Soddisfa la tua sete di strategia e competizione con CardBazaar.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start"> --}}
-    {{-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> --}}
-    {{-- </div>
-            </div>
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="/assets/images/mix_cards.jpg" class="d-block mx-lg-auto img-fluid" alt="Mixed Cards"
-                    width="600" height="500" loading="lazy">
-            </div>
-        </div>
-        <hr class="my-4"/>
-    </div> --}}
-
-    {{-- VECCHIA SEZIONE CON LE CARTE --}}
-    {{-- <div class="section">
-        <div class="container">
-            <div class="row">
-                @foreach ($announcements as $announcement)
-                    <div class="col-12 col-md-4 col-lg-3 mx- my-5 mb-md-0">
-                        <div class="item">
-                            <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
-                            <h5 class="">{{ $announcement->title }}</h5>
-                            <p class="price">{{ $announcement->price }}€</p>
-
-                            <span class="icon-cross">
-                                <a href="{{ route('announcements.show', $announcement->uri) }}"><img
-                                        src="assets/images/cross.svg" class="img-fluid"></a>
-                            </span>
-                        </div>
-                    </div>
-                @endforeach
-                <div class="wrapper container">
-                        <div class="cardHome text-center col-1">
-                            <div class="image"> <img src="assets/images/yugioh (3).jpg" width="220"> </div>
-                            <div class="pr-3 about-product">
-                                <h3>{{ $announcement->title }}</h3>
-                                <h4>{{ $announcement->price }}</h4> <button href="{{ route('announcements.show', $announcement->uri) }}" class="btn btn-primary buy-now">Prova</button>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div> --}}
+  </div>
+        <div class="py-4"></div>
+    </section>
 
 </x-layout>
