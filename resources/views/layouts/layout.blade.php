@@ -14,17 +14,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     @vite(['resources/css/app.css', 'resources/js/navbar-scroll.js', 'resources/js/app.js', 'resources/css/cards.css', 'resources/css/cardhomepage.css'])
     @livewireStyles
 </head>
+
 <body class="body-background d-flex flex-column min-vh-100">
     <x-navbar />
     <div style="height: 60px"></div>
     <main class="flex-grow-1 main-padding">
-    {{ $slot }}
+        {{ $slot }}
     </main>
     <x-footer />
     @livewireScripts
 </body>
+
 </html>
