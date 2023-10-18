@@ -6,10 +6,14 @@
                     <h1 class="animate__animated animate__heartBeat">Benvenuto in CardBazaar.</h1>
                     <h5 class="animate__animated animate__heartBeat">Il tuo mondo, le tue carte!</h5>
                     <p class="mb-4 ">Qua puoi creare il tuo mazzo dei sogni.. Magia, Collezione, Azione!</p>
-                    <p><a href="{{route('register')}}" class="btn btn-primary me-2">Entra nella famiglia!</a>
-                        {{-- TASTO REVISOR --}}
+                    <p><a href="{{ route('register') }}" class="btn btn-primary me-2">Entra nella famiglia!</a>
+                        {{-- TASTO "LAVORA CON NOI" --}}
+                        @if (Auth::user() && !Auth::user()->is_revisor)
+                            <p><a href="{{ route('workWithUs') }}" class="btn btn-primary me-2">Lavora con noi!</a>
+                        @endif
+                        {{-- TASTO "REVISOR" --}}
                         @if (Auth::user() && Auth::user()->is_revisor)
-                            <p><a href="{{route('revisor.index')}}" class="btn btn-primary me-2">Revisor!</a>
+                            <p><a href="{{ route('revisor.index') }}" class="btn btn-primary me-2">Revisor!</a>
                         @endif
                 </div>
             </div>

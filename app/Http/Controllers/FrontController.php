@@ -12,4 +12,8 @@ class FrontController extends Controller
         $announcements = Announcement::where('is_accepted', true)->latest()->take(3)->get();
         return view('homepage', compact('announcements'));
     }
+
+    public function workWithUs(){
+        return view('lavora');
+    }
 }

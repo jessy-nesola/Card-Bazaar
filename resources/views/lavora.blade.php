@@ -20,13 +20,22 @@
                 <div class="col-md-6">
                     <div class="">
                         <h2 class="mb-4 text-center">Che scriviamo?</h2>
-                        <div class="form-floating mb-4">
-                            <textarea class="form-control mb-4" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Comments</label>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-primary">Invia</button>
-                        </div>
+                        <form action="{{route('become.revisor')}}" method="POST">
+                            @csrf
+                            @method('POST')
+                            <div class="form-floating mb-4">
+                                <textarea name="aboutYou" class="form-control mb-4 @error('aboutYou') is-invalid @enderror" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                                @error('aboutYou')
+                                    <span class="text-danger">
+                                        {{ $message }}
+                                    </span>
+                                @enderror
+                            </div>
+                            <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary">Invia</button>
+                            </div>
+                        </form>
                     </div>
                     </form>
                 </div>
