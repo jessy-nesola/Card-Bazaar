@@ -20,7 +20,7 @@ class BecomeRevisor extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($content, $user)
+    public function __construct(User $user, $content)
     {
         $this->content = $content;
         $this->user = $user;

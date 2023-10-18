@@ -42,12 +42,12 @@ class RevisorController extends Controller
 
         Mail::to('admin@cardbazaar.it')->send(new BecomeRevisor(Auth::user(), $data));
 
-        return view('homepage')->with('send.ok', 'Richiesta inviata con successo');
+        return redirect('/')->with('send.ok', 'Richiesta inviata con successo');
     }
 
     public function makeRevisor(User $user)
     {
         Artisan::call('bazaar:makeUserRevisor', ["email"=>$user->email]);
-        return view('homepage')->with('send.ok', "$user->name è diventato revisore.");
+        return redirect('/')->with('send.ok', "utente è diventato revisore.");
     }
 }

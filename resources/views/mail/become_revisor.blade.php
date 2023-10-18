@@ -7,6 +7,4 @@ Messaggio: <br>
 {{{$content['aboutYou']}}} <br>
 <br>
 <br>
-Se vuoi renderlo revisore clicca qui <br>
-<br>
-<a href="">Rendi revisore.</a>
+Se vuoi renderlo revisore clicca qui: <a href="{{route('make.revisor', compact('user'))}}">Rendi revisore.</a>
