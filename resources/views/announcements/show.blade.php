@@ -5,26 +5,32 @@
 
         <div class="container col-md-11 px-3"
             style=" display: flex;flex-direction: column; justify-content:center ;height: 100%;overflow:hidden;">
-            <div class="row justify-content-around">
+            <div class="row justify-content-around align-content-center">
 
-                <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade col-6 my-5"
-                style="display: flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;position: relative;height: 70vh;padding-top: 60px;"
+                <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade col-12 col-md-6 my-2 mx-0"
+                style="display: flex;justify-content: center;align-item: center;height: 70vh;padding-top: 60px;"
                     data-bs-ride="carousel">
 
                     <!-- Slide 1 -->
-                    <div class="carousel-item active col-6">
+                    <div class="carousel-item active col-6 position-relative">
                         <div class="carousel-container col-6">
-                            <h2 class="animate__animated animate__fadeInLeft col-6">Ragazzi <span>ci siamo quasi</span></h2>
-                            <p class="animate__animated animate__fadeInRight col-6">Speriamo.</p>
+                            <img class="animate__animated animate__fadeInLeft scrollto img-fluid" src="/assets/images/card-1.png">
 
                         </div>
                     </div>
 
-                    <!-- Slide 2 -->
-                    <div class="carousel-item active col-6">
+                     <!-- Slide 2 -->
+                     <div class="carousel-item active col-6">
                         <div class="carousel-container col-6">
-                            <h2 class="animate__animated animate__fadeInLeft col-6">Ciao <span>BELLI</span></h2>
-                            <p class="animate__animated animate__fadeInRight col-6">Lo finiamo sto sito?!</p>
+                            <img class="animate__animated animate__fadeInLeft scrollto img-fluid" src="/assets/images/card-2.png">
+
+                        </div>
+                    </div>
+
+                     <!-- Slide 3 -->
+                     <div class="carousel-item active col-6">
+                        <div class="carousel-container col-6">
+                            <img class="animate__animated animate__fadeInLeft scrollto img-fluid" src="/assets/images/card-3.png">
 
                         </div>
                     </div>
