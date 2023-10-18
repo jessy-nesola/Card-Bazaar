@@ -7,7 +7,7 @@
             style=" display: flex;flex-direction: column; justify-content:center ;height: 100%;overflow:hidden;">
             <div class="row justify-content-around">
 
-                <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade col-6 my-5 h-100"
+                <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade col-6 my-5"
                 style="display: flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;position: relative;height: 70vh;padding-top: 60px;"
                     data-bs-ride="carousel">
 
@@ -16,7 +16,7 @@
                         <div class="carousel-container col-6">
                             <h2 class="animate__animated animate__fadeInLeft col-6">Ragazzi <span>ci siamo quasi</span></h2>
                             <p class="animate__animated animate__fadeInRight col-6">Speriamo.</p>
-                            
+
                         </div>
                     </div>
 
@@ -25,15 +25,9 @@
                         <div class="carousel-container col-6">
                             <h2 class="animate__animated animate__fadeInLeft col-6">Ciao <span>BELLI</span></h2>
                             <p class="animate__animated animate__fadeInRight col-6">Lo finiamo sto sito?!</p>
-                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                                More</a>
+
                         </div>
                     </div>
-
-
-
-
-
 
                     <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
@@ -47,7 +41,7 @@
 
 
                 <div class="col-12 col-md-6 col-sm-6 my-5"
-                    style="max-width: 45%;max-height: 100%;padding: 20px;width: 100%;border-radius: 40px; background-color: #272e3c;overflow:hidden;">
+                    style="max-width: 45%;max-height: 100%;padding: 20px;width: 100%;border-radius: 40px; overflow:hidden;">
                     <div class="card-description mx-2">
                         <h2 class="mb-3">{{ $announcement->title }}</h2>
                         <div><strong>Categoria: <a
