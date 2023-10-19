@@ -16,7 +16,7 @@
             <div class="row">
                 @foreach ($categories as $category)
                     <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
-                        <div class="custom-card">
+                        <div class="custom-card shadow">
                             <div class="custom-card-content">
                                 <img src="assets/images/yugioh (1).jpg" class="img-fluid" alt="{{ $category->name }}">
                                 <h3 class="name">{{ $category->name }}</h3>
