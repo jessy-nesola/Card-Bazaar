@@ -92,10 +92,12 @@
                         concentrarti sulla tua attività principale e lasciando il resto a noi.</p>
                 </div>
             </div>
+            @guest
             <div>
                 <a class="btn btn-primary rounded font-weight-bold my-5" href="{{ route('register') }}"">Registrati
                     adesso</a>
             </div>
+            @endguest
         </div>
         <div class="py-4"></div>
     </section>
