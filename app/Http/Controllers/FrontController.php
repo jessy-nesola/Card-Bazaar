@@ -9,7 +9,7 @@ class FrontController extends Controller
 {
     public function homepage()
     {
-        $announcements = Announcement::where('is_accepted', true)->latest()->take(3)->get();
+        $announcements = Announcement::where('is_accepted', true)->latest()->take(4)->get();
         return view('homepage', compact('announcements'));
     }
 
@@ -19,7 +19,8 @@ class FrontController extends Controller
 
     public function searchAnnouncements(Request $request)
     {
-        $announcements = Announcement::search($request->searched)->where('is_accepted', true)->latest()->paginate(8);
+        $announcements_search = Announcement::search($request->searched)->get()->pluck('id');
+        $announcements = Announcement::whereIn('id', $announcements_search)->latest()->paginate(8)->withQueryString();
         return view('announcements.index', compact('announcements'));
     }
 }
