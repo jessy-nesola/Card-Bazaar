@@ -154,3 +154,8 @@ article p {
 .btn-navbar {
     background-color: #5BC0F8;
 }
+
+.carousel-indicators{
+position:asoblute;
+bottom: -12%;
+}

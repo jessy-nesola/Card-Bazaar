@@ -2,7 +2,12 @@
     <div style="margin:80px;"></div>
     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
 
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="/assets\images\card-1.png" class=" w-100" style="height: 300px; width: 120px; object-fit:contain;" alt="...">
