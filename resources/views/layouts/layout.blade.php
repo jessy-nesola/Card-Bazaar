@@ -21,7 +21,7 @@
 
 <body class="text-dark">
     <x-navbar />
-    <div style="height: 60px; background-color: #5BC0F8"></div>
+    <div style="height: 60px; background-color: #f9f9f9"></div>
     <main>
         {{ $slot }}
     </main>
