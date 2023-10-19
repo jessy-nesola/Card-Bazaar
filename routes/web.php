@@ -36,6 +36,8 @@ Route::get('/announcements/create', [AnnouncementController::class, 'create'])->
 
 Route::get('/announcements/{uri}/show', [AnnouncementController::class, 'show'])->name('announcements.show');
 
+Route::get('/announcements/search', [FrontController::class, 'searchAnnouncements'])->name('announcements.search');
+
 // REVISOR
 
 Route::get('/revisor', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');

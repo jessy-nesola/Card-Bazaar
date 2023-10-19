@@ -16,4 +16,11 @@ class FrontController extends Controller
     public function workWithUs(){
         return view('lavora');
     }
+
+    public function searchAnnouncements(Request $request)
+    {
+        $announcements = Announcement::search($request->searched)->where('is_accepted', true)->latest()->paginate(8);
+        // dd($announcements);
+        return view('announcements.index', compact($announcements));
+    }
 }
