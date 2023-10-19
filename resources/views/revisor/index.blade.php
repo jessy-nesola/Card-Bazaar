@@ -20,57 +20,65 @@
                     </div>
                 </div>
                 @if ($announcement_to_check)
-                    <div class="row justify-content-evenly my-4">
-                        <form class=" col-4"
-                            action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
-                            method="POST">
-                            @csrf
-                            @method('PATCH')
-                            <button type="submit" class="btn btn-primary">Accetta</button>
-                        </form>
-                        <form class=" col-4"
-                            action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
-                            method="POST">
-                            @csrf
-                            @method('PATCH')
-                            <button type="submit" class="btn btn-secondary">Rifiuta</button>
-                        </form>
-                    </div>
+                    <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
 
-                    <div class="row">
-                        <div id="carouselExampleAutoplaying" class="col-lg-6 d-flex h-100 carousel slide"
-                            data-bs-ride="carousel">
+                        <div id="carousel-show" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active justify-content-center">
-                                    <img src="{{ asset('assets/images/card-1.avif') }}" class="d-block w-100"
-                                        alt="...">
+                                <div class="carousel-item active">
+                                    <img src="/assets\images\card-1.png" class=" w-100"
+                                        style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                                 </div>
-                                <div class="carousel-item justify-content-center">
-                                    <img src="{{ asset('assets/images/card-2.avif') }}" class="d-block w-100"
-                                        alt="...">
+                                <div class="carousel-item">
+                                    <img src="/assets\images\card-2.png" class=" w-100"
+                                        style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                                 </div>
-                                <div class="carousel-item justify-content-center">
-                                    <img src="{{ asset('assets/images/card-3.avif') }}" class="d-block w-100"
-                                        alt="...">
+                                <div class="carousel-item">
+                                    <img src="/assets\images\card-3.png" class=" w-100"
+                                        style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
+                                data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-show"
+                                data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
 
-                        <div class="col-md-12 col-lg-3 mb-lg-0 col-lg-6 d-flex justify-content-center">
-                            <div class="card-description mx-5">
+                        <div class="row justify-content-center  my-5">
+                            <form class=" col-4 d-flex justify-content-end"
+                                action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
+                                method="POST">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="btn btn-primary">Accetta</button>
+                            </form>
+                            <form class=" col-4"
+                                action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
+                                method="POST">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="btn btn-secondary">Rifiuta</button>
+                            </form>
+                        </div>
+
+                        <div class="col-12 my-5 d-flex justify-content-center">
+                            <div class="card-description mx-2">
                                 <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
                                 <div><strong>Categoria: <a
-                                            href="#">{{ $announcement_to_check->category->name }}</a></strong>
+                                            href="{{ route('categories.show', ['name' => $announcement_to_check->category->name]) }}">{{ $announcement_to_check->category->name }}</a></strong>
                                 </div>
                                 <div><strong>Pubblicato da: {{ $announcement_to_check->user->name }}</strong></div>
                                 <div class="mb-3"><strong>Data pubblicazione:
@@ -78,13 +86,16 @@
                                 <div><strong>Descrizione:</strong></div>
                                 <p class="mb-4">{{ $announcement_to_check->body }}</p>
                                 <h5><strong>{{ $announcement_to_check->price }}€</strong></h5>
+                                {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}
                             </div>
                         </div>
+
                     </div>
-                @endif
             </div>
-        </section>
-        {{-- <div class="testimonial-item">
+            @endif
+    </div>
+    </section>
+    {{-- <div class="testimonial-item">
                     <p>
                         <i class="bi bi-quote quote-icon-left"></i>
                         Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
