@@ -9,7 +9,6 @@ use Laravel\Scout\Searchable;
 class Announcement extends Model
 {
     use HasFactory, Searchable;
-    use HasFactory;
 
     protected $fillable = ['title', 'body', 'price', 'uri'];
 

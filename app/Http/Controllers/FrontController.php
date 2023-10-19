@@ -20,7 +20,6 @@ class FrontController extends Controller
     public function searchAnnouncements(Request $request)
     {
         $announcements = Announcement::search($request->searched)->where('is_accepted', true)->latest()->paginate(8);
-        // dd($announcements);
-        return view('announcements.index', compact($announcements));
+        return view('announcements.index', compact('announcements'));
     }
 }
