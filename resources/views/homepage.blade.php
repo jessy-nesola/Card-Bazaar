@@ -28,7 +28,7 @@
                     <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
                         <div class="custom-card shadow">
                             <div class="custom-card-content d-flex flex-column">
-                                <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
+                                <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail shadow">
                                 <div>
                                     <h3 class="name text-dark">{{ $announcement->title }}</h3>
                                 </div>
