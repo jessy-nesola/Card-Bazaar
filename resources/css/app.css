@@ -5,7 +5,7 @@
 .navbar {
     /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
-    background-color: #272e3c;
+    background-color: #FFC93C;
     transition: transform 0.3s ease-in-out;
     transform: translateY(0);
   }
@@ -15,7 +15,7 @@
   }
 
   .navbar.navbar-expand-lg {
-    background-color: #272e3c;
+    background-color: #FFC93C;
 }
   
 
@@ -46,9 +46,10 @@
 
 /* sezione BODY */
 body {
-    background: rgb(27 32 44 / 100%);
+    background: #F5F7F8;
     color: #f9f9f9;
     font-family: "Euclid Circular A", "Poppins";
+    
 }
 
 * {
@@ -127,7 +128,7 @@ article p {
     margin: 0 auto 32px;
     margin-top: 90px;
     border-radius: 12.5px;
-    background-color: #272e3c;
+    background-color: #5BC0F8;
 }
 
 /* sezione REGISTRAZIONE */
@@ -139,9 +140,17 @@ article p {
     margin: 0 auto 32px;
     margin-top: 90px;
     border-radius: 12.5px;
-    background-color: #272e3c;
+    background-color: #5BC0F8;
 }
 
 .footer {
-  background-color: #272e3c;
+  background-color: #FFC93C;
+}
+
+.btn-yellow {
+    background-color: #FFC93C;
+}
+
+.btn-navbar {
+    background-color: #5BC0F8;
 }

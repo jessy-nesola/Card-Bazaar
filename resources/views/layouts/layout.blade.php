@@ -19,9 +19,9 @@
     @livewireStyles
 </head>
 
-<body>
+<body class="text-dark">
     <x-navbar />
-    <div style="height: 60px"></div>
+    <div style="height: 60px; background-color: #5BC0F8"></div>
     <main>
         {{ $slot }}
     </main>

@@ -1,20 +1,4 @@
 <x-layout>
-
-    @if (session()->has('access.denied'))
-        <div>
-            <div class="text-center mt-5">
-                <h3 class="text-decoration-underline">{{ session()->get('access.denied') }}</h3>
-            </div>
-        </div>
-    @endif
-    @if (session()->has('send.ok'))
-        <div>
-            <div class="text-center mt-5">
-                <h3 class="text-decoration-underline">{{ session()->get('send.ok') }}</h3>
-            </div>
-        </div>
-    @endif
-
     <x-header />
 
     <div class="container col-xxl-8 px-4 py-5">
@@ -46,16 +30,15 @@
                             <div class="custom-card-content d-flex flex-column">
                                 <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
                                 <div>
-                                    <h3 class="name">{{ $announcement->title }}</h3>
+                                    <h3 class="name text-dark">{{ $announcement->title }}</h3>
                                 </div>
                                 <div class="mt-1 mb-3">
                                     <strong class="product-price">{{ $announcement->price }}€</strong>
                                 </div>
                                 <div>
                                     <a href="{{ route('announcements.show', $announcement->uri) }}"
-                                        class="btn btn-primary">Visualizza</a>
+                                        class="btn btn-yellow">Visualizza</a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -94,7 +77,7 @@
             </div>
             @guest
             <div>
-                <a class="btn btn-primary rounded font-weight-bold my-5" href="{{ route('register') }}"">Registrati
+                <a class="btn btn-yellow rounded font-weight-bold my-5" href="{{ route('register') }}"">Registrati
                     adesso</a>
             </div>
             @endguest
