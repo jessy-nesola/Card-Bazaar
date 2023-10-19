@@ -41,7 +41,7 @@
 
             <form action="{{route('announcements.search')}}" method="GET" class="d-flex" role="search">
                 <input name="searched" class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Cerca!</button>
+                <button class="btn btn-outline-primary" type="submit">Cerca!</button>
             </form>
 
             <ul class="navbar-nav">
