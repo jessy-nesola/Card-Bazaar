@@ -14,8 +14,7 @@
 
     <div class="intro-excerpt text-center" style="margin-top: 4%">
         <h2 class="animate__animated animate__pulse fs-1">Categorie da questa parte!</h2>
-        <p class="animate__animated animate__pulse">Che testo mettiamo? Che testo mettiamo? Che testo
-            mettiamo? Che testo mettiamo?</p>
+        <p class="animate__animated animate__pulse">Troverai ogni genere di carta</p>
     </div>
 
     <div class="container justify-content-center">
@@ -25,13 +24,13 @@
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                     <div class="custom-card shadow">
                         <div class="custom-card-content d-flex flex-column">
-                            <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
+                            <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail shadow">
                             <div>
                                 <h3 class="name text-dark">{{ $category->name }}</h3>
                             </div>
                             <div>
                                 <a href="{{ route('categories.show', $category->name) }}"
-                                    class="btn btn-yellow">Visualizza</a>
+                                    class="btn btn-secondary">Visualizza</a>
                             </div>
 
                         </div>

@@ -1,10 +1,9 @@
 @import "bootstrap";
 @import "animate.css";
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 /* sezione NAVBAR */
 .navbar {
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
     background-color: #FFC93C;
     transition: transform 0.3s ease-in-out;
     transform: translateY(0);
@@ -28,21 +27,6 @@
   backface-visibility: hidden;
   transform: translateZ(0px);
   transition: 0.3s; */
-
-/* CARD CHE CONTIENE LA HEADER */
-.header-card {
-    border-radius: 10px;
-    background-color: #272e3c;
-    margin: 60px 30px 20px 30px;
-}
-
-.third-section {
-    background-color: #272e3c;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* sezione BODY */
 body {
@@ -158,14 +142,6 @@ article p {
 .content {
     flex: 1; /* Occupa lo spazio rimanente */
   }
-
-.btn-yellow {
-    background-color: #FFC93C;
-}
-
-.btn-celeste {
-    background-color: #5BC0F8;
-}
 
 /* sezione Show Announcements */
 .carousel-indicators{

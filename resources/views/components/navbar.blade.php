@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top shadow">
+<nav class="navbar navbar-expand-lg fixed-top shadow-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('homepage') }}">CardBazaar.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -40,14 +40,14 @@
                 {{-- FORM SEARCH --}}
 
             <form action="{{route('announcements.search')}}" method="GET" class="d-flex" role="search">
-                <input name="searched" class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                <button class="btn btn-outline-dark" type="submit">Cerca!</button>
+                <input name="searched" class="form-control me-2" type="search" placeholder="Nome carta.." aria-label="Search">
+                <button class="btn btn-secondary" type="submit">Cerca!</button>
             </form>
 
             <ul class="navbar-nav">
                 @guest
                     <div class="nav-item">
-                        <a class="btn btn-outline-dark m-2" href="{{ route('login') }}">Login/Register</a>
+                        <a class="btn btn-secondary m-2" href="{{ route('login') }}">Login/Register</a>
                     </div>
                 @else
                     <div class="nav-item">
@@ -58,7 +58,7 @@
                     <div class="nav-item">
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <button class="btn btn-outline-dark m-2"
+                            <button class="btn btn-secondary m-2"
                                 onclick="event.preventDefault(); this.closest('form').submit();">
                                 Logout
                             </button>

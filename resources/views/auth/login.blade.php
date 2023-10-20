@@ -1,7 +1,7 @@
 <x-layout>
     <!-- SEZIONE LOGIN -->
-    <div style="padding: 5%" >
-    <div class="login-section shadow">
+    <div style="padding: 5%">
+    <div class="login-section shadow-lg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -19,11 +19,11 @@
                                 <input type="password" class="form-control" id="password" name="password" required>
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-yellow">Entra</button>
+                                <button type="submit" class="btn btn-secondary">Entra</button>
                             </div>
                         </form>
                         {{-- <p class="mt-3"><a href="#">Forgot your password?</a></p> --}}
-                        <p class="mt-3">Non hai un account? <a href="{{ route('register') }}"> Clicca qua</a></p>
+                        <p class="mt-3 text-center">Non hai un account? <a href="{{ route('register') }}"> Clicca qua</a></p>
                     </div>
                 </div>
             </div>

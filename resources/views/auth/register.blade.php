@@ -1,7 +1,7 @@
 <x-layout>
     <!-- SEZIONE REGISTRAZIONE -->
     <div style="padding: 5%" >
-    <div class="register-section shadow">
+    <div class="register-section shadow-lg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -52,10 +52,10 @@
                                 @enderror
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-yellow">Registrati</button>
+                                <button type="submit" class="btn btn-secondary">Registrati</button>
                             </div>
                         </form>
-                        <p class="mt-3">Hai giá un account? <a href="{{ route('login') }}"> Clicca qua</a></p>
+                        <p class="mt-3 text-center">Hai giá un account? <a href="{{ route('login') }}"> Clicca qua</a></p>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@
                     competizione con CardBazaar.</p>
             </div>
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="/assets/images/mix_cards.jpg" class="d-block mx-lg-auto img-fluid" alt="Mixed Cards"
+                <img src="/assets/images/Cards Shop.jpg" class="d-block mx-lg-auto img-fluid" alt="Mixed Cards"
                     width="600" height="500" loading="lazy">
             </div>
         </div>
@@ -77,7 +77,7 @@
             </div>
             @guest
             <div>
-                <a class="btn btn-yellow rounded font-weight-bold my-5" href="{{ route('register') }}"">Registrati
+                <a class="btn btn-secondary rounded font-weight-bold my-5" href="{{ route('register') }}"">Registrati
                     adesso</a>
             </div>
             @endguest

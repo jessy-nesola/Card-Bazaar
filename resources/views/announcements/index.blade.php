@@ -14,9 +14,8 @@
     </div> --}}
 
     <div class="intro-excerpt text-center" style="margin-top: 4%">
-        <h2 class="animate__animated animate__pulse fs-1">Esplora da qui tutte le carte!</h2>
-        <p class="animate__animated animate__pulse">Che testo mettiamo? Che testo mettiamo? Che testo
-            mettiamo? Che testo mettiamo?</p>
+        <h2 class="animate__animated animate__pulse fs-1">Esplora da qui le carte!</h2>
+        <p class="animate__animated animate__pulse">Troverai tutte le carte disponibili</p>
     </div>
 
     <div class="product-section">
@@ -42,7 +41,7 @@
                     </div>
                 @empty
                 <h3 class="mb-3">Al momento non ci sono annunci caricati! </h3>
-                <div><a href="{{ route('announcements.create') }}" class="btn btn-celeste btn-sm">Inserisci
+                <div><a href="{{ route('announcements.create') }}" class="btn btn-secondary btn-sm">Inserisci
                         annuncio</a></div>
                 @endforelse
                 <div class="mb-5"></div>

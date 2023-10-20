@@ -1,4 +1,4 @@
-<footer class="footer py-4 mt-5">
+<footer class="footer py-4 mt-5 shadow-lg">
     <div class="container px-5">
         <div class="row my-3">
             <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">

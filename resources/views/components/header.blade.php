@@ -1,5 +1,5 @@
-<header class="" style="background-color: ">
-    <div class="px-5 shadow" style="background-color: #5BC0F8">
+<header>
+    <div class="px-5 shadow-lg" style="background-color: #5BC0F8">
         @if (session()->has('access.denied'))
             <div>
                 <div class="text-center pt-5">
@@ -22,11 +22,11 @@
                         <hr class="my-4" />
                         <p class="lead">Il tuo sito di riferimento per comprare e vendere giochi di carte</p>
                         @guest
-                            <p><a href="{{ route('register') }}" class="btn btn-yellow me-2">Entra nella famiglia!</a>
+                            <p><a href="{{ route('register') }}" class="btn btn-secondary me-2">Entra nella famiglia!</a>
                             @endguest
                             {{-- TASTO "LAVORA CON NOI" --}}
                             @if (Auth::user() && !Auth::user()->is_revisor)
-                                <p><a href="{{ route('workWithUs') }}" class="btn btn-yellow me-2">Lavora con noi!</a>
+                                <p><a href="{{ route('workWithUs') }}" class="btn btn-secondary me-2">Lavora con noi!</a>
                             @endif
                             {{-- TASTO "REVISOR" --}}
                             @if (Auth::user() && Auth::user()->is_revisor)
