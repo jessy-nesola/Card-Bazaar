@@ -51,26 +51,26 @@
 
 
     <section>
-        <div class="py-4"></div>
+        <div class="py-2"></div>
         <div class="container-fluid text-center col-12 col-lg-10 m-auto">
             <h3 class="homepage__title--dark-blue h1--smaller mb-5">Vantaggi per i compratori e venditori:</h3>
             <div class="row">
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <span><i class="fa fa-3x fa-globe-americas" aria-hidden="true"></i><br></span>
-                    <p class="font-weight-bold">Compra e vendi in tutto il mondo</p>
+                    <p class="font-weight-bold mt-3">Compra e vendi in tutto il mondo</p>
                     <p>I compratori internazionali potranno acquistare da te senza preoccuparsi delle spese di
                         spedizione, consentendo a venditori e acquirenti di risparmiare in media oltre il 18% sugli
                         acquisti.</p>
                 </div>
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <span><i class="fa fa-3x fa-handshake" aria-hidden="true"></i><br></span>
-                    <p class="font-weight-bold">Mai più controversie</p>
+                    <p class="font-weight-bold mt-3">Mai più controversie</p>
                     <p>Affrontiamo internamente problemi con carte, ritardi e spedizioni smarrite, garantendo al 100% la
                         consegna dei tuoi ordini.</p>
                 </div>
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <span><i class="fa fa-3x fa-headset" aria-hidden="true"></i><br></span>
-                    <p class="font-weight-bold">100% Supporto clienti</p>
+                    <p class="font-weight-bold mt-3">100% Supporto clienti</p>
                     <p>CardBazaar offre un servizio di supporto attivo 24/7 per gestire i tuoi ordini, permettendoti di
                         concentrarti sulla tua attività principale e lasciando il resto a noi.</p>
                 </div>
@@ -82,7 +82,6 @@
             </div>
             @endguest
         </div>
-        <div class="py-4"></div>
     </section>
 
 </x-layout>

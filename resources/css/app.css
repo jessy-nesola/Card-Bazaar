@@ -50,6 +50,10 @@ body {
     color: #f9f9f9;
     font-family: "Euclid Circular A", "Poppins";
 
+    /* SERVE PER TENERE IL FOOTER BASSO */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altezza minima del corpo pari al 100% della viewport height */
 }
 
 * {
@@ -145,7 +149,15 @@ article p {
 
 .footer {
   background-color: #FFC93C;
+
+  /* SERVE PER TENERE IL FOOTER BASSO */
+  flex-shrink: 0; /* Non restringere il footer */
 }
+
+/* SERVE PER TENERE IL FOOTER BASSO */
+.content {
+    flex: 1; /* Occupa lo spazio rimanente */
+  }
 
 .btn-yellow {
     background-color: #FFC93C;

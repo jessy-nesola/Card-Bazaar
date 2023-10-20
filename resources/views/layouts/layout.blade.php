@@ -22,7 +22,7 @@
 <body class="text-dark">
     <x-navbar />
     <div style="height: 60px; background-color: #f9f9f9"></div>
-    <main>
+    <main class="content">
         {{ $slot }}
     </main>
     <x-footer />
