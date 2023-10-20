@@ -1,4 +1,5 @@
 <div>
+    <div style="padding: 5%" >
     <section class="login-section shadow" style="margin-top: 130px;">
         <div class="container">
             <div class="row justify-content-center">
@@ -55,4 +56,5 @@
             </div>
         </div>
     </section>
+    </div>
 </div>
