@@ -4,7 +4,7 @@
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h2 class="animate__animated animate__pulse">Esplora da qui tutte le carte!</h2>
+                        <h2 class="animate__animated animate__pulse fs-1">Esplora da qui tutte le carte!</h2>
                         <p class="animate__animated animate__pulse">Che testo mettiamo? Che testo mettiamo? Che testo
                             mettiamo? Che testo mettiamo?</p>
                     </div>
@@ -35,9 +35,9 @@
                         </div>
                     </div>
                 @empty
-                    <div class="col-12">
-                        <div>Non ci sono annunci per questa ricerca!</div>
-                    </div>
+                <h3 class="mb-3">Al momento non ci sono annunci caricati! </h3>
+                <div><a href="{{ route('announcements.create') }}" class="btn btn-celeste btn-sm">Inserisci
+                        annuncio</a></div>
                 @endforelse
                 <div class="mb-5"></div>
                 {{-- MENU NAVIGAZIONE --}}

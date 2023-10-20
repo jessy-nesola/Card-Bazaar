@@ -4,7 +4,7 @@
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h2 class="animate__animated animate__pulse">Categorie da questa parte!</h2>
+                        <h2 class="animate__animated animate__pulse fs-1">Categorie da questa parte!</h2>
                         <p class="animate__animated animate__pulse">Che testo mettiamo? Che testo mettiamo? Che testo mettiamo? Che testo mettiamo?</p>
                     </div>
                 </div>

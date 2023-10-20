@@ -19,8 +19,8 @@
     </div>
 
     <section class="product-section">
-        <div class="container-fluid text-center col-12 col-lg-10 m-auto">
-            <div class="row d-flex justify-content-center">
+        <div class="container-fluid text-center col-12 col-lg-10 mb-5">
+            <div class="row d-flex justify-content-center mb-5">
                 <div>
                     <h3 class="text-center">Ecco gli ultimi annunci degli utenti:</h3>
                 </div>

@@ -157,9 +157,9 @@ return [
         ]),
     ],
 
-    // 'redirects' => [
-    //     'logout' => '/',
-    //     'login' => '/',
-    //     'register' => '/'
-    // ]
+    'redirects' => [
+        'logout' => '/',
+        'login' => '/',
+        'register' => '/'
+    ]
 ];

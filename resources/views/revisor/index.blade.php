@@ -57,20 +57,20 @@
                             </button>
                         </div>
 
-                        <div class="row justify-content-center  my-5">
+                        <div class="row justify-content-center mt-5">
                             <form class=" col-4 d-flex justify-content-end"
                                 action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
                                 method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <button type="submit" class="btn btn-primary">Accetta</button>
+                                <button type="submit" class="btn btn-celeste">Accetta</button>
                             </form>
                             <form class=" col-4"
                                 action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
                                 method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <button type="submit" class="btn btn-secondary">Rifiuta</button>
+                                <button type="submit" class="btn btn-celeste">Rifiuta</button>
                             </form>
                         </div>
 
