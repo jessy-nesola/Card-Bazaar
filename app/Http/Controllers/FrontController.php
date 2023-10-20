@@ -21,6 +21,6 @@ class FrontController extends Controller
     {
         $announcements_search = Announcement::search($request->searched)->get()->pluck('id');
         $announcements = Announcement::whereIn('id', $announcements_search)->latest()->paginate(8)->withQueryString();
-        return view('announcements.index', compact('announcements'));
+        return view('search', compact('announcements'));
     }
 }
