@@ -1,5 +1,5 @@
 <x-layout>
-    <header class="hero" style="margin-top: 130px;">
+    {{-- <header class="hero" style="margin-top: 130px;">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-5">
@@ -11,12 +11,19 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> --}}
+
+    <div class="intro-excerpt text-center" style="margin-top: 4%">
+        <h2 class="animate__animated animate__pulse fs-1">{{ $category->name }}</h2>
+        <p class="animate__animated animate__pulse">Che testo mettiamo? Che testo mettiamo? Che testo
+            mettiamo? Che testo mettiamo?</p>
+    </div>
+
     <div class="product-section">
         <div class="container">
             <div class="row">
                 @forelse ($category->orderByAndPaginate() as $announcement)
-                    <div class="col-12 col-md-4 col-lg-3 my-5 mb-md-0">
+                    <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                         <div class="custom-card shadow">
                             <div class="custom-card-content d-flex flex-column">
                                 <img src="/assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail">
