@@ -1,7 +1,7 @@
 <x-layout>
     <x-header />
 
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-lg-6">
                 <h3></h3>
@@ -77,8 +77,7 @@
             </div>
             @guest
             <div>
-                <a class="btn btn-secondary rounded font-weight-bold my-5" href="{{ route('register') }}"">Registrati
-                    adesso</a>
+                <a class="btn btn-secondary rounded font-weight-bold my-5" href="{{ route('register') }}"">Che aspetti? Entra a far parte della famiglia!</a>
             </div>
             @endguest
         </div>

@@ -17,7 +17,6 @@
     background-color: #FFC93C;
 }
 
-
 /* COLOR BACKGROUND TRASPARANTE */
 /* background: rgb(27 32 44 / 70%);
   -webkit-backdrop-filter: blur(5px);
@@ -27,6 +26,12 @@
   backface-visibility: hidden;
   transform: translateZ(0px);
   transition: 0.3s; */
+
+/* dropdown NAVBAR  */
+.drop-nav {
+    background: #F5F7F8;
+}
+
 
 /* sezione BODY */
 body {
@@ -45,7 +50,7 @@ body {
 }
 
 /* durata animazione testo "CardBazaar." */
-.animate__animated.animate__heartBeat {
+.animate__animated.animate__bounceInLeft {
     --animate-duration: 1.25s;
 }
 

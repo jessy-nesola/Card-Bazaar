@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <div class="">
+                    <div class="" style="margin-top: 15%">
                         <h2 class="mb-4 text-center">Raccontaci di te!</h2>
                         <form action="{{route('become.revisor')}}" method="POST">
                             @csrf
@@ -34,7 +34,7 @@
                                 @enderror
                             </div>
                             <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-celeste">Invia</button>
+                            <button type="submit" class="btn btn-secondary">Invia richiesta</button>
                             </div>
                         </form>
                     </div>

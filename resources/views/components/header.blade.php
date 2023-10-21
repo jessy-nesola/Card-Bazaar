@@ -18,16 +18,12 @@
             <div class="row gx-5 align-items-center justify-content-center">
                 <div class="col-lg-8 col-xl-7 col-xxl-6">
                     <div class="my-5 text-center text-xl-start">
-                        <h1 class="animate__animated animate__heartBeat">Benvenuto in CardBazaar.</h1>
+                        <h1 class="animate__animated animate__rubberBand">Benvenuto in CardBazaar.</h1>
                         <hr class="my-4" />
                         <p class="lead">Il tuo sito di riferimento per comprare e vendere giochi di carte</p>
                         @guest
                             <p><a href="{{ route('register') }}" class="btn btn-secondary me-2">Entra nella famiglia!</a>
                             @endguest
-                            {{-- TASTO "LAVORA CON NOI" --}}
-                            @if (Auth::user() && !Auth::user()->is_revisor)
-                                <p><a href="{{ route('workWithUs') }}" class="btn btn-secondary me-2">Lavora con noi!</a>
-                            @endif
                             {{-- TASTO "REVISOR" --}}
                             @if (Auth::user() && Auth::user()->is_revisor)
                                 <p><a href="{{ route('revisor.index') }}" class="btn btn-yellow me-2">Revisor!</a>

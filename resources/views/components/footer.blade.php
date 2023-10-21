@@ -6,17 +6,19 @@
             </div>
             <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
                  <ul>   
-                    <li><a href="{{route('announcements.index')}}" class="text-decoration-none text-reset">Espolra</a></li>
-                    <li><a href="{{route('categories.index')}}" class="text-decoration-none text-reset">Tutte le categorie</a></li>
-                    <li><a href="{{route('register')}}" class="text-decoration-none text-reset">Registrati</a></li>
-                    <li><a href="{{route('announcements.create')}}" class="text-decoration-none text-reset">Inserisci annuncio</a></li>    
+                    <li><a href="" class="text-decoration-none text-reset">Contatti</a></li>
+                    <li><a href="" class="text-decoration-none text-reset">Chi siamo</a></li>
+                     {{-- TASTO "LAVORA CON NOI" --}}
+                     @if (Auth::user() && !Auth::user()->is_revisor)
+                     <li><a href="{{ route('workWithUs') }}" class="text-decoration-none text-reset">Lavora con noi</a>
+                 @endif  
                 </ul>
             </div>
         </div>
         
         <div class="row align-items-center justify-content-center">
             <div class="col-auto">
-                <p class="small m-0">Copyright &copy; Designed by develHOPErs, 2023</p>
+                <p class="small m-0">Copyright &copy; designed by develHOPErs, 2023</p>
             </div>
         </div>
     </div>

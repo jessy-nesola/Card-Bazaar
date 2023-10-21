@@ -23,7 +23,7 @@
                             </div>
                         </form>
                         {{-- <p class="mt-3"><a href="#">Forgot your password?</a></p> --}}
-                        <p class="mt-3 text-center">Non hai un account? <a href="{{ route('register') }}"> Clicca qua</a></p>
+                        <p class="mt-3 text-center">Non sei registrato? <a href="{{ route('register') }}"> Clicca qua</a></p>
                     </div>
                 </div>
             </div>

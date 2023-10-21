@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg fixed-top shadow-lg">
-    <div class="container-fluid">
+    <div class="container-fluid col-11">
         <a class="navbar-brand" href="{{ route('homepage') }}">CardBazaar.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Categorie
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu drop-nav shadow" aria-labelledby="navbarDropdown">
                         @foreach ($categories as $category)
                         <li><a class="dropdown-item" href="{{ route('categories.show', $category->name) }}">{{$category->name}}</a></li>
                         @endforeach
@@ -47,11 +47,11 @@
             <ul class="navbar-nav">
                 @guest
                     <div class="nav-item">
-                        <a class="btn btn-secondary m-2" href="{{ route('login') }}">Login/Register</a>
+                        <a class="btn btn-secondary m-2" href="{{ route('login') }}">Accedi</a>
                     </div>
                 @else
                     <div class="nav-item">
-                        <a class="btn btn-outline-dark m-2">
+                        <a class="btn btn-secondary m-2">
                             Utente: {{ Auth::user()->name }}
                         </a>
                     </div>
