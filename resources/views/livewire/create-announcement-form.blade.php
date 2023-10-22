@@ -48,7 +48,7 @@
                                 @enderror
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-warning">Upload!</button>
+                                <button type="submit" class="btn btn-secondary">Upload!</button>
                             </div>
                         </form>
                     </div>
