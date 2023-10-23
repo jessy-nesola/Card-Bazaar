@@ -1,36 +1,65 @@
-{{-- <footer class="footer py-4 mt-5 shadow-lg">
-    <div class="container px-5">
-        <div class="row my-3">
-            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                <h4><a href="{{ route('homepage') }}" class="text-decoration-none text-reset">CardBazaar.</a></h4>
-            </div>
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
-                <ul>
-                    <li><a href="" class="text-decoration-none text-reset">Contatti</a></li>
-                    <li><a href="" class="text-decoration-none text-reset">Chi siamo</a></li>
-                    {{-- TASTO "LAVORA CON NOI" --}}
-                    {{-- @if (Auth::user() && !Auth::user()->is_revisor)
-                        <li><a href="{{ route('workWithUs') }}" class="text-decoration-none text-reset">Lavora con
-                                noi</a>
-                    @endif
-                    <li>
-                        <x-_locale lang='it' nation='IT' />
-                        <x-_locale lang='en' nation='EN' />
-                        <x-_locale lang='es' nation='ES' />
-                    </li>
-                </ul>
-            </div>
-        </div>
+<footer class="py-5">
+		<div class="container">
+	  <div class="row">
 
-        <div class="row align-items-center justify-content-center">
-            <div class="col-auto">
-                <p class="small m-0">Copyright &copy; designed by develHOPErs, 2023</p>
-            </div>
-        </div>
-    </div>
-</footer> --}}
+		<div class="col-6 col-md-2 mb-3">
+			<h5 class="text-light">LINGUA</h5>
+			<ul class="nav flex-column">
+			  <li>
+				  <x-_locale lang='it' nation='Italiano' />
+				  <x-_locale lang='en' nation='English' />
+				  <x-_locale lang='es' nation='Español' />
+			  </li>
+			</ul>
+		  </div>
 
-<footer class="deneb_footer">
+		<div class="col-6 col-md-2 mb-3">
+		  <h5 class="text-light">LINKS</h5>
+		  <ul class="nav flex-column">
+			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Su di noi</a></li>
+			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Contatti</a></li>
+			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FAQs</a></li>
+		  </ul>
+		</div>
+
+		<div class="col-6 col-md-2 mb-3">
+			<h5 class="text-light">LAVORA CON NOI</h5>
+			<ul class="nav flex-column">
+			  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+			  @if (Auth::user() && !Auth::user()->is_revisor)
+			  <li><a href="{{ route('workWithUs') }}" class="text-decoration-text-reset">Lavora con noi</a>
+			  </li>
+			  @endif
+			</ul>
+		  </div>
+  
+		<div class="col-md-5 offset-md-1 mb-3">
+		  <form>
+			<h3 class="text-light">CardBazaar.</h3>
+			<p class="text-white-50">Il tuo sito di riferimento per comprare e vendere giochi di carte</p>
+			<hr style="color: white">
+			<p class="text-white-50">Orari servizio clienti</p>
+			<p class="text-white-50">Lun - Ven  |  08:00 - 16:00</p>
+			<p class="text-white-50">info@cardbazaar.it</p>
+		  </form>
+		</div>
+	  </div>
+  
+	  <hr style="color: white">
+
+	  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+		<p class="text-white-50">Copyright &copy; Designed by DevelHopers, 2023</p>
+		<ul class="list-unstyled d-flex">
+		  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+		  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+		  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+		</ul>
+	  </div>
+	</div>
+	</footer>
+  
+{{-- <footer class="deneb_footer">
 	<div class="widget_wrapper" style="background-image: url(http://demo.tortoizthemes.com/deneb-html/deneb-ltr/assets/images/footer_bg.png);">
 		<div class="container">
 			<div class="row">
@@ -39,7 +68,7 @@
 						<div class="widget_title">
 							<img src="assets/images/logo_1.png" class="img-fluid" alt="">
 						</div>
-						<p>Quisque orci nisl, viverra et sem ac, tincidunt egestas massa. Morbi est arcu, hendrerit ac vehicula condimentum, euismod nec tortor praesent consequat urna.</p>
+						<h2>CardBazaar.</h2>
 						<ul class="social">
 							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -60,6 +89,7 @@
 						</ul>
 					</div>
 				</div>
+				
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="widget widget_contact">
 						<div class="widget_title">
@@ -95,6 +125,7 @@
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -103,10 +134,10 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="copyright_text">
-						<p>Copyright &copy; 2023 All rights reserved.</p>
+						<p class="">Copyright &copy; designed by develHOPErs, 2023</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</footer>
+</footer> --}}

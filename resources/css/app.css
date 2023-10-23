@@ -3,9 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 @import "../../node_modules/flag-icon-css/css/flag-icons.css";
 
+/* COLORE TRASPARANTE */
+/* background: rgb(27 32 44 / 70%);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  -ms-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
+
 /* sezione NAVBAR */
 .navbar {
-    background-color: #FFC93C;
+    background-color: #2866b1;
+    border-bottom: #fba543;
     transition: transform 0.3s ease-in-out;
     transform: translateY(0);
   }
@@ -15,24 +23,8 @@
   }
 
   .navbar.navbar-expand-lg {
-    background-color: #FFC93C;
+    background-color: #2866b1;
 }
-
-/* COLOR BACKGROUND TRASPARANTE */
-/* background: rgb(27 32 44 / 70%);
-  -webkit-backdrop-filter: blur(5px);
-  -moz-backdrop-filter: blur(5px);
-  -ms-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  backface-visibility: hidden;
-  transform: translateZ(0px);
-  transition: 0.3s; */
-
-/* dropdown NAVBAR  */
-.drop-nav {
-    background: #F5F7F8;
-}
-
 
 /* sezione BODY */
 body {
@@ -123,7 +115,11 @@ article p {
     margin: 0 auto 32px;
     margin-top: 90px;
     border-radius: 12.5px;
-    background-color: #5BC0F8;
+    background: rgba(255, 255, 255, 0.062);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 /* sezione REGISTRAZIONE */
@@ -135,20 +131,23 @@ article p {
     margin: 0 auto 32px;
     margin-top: 90px;
     border-radius: 12.5px;
-    background-color: #5BC0F8;
+    background: rgba(255, 255, 255, 0.24);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
-/* .footer {
-  background-color: #FFC93C; */
-
+footer {
+  background-color: #2866b1;
   /* SERVE PER TENERE IL FOOTER BASSO */
-  /* flex-shrink: 0; Non restringere il footer */
-/* } */
+  flex-shrink: 0;
+}
 
 /* SERVE PER TENERE IL FOOTER BASSO */
 .content {
-    flex: 1; /* Occupa lo spazio rimanente */
-  }
+    flex: 1; 
+}
 
 /* sezione Show Announcements */
 .carousel-indicators{
@@ -157,8 +156,8 @@ bottom: -12%;
 }
 
 /*Footer*/
-.deneb_footer .widget_wrapper {
-    background-color: #FFC93C;
+/* .deneb_footer .widget_wrapper {
+    background-color: #2866b1;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 25px;
@@ -218,7 +217,7 @@ bottom: -12%;
 }
 .deneb_footer .widget_wrapper .widget_link ul li a {
     text-transform: capitalize;
-    color: #7a808d;
+    color: #7a808d
 }
 .deneb_footer .widget_wrapper .widget_link ul li a:hover,
 .deneb_footer .widget_wrapper .widget_link ul li a:focus {
@@ -243,7 +242,7 @@ bottom: -12%;
 }
 
 .deneb_footer .copyright_area {
-    background: #edecf0;
+    background: #2866b1;
     padding: 10px 0;
 }
 .deneb_footer .copyright_area .copyright_text {
@@ -322,4 +321,4 @@ bottom: -12%;
 .deneb_cta .cta_wrapper .button_box .deneb_btn:hover,
 .deneb_cta .cta_wrapper .button_box .deneb_btn:focus {
     box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
-}
+} */

@@ -1,6 +1,6 @@
 <form action="{{ route ('set_language', $lang) }}" method="POST">
     @csrf
-    <button class="btn btn-secondary" type="submit">
-        <span>{{ $nation }}</span>
-    </button>
+    <li class="text-white-50" type="submit">
+        <a>{{ $nation }}</a>
+    </li>
 </form>
