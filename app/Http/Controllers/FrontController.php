@@ -23,4 +23,9 @@ class FrontController extends Controller
         $announcements = Announcement::whereIn('id', $announcements_search)->latest()->paginate(8)->withQueryString();
         return view('search', compact('announcements'));
     }
+
+    public function setLanguage($lang){
+        session()->put('locale', $lang);
+        return redirect()->back();
+    }
 }

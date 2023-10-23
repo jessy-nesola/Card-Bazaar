@@ -22,6 +22,8 @@ Route::get('/', [FrontController::class, 'homepage'])->name('homepage');
 
 Route::get('/lavora-con-noi', [FrontController::class, 'workWithUs'])->middleware('auth')->name('workWithUs');
 
+Route::post('/language/{lang}', [FrontController::class,'setLanguage'])->name('set_language');
+
 // CATEGORIES
 
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
