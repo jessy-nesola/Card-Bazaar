@@ -1,5 +1,5 @@
 <header>
-    <div class="px-5 shadow-lg" style="background-color: #5BC0F8">
+    <div class="px-5">
         @if (session()->has('access.denied'))
             <div>
                 <div class="text-center pt-5">
