@@ -18,7 +18,7 @@
             <div class="row gx-5 align-items-center justify-content-center">
                 <div class="col-lg-8 col-xl-7 col-xxl-6">
                     <div class="my-5 text-center text-xl-start">
-                        <h1 class="animate__animated animate__rubberBand">Benvenuto in CardBazaar.</h1>
+                        <h1 class="animate__animated animate__rubberBand">{{ __('custom.header1') }}</h1>
                         <hr class="my-4" />
                         <p class="lead">Il tuo sito di riferimento per comprare e vendere giochi di carte</p>
                         @guest

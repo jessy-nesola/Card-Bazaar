@@ -15,7 +15,7 @@
                     @endif
                     <li>
                         <x-_locale lang='it' nation='IT' />
-                        <x-_locale lang='en' nation='GB' />
+                        <x-_locale lang='en' nation='EN' />
                         <x-_locale lang='es' nation='ES' />
                     </li>
                 </ul>
