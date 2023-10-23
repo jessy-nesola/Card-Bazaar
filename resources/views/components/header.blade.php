@@ -1,4 +1,4 @@
-<header>
+<header class="shadow-lg">
     <div class="px-5">
         @if (session()->has('access.denied'))
             <div>

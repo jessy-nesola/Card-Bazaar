@@ -21,6 +21,7 @@
     <section class="product-section">
 
         <div class="container-fluid text-center col-12 col-lg-10 mb-5">
+            <hr style="margin-bottom: 3%">
             <div class="row d-flex justify-content-center mb-5">
                 <div>
                     <h3 class="text-center">Ecco gli ultimi annunci degli utenti:</h3>
