@@ -51,7 +51,7 @@
 
 
 
-    <section>
+    <section style="margin-bottom: 7%">
         <div class="py-2"></div>
         <div class="container-fluid text-center col-12 col-lg-10 m-auto">
             <h3 class="homepage__title--dark-blue h1--smaller mb-5">Vantaggi per i compratori e venditori:</h3>
@@ -78,7 +78,7 @@
             </div>
             @guest
             <div>
-                <a class="btn btn-secondary rounded font-weight-bold my-5" href="{{ route('register') }}"">Che aspetti? Entra a far parte della famiglia!</a>
+                <a class="btn btn-secondary rounded font-weight-bold my-5" href="{{ route('register') }}">Che aspetti? Entra a far parte della famiglia!</a>
             </div>
             @endguest
         </div>

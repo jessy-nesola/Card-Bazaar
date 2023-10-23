@@ -1,4 +1,4 @@
-<footer class="py-5">
+<footer class="py-5 shadow-lg">
 		<div class="container">
 	  <div class="row">
 
