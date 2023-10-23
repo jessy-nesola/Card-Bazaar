@@ -26,9 +26,9 @@
                 </div>
                 @foreach ($announcements as $announcement)
                     <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                        <div class="custom-card shadow">
+                        <div class="custom-card">
                             <div class="custom-card-content d-flex flex-column">
-                                <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail shadow">
+                                <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail shadow-lg">
                                 <div>
                                     <h3 class="name text-dark">{{ $announcement->title }}</h3>
                                 </div>
@@ -37,7 +37,7 @@
                                 </div>
                                 <div>
                                     <a href="{{ route('announcements.show', $announcement->uri) }}"
-                                        class="btn btn-yellow">Visualizza</a>
+                                        class="btn btn-secondary shadow-lg">Visualizza</a>
                                 </div>
                             </div>
                         </div>

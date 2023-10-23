@@ -22,15 +22,15 @@
             <div class="row">
                 @foreach ($categories as $category)
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <div class="custom-card shadow">
+                    <div class="custom-card">
                         <div class="custom-card-content d-flex flex-column">
-                            <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail shadow">
+                            <img src="assets/images/yugioh (1).jpg" class="img-fluid product-thumbnail shadow-lg">
                             <div>
                                 <h3 class="name text-dark">{{ $category->name }}</h3>
                             </div>
                             <div>
                                 <a href="{{ route('categories.show', $category->name) }}"
-                                    class="btn btn-secondary">Visualizza</a>
+                                    class="btn btn-secondary shadow-lg">Visualizza</a>
                             </div>
 
                         </div>
