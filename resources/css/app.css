@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "animate.css";
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import "../../node_modules/flag-icon-css/css/flag-icons.css";
 
 /* sezione NAVBAR */
 .navbar {
