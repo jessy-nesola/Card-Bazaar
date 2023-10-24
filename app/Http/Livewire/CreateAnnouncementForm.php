@@ -4,18 +4,26 @@ namespace App\Http\Livewire;
 
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Config;
 use Livewire\Component;
 use Illuminate\Support\Str;
+use Livewire\WithFileUploads;
 
 class CreateAnnouncementForm extends Component
 {
-    public $title, $body, $price, $category;
+    use WithFileUploads;
+
+    public $title, $body, $price, $category, $temporary_images, $images = [];
+
+    public $announcement;
 
     protected $rules = [
         'title'=> 'required|min:4',
         'body' => 'required|min:8',
         'price' => 'required|numeric',
-        'category' => 'required'
+        'category' => 'required',
+        'temporary_images.*' => 'image',
+        'images.*' => 'image'
     ];
 
     public function updated($propertyName)
@@ -23,25 +31,86 @@ class CreateAnnouncementForm extends Component
         $this->validateOnly($propertyName);
     }
 
+    public function updatedTemporaryImages()
+    {
+        if($this->validate(['temporary_images.*' => 'image']))
+        {
+            foreach ($this->temporary_images as $image)
+            {
+                $this->images[] = $image;
+            }
+        }
+    }
+
+    public function removeImage($key)
+    {
+        if (in_array($key, array_keys($this->images)))
+        {
+            unset($this->images[$key]);
+        }
+    }
+
     public function store()
     {
-        $this->validate($this->rules);
+        $this->validate();
 
-        $category = Category::find($this->category);
-        $announcement = $category->announcements()->create([
-            'title' => $this->title,
-            'body' => $this->body,
-            'price' => $this->price,
-            'uri' => Str::slug($this->title . ' ' . Str::password(6,false,true,false,false), '-')
-        ]);
-        Auth::user()->announcements()->save($announcement);
+        $this->announcement = Category::find($this->category)->announcements()->create([
+                'title' => $this->title,
+                'body' => $this->body,
+                'price' => $this->price,
+                'uri' => Str::slug($this->title . ' ' . Str::password(6,false,true,false,false), '-'),
+                'temporary_images.*' => $this->temporary_images,
+                'images.*' => $this->images
+            ]);
+        if (count($this->images))
+        {
+            foreach ($this->images as $image)
+            {
+                $this->announcement->images()->create(['path'=>$image->store('images', 'public')]);
+            }
+        }
+        $this->announcement->user()->associate(Auth::user());
+        $this->announcement->save();
 
-        $this->reset('title','body','price','category');
-        session()->flash('success', 'Announcement Created');
+        // $this->validate($this->rules);
+
+        // $category = Category::find($this->category);
+        // $announcement = $category->announcements()->create([
+        //     'title' => $this->title,
+        //     'body' => $this->body,
+        //     'price' => $this->price,
+        //     'uri' => Str::slug($this->title . ' ' . Str::password(6,false,true,false,false), '-')
+        // ]);
+        // Auth::user()->announcements()->save($announcement);
+
+        $flash= '';
+        if (Config::get('app.locale') == 'it')
+        {
+            $flash = 'Annuncio Creato';
+        } elseif (Config::get('app.locale') == 'en')
+        {
+            $flash = 'Annuncement Created';
+        } elseif (Config::get('app.locale') == 'es')
+        {
+            $flash = 'Annuncios Creatos';
+        }
+
+        session()->flash('success', $flash);
+        $this->cleanForm();
     }
 
     public function render()
     {
         return view('livewire.create-announcement-form');
+    }
+
+    public function cleanForm()
+    {
+        $this->title = '';
+        $this->body = '';
+        $this->price = '';
+        $this->category = '';
+        $this->temporary_images = [];
+        $this->images = [];
     }
 }

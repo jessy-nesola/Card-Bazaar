@@ -47,6 +47,33 @@
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
+
+                            <div class="mb-3">
+                                <label for="temporary_images" class="form-label">Prezzo</label>
+                                <input wire:model="temporary_images" type="file" multiple
+                                    class="form-control @error('temporary_images.*') is-invalid @enderror" id="temporary_images" required>
+                                @error('temporary_images.*')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+
+                            @if (!empty($images))
+                                <div class="row mb-5">
+                                    <div class="col-12">
+                                        <div class="row border border-4 border-info rounded py-4">
+                                            <div class="text-center fs-5">Photo preview</div>
+                                            @foreach ($images as $key => $image)
+                                                <div class="col my-3">
+                                                    <div class="mx-auto shadow rounded" style="height: 300px; width: 300px; background-image: url({{$image->temporaryUrl()}});"></div>
+                                                    <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">Cancella</button>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+
+
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-secondary">Upload!</button>
                             </div>
