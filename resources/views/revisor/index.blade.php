@@ -70,33 +70,34 @@
                                 method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <button type="submit" class="btn btn-celeste">Accetta</button>
+                                <button type="submit" class="btn btn-secondary btn-sm shadow">Accetta</button>
                             </form>
                             <form class=" col-4"
                                 action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
                                 method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <button type="submit" class="btn btn-celeste">Rifiuta</button>
+                                <button type="submit" class="btn btn-secondary bnt-sm shadow">Rifiuta</button>
                             </form>
                         </div>
 
                         <div class="col-12 my-5 d-flex justify-content-center">
-                            <div class="card-description mx-2">
-                                <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
-                                <div><strong>Categoria: <a
-                                            href="{{ route('categories.show', ['name' => $announcement_to_check->category->name]) }}">{{ $announcement_to_check->category->name }}</a></strong>
+                            <div class="shadow-lg dati-scheda">
+                                <div class="card-description mx-2">
+                                    <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
+                                    <div><strong>Categoria: <a
+                                                href="{{ route('categories.show', ['name' => $announcement_to_check->category->name]) }}">{{ $announcement_to_check->category->name }}</a></strong>
+                                    </div>
+                                    <div><strong>Pubblicato da: {{ $announcement_to_check->user->name }}</strong></div>
+                                    <div class="mb-3"><strong>Data pubblicazione:
+                                            {{ $announcement_to_check->created_at->format('d/m/Y') }}</strong></div>
+                                    <div><strong>Descrizione:</strong></div>
+                                    <p class="mb-4">{{ $announcement_to_check->body }}</p>
+                                    <h5><strong>{{ $announcement_to_check->price }}€</strong></h5>
+                                    {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}
                                 </div>
-                                <div><strong>Pubblicato da: {{ $announcement_to_check->user->name }}</strong></div>
-                                <div class="mb-3"><strong>Data pubblicazione:
-                                        {{ $announcement_to_check->created_at->format('d/m/Y') }}</strong></div>
-                                <div><strong>Descrizione:</strong></div>
-                                <p class="mb-4">{{ $announcement_to_check->body }}</p>
-                                <h5><strong>{{ $announcement_to_check->price }}€</strong></h5>
-                                {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}
                             </div>
                         </div>
-
                     </div>
             </div>
             @endif
