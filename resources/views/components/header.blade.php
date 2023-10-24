@@ -26,7 +26,7 @@
                             @endguest
                             {{-- TASTO "REVISOR" --}}
                             @if (Auth::user() && Auth::user()->is_revisor)
-                                <p><a href="{{ route('revisor.index') }}" class="btn btn-yellow me-2">Revisor!</a>
+                                <p><a href="{{ route('revisor.index') }}" class="btn btn-secondary me-2">Revisor!</a>
                             @endif
                     </div>
                 </div>

@@ -4,44 +4,52 @@
 
         <div id="carousel-show" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
+                <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets\images\card-1.png" class=" w-100" style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets\images\card-2.png" class=" w-100" style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets\images\card-3.png" class=" w-100" style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-              </div>
+                <div class="carousel-item active">
+                    <img src="/assets\images\card-1.png" class=" w-100"
+                        style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets\images\card-2.png" class=" w-100"
+                        style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets\images\card-3.png" class=" w-100"
+                        style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-show" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
 
         <div class="col-12 my-5 d-flex justify-content-center">
-            <div class="card-description mx-2">
-                <h2 class="mb-3">{{ $announcement->title }}</h2>
-                <div><strong>Categoria: <a
-                            href="{{ route('categories.show', ['name' => $announcement->category->name]) }}">{{ $announcement->category->name }}</a></strong>
+            <div class="shadow-lg dati-scheda">
+                <div class="card-description mx-2">
+                    <h2 class="mb-3">{{ $announcement->title }}</h2>
+                    <div><strong>Categoria: <a
+                                href="{{ route('categories.show', ['name' => $announcement->category->name]) }}">{{ $announcement->category->name }}</a></strong>
+                    </div>
+                    <div><strong>Pubblicato da: {{ $announcement->user->name }}</strong></div>
+                    <div class="mb-3"><strong>Data pubblicazione:
+                            {{ $announcement->created_at->format('d/m/Y') }}</strong></div>
+                    <div><strong>Descrizione:</strong></div>
+                    <p class="mb-4">{{ $announcement->body }}</p>
+                    <h5><strong>{{ $announcement->price }}€</strong></h5>
+                    {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}
                 </div>
-                <div><strong>Pubblicato da: {{ $announcement->user->name }}</strong></div>
-                <div class="mb-3"><strong>Data pubblicazione:
-                        {{ $announcement->created_at->format('d/m/Y') }}</strong></div>
-                <div><strong>Descrizione:</strong></div>
-                <p class="mb-4">{{ $announcement->body }}</p>
-                <h5><strong>{{ $announcement->price }}€</strong></h5>
-                {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}
             </div>
         </div>
     </div>
