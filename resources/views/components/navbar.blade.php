@@ -41,24 +41,24 @@
 
             <form action="{{route('announcements.search')}}" method="GET" class="d-flex" role="search">
                 <input name="searched" class="form-control me-2" type="search" placeholder="{{__('custom.nav6')}}" aria-label="Search">
-                <button class="btn btn-warning" type="submit">{{__('custom.nav7')}}</button>
+                <button class="btn btn-secondary" type="submit">{{__('custom.nav7')}}</button>
             </form>
 
             <ul class="navbar-nav">
                 @guest
                     <div class="nav-item">
-                        <a class="btn btn-warning m-2" href="{{ route('login') }}">{{__('custom.nav8')}}</a>
+                        <a class="btn btn-sm btn-warning m-2" href="{{ route('login') }}">{{__('custom.nav8')}}</a>
                     </div>
                 @else
                     <div class="nav-item">
-                        <a class="btn btn-warning m-2">
+                        <a class="btn btn-sm btn-warning m-2">
                             {{__('custom.nav9')}} {{ Auth::user()->name }}
                         </a>
                     </div>
                     <div class="nav-item">
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <button class="btn btn-warning m-2"
+                            <button class="btn btn-sm btn-warning m-2"
                                 onclick="event.preventDefault(); this.closest('form').submit();">
                                 {{__('custom.nav10')}}
                             </button>
