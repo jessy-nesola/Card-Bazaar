@@ -1,6 +1,6 @@
 <div>
-    <div style="padding: 5%" >
-    <section class="login-section shadow" style="margin-top: 130px;">
+    <div style="margin: 5%" >
+    <section class="login-section shadow-lg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">

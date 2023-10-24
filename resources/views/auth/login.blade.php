@@ -1,6 +1,6 @@
 <x-layout>
     <!-- SEZIONE LOGIN -->
-    <div style="padding: 5%">
+    <div style="margin: 5%">
     <div class="login-section shadow-lg">
         <div class="container">
             <div class="row justify-content-center">

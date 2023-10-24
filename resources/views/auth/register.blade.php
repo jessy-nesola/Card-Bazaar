@@ -1,12 +1,12 @@
 <x-layout>
     <!-- SEZIONE REGISTRAZIONE -->
-    <div style="padding: 5%" >
+    <div style="margin: 5%" >
     <div class="register-section shadow-lg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="register-form">
-                        <h2 class="mb-5 text-center">Crea Account</h2>
+                        <h2 class="mb-5 text-center">Registrati</h2>
                         <form action="{{ route('register') }}" method="POST">
                             @csrf
                             @method('POST')
@@ -52,7 +52,7 @@
                                 @enderror
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-secondary">Registrati</button>
+                                <button type="submit" class="btn btn-secondary">Crea Account</button>
                             </div>
                         </form>
                         <p class="mt-3 text-center">Hai giá un account? <a href="{{ route('login') }}"> Clicca qua</a></p>
