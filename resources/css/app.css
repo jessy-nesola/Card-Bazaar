@@ -26,7 +26,7 @@
 }
 
 .border-nav {
-    border-bottom: 10px solid #FFC107;
+    border-bottom: 5px solid #FFC107;
 }
 
 header {
@@ -156,7 +156,7 @@ footer {
 }
 
 .border-footer {
-    border-top: 10px solid #FFC107;
+    border-top: 5px solid #FFC107;
 }
 
 /* SERVE PER TENERE IL FOOTER BASSO */
