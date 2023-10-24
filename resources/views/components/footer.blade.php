@@ -1,4 +1,4 @@
-<footer class="py-5 shadow-lg border-footer">
+<footer class="pt-4 shadow-lg border-footer">
 		<div class="container">
 	  <div class="row">
 
@@ -23,14 +23,14 @@
 		  </ul>
 		</div>
 
-		<div class="col-6 col-md-2 mb-3">
-			<h5 class="text-light">LAVORA CON NOI</h5>
+		 <div class="col-6 col-md-2 mb-3">
+			{{--<h5 class="text-light">LAVORA CON NOI</h5>
 			<ul class="nav flex-column">
 			  @if (Auth::user() && !Auth::user()->is_revisor)
 			  <li><a href="{{ route('workWithUs') }}" class="text-white-50 text-decoration-none">Lavora con noi</a>
 			  </li>
 			  @endif
-			</ul>
+			</ul> --}}
 		  </div>
   
 		<div class="col-md-5 offset-md-1 mb-3">
@@ -47,13 +47,8 @@
   
 	  <hr style="color: white">
 
-	  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+	  <div class="d-flex flex-column flex-sm-row justify-content-between py-1 my-4">
 		<p class="text-white-50">Copyright &copy; Designed by DevelHopers, 2023</p>
-		<ul class="list-unstyled d-flex">
-		  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-		  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-		  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-		</ul>
 	  </div>
 	</div>
 	</footer>

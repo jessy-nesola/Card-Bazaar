@@ -47,18 +47,18 @@
             <ul class="navbar-nav">
                 @guest
                     <div class="nav-item">
-                        <a class="btn btn-sm btn-warning m-2" href="{{ route('login') }}">{{__('custom.nav8')}}</a>
+                        <a class="btn btn-warning m-2" href="{{ route('login') }}">{{__('custom.nav8')}}</a>
                     </div>
                 @else
                     <div class="nav-item">
-                        <a class="btn btn-sm btn-warning m-2">
+                        <a class="btn btn-warning m-2">
                             {{__('custom.nav9')}} {{ Auth::user()->name }}
                         </a>
                     </div>
                     <div class="nav-item">
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <button class="btn btn-sm btn-warning m-2"
+                            <button class="btn btn-warning m-2"
                                 onclick="event.preventDefault(); this.closest('form').submit();">
                                 {{__('custom.nav10')}}
                             </button>
