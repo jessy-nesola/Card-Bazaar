@@ -74,6 +74,27 @@
             </div>
             @endguest
         </div>
+
+        <section class="deneb_cta">
+            <div class="container">
+                <div class="cta_wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="cta_content">
+                                <h3>Voui far parte del nostro team ?</h3>
+                                <p>Contattaci per saperne di più.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="button_box">
+                                <a href="#" class="btn btn-warning">Lavora con noi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </section>
 
 </x-layout>
