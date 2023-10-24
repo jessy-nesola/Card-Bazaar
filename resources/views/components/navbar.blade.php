@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top shadow-lg">
+<nav class="navbar navbar-expand-lg fixed-top shadow-lg border-nav">
     <div class="container-fluid col-11">
         <a class="navbar-brand text-light" href="{{ route('homepage') }}">CardBazaar.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

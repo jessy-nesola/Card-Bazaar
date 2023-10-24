@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="px-5 shadow" style="background-color: #5BC0F8">
+    <div class="px-5 shadow work-bg">
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center">
                 <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -15,11 +15,11 @@
             </div>
         </div>
     </div>
-    <div class="form-section mt-5" style="margin-top: 15px;">
+    <div class="form-section my-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="" style="margin-top: 15%">
+                <div class="col-md-6 ">
+                    <div class="my-5">
                         <h2 class="mb-4 text-center">Raccontaci di te!</h2>
                         <form action="{{route('become.revisor')}}" method="POST">
                             @csrf

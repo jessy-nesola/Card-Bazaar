@@ -1,4 +1,4 @@
-<footer class="py-5 shadow-lg">
+<footer class="py-5 shadow-lg border-footer">
 		<div class="container">
 	  <div class="row">
 
@@ -16,7 +16,7 @@
 		<div class="col-6 col-md-2 mb-3">
 		  <h5 class="text-light">LINKS</h5>
 		  <ul class="nav flex-column">
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+			<li class="nav-item mb-2"><a href="{{route('homepage')}}" class="nav-link p-0 text-white-50">Home</a></li>
 			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Su di noi</a></li>
 			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Contatti</a></li>
 			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FAQs</a></li>
@@ -26,9 +26,8 @@
 		<div class="col-6 col-md-2 mb-3">
 			<h5 class="text-light">LAVORA CON NOI</h5>
 			<ul class="nav flex-column">
-			  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
 			  @if (Auth::user() && !Auth::user()->is_revisor)
-			  <li><a href="{{ route('workWithUs') }}" class="text-decoration-text-reset">Lavora con noi</a>
+			  <li><a href="{{ route('workWithUs') }}" class="text-white-50 text-decoration-none">Lavora con noi</a>
 			  </li>
 			  @endif
 			</ul>
