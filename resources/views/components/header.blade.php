@@ -20,13 +20,13 @@
                     <div class="my-5 text-center text-xl-start">
                         <h1 class="animate__animated animate__rubberBand">{{ __('custom.header1') }}</h1>
                         <hr class="my-4" />
-                        <p class="lead">Il tuo sito di riferimento per comprare e vendere giochi di carte</p>
+                        <p class="lead">{{ __('custom.header2') }}</p>
                         @guest
-                            <p><a href="{{ route('register') }}" class="btn btn-secondary me-2">Entra nella famiglia!</a>
+                            <p><a href="{{ route('register') }}" class="btn btn-secondary me-2">{{ __('custom.header3') }}</a>
                             @endguest
                             {{-- TASTO "REVISOR" --}}
                             @if (Auth::user() && Auth::user()->is_revisor)
-                                <p><a href="{{ route('revisor.index') }}" class="btn btn-secondary me-2">Revisor!</a>
+                                <p><a href="{{ route('revisor.index') }}" class="btn btn-secondary me-2">{{ __('custom.header4') }}</a>
                             @endif
                     </div>
                 </div>

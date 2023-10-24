@@ -5,10 +5,7 @@
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-lg-6">
                 <h3></h3>
-                <p class="lead">É il tuo bazar online per appassionati di carte da gioco. Scopri una vasta selezione
-                    di carte da collezione, mazzi personalizzati e accessori per migliorare la tua esperienza di gioco.
-                    Trova le carte più rare e cerca tra le offerte esclusive. Soddisfa la tua sete di strategia e
-                    competizione con CardBazaar.</p>
+                <p class="lead">{{__('custom.home1')}}</p>
             </div>
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="/assets/images/Cards Shop.jpg" class="d-block mx-lg-auto img-fluid" alt="Mixed Cards"
@@ -24,7 +21,7 @@
             <hr style="margin-bottom: 3%">
             <div class="row d-flex justify-content-center mb-5">
                 <div>
-                    <h3 class="text-center">Ecco gli ultimi annunci degli utenti:</h3>
+                    <h3 class="text-center">{{__('custom.home2')}}</h3>
                 </div>
                 @foreach ($announcements as $announcement)
                     <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
@@ -39,7 +36,7 @@
                                 </div>
                                 <div>
                                     <a href="{{ route('announcements.show', $announcement->uri) }}"
-                                        class="btn btn-secondary shadow-lg">Visualizza</a>
+                                        class="btn btn-secondary shadow-lg">{{__('custom.home3')}}</a>
                                 </div>
                             </div>
                         </div>
@@ -53,31 +50,27 @@
     <section style="margin-bottom: 7%">
         <div class="py-2"></div>
         <div class="container-fluid text-center col-12 col-lg-10 m-auto">
-            <h3 class="homepage__title--dark-blue h1--smaller mb-5">Vantaggi per i compratori e venditori:</h3>
+            <h3 class="homepage__title--dark-blue h1--smaller mb-5">{{__('custom.home4')}}</h3>
             <div class="row">
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <span><i class="fa fa-3x fa-globe-americas" aria-hidden="true"></i><br></span>
-                    <p class="font-weight-bold mt-3">Compra e vendi in tutto il mondo</p>
-                    <p>I compratori internazionali potranno acquistare da te senza preoccuparsi delle spese di
-                        spedizione, consentendo a venditori e acquirenti di risparmiare in media oltre il 18% sugli
-                        acquisti.</p>
+                    <p class="font-weight-bold mt-3">{{__('custom.home5')}}</p>
+                    <p>{{__('custom.home6')}}</p>
                 </div>
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <span><i class="fa fa-3x fa-handshake" aria-hidden="true"></i><br></span>
-                    <p class="font-weight-bold mt-3">Mai più controversie</p>
-                    <p>Affrontiamo internamente problemi con carte, ritardi e spedizioni smarrite, garantendo al 100% la
-                        consegna dei tuoi ordini.</p>
+                    <p class="font-weight-bold mt-3">{{__('custom.home7')}}</p>
+                    <p>{{__('custom.home8')}}</p>
                 </div>
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <span><i class="fa fa-3x fa-headset" aria-hidden="true"></i><br></span>
-                    <p class="font-weight-bold mt-3">100% Supporto clienti</p>
-                    <p>CardBazaar offre un servizio di supporto attivo 24/7 per gestire i tuoi ordini, permettendoti di
-                        concentrarti sulla tua attività principale e lasciando il resto a noi.</p>
+                    <p class="font-weight-bold mt-3">{{__('custom.home9')}}</p>
+                    <p>{{__('custom.home10')}}</p>
                 </div>
             </div>
             @guest
             <div>
-                <a class="btn btn-secondary rounded font-weight-bold my-5" href="{{ route('register') }}">Che aspetti? Entra a far parte della famiglia!</a>
+                <a class="btn btn-secondary rounded font-weight-bold my-5" href="{{ route('register') }}">{{__('custom.home11')}}</a>
             </div>
             @endguest
         </div>

@@ -8,16 +8,16 @@
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item @if (Route::currentRouteName() == 'homepage') @endif">
-                    <a class="nav-link text-white-50" aria-current="page" href="{{ route('homepage') }}">Home</a>
+                    <a class="nav-link text-white-50" aria-current="page" href="{{ route('homepage') }}">{{__('custom.nav1')}}</a>
                 </li>
                 <li class="nav-item @if (Route::currentRouteName() == 'announcements.index') @endif">
-                    <a class="nav-link text-white-50" href="{{ route('announcements.index') }}">Esplora</a>
+                    <a class="nav-link text-white-50" href="{{ route('announcements.index') }}">{{__('custom.nav2')}}</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white-50 @if (Route::currentRouteName() == 'categories.index') @endif"
                         href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Categorie
+                        {{__('custom.nav3')}}
                     </a>
                     <ul class="dropdown-menu drop-nav shadow" aria-labelledby="navbarDropdown">
                         @foreach ($categories as $category)
@@ -26,13 +26,13 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li class="item"><a class="dropdown-item" href="{{ route('categories.index') }}">Visualizza tutto</a></li>
+                        <li class="item"><a class="dropdown-item" href="{{ route('categories.index') }}">{{__('custom.nav4')}}</a></li>
                     </ul>
                 </li>
                 @auth
                 <li class="nav-item">
                     <a class="nav-link text-white-50 @if (Route::currentRouteName() == 'announcements.create') @endif" href="{{ route('announcements.create') }}" tabindex="-1"
-                        aria-disabled="true">Inserisci annuncio</a>
+                        aria-disabled="true">{{__('custom.nav5')}}</a>
                 </li>
                 @endauth
             </ul>
@@ -40,19 +40,19 @@
                 {{-- FORM SEARCH --}}
 
             <form action="{{route('announcements.search')}}" method="GET" class="d-flex" role="search">
-                <input name="searched" class="form-control me-2" type="search" placeholder="Nome carta.." aria-label="Search">
-                <button class="btn btn-warning" type="submit">Cerca!</button>
+                <input name="searched" class="form-control me-2" type="search" placeholder="{{__('custom.nav6')}}" aria-label="Search">
+                <button class="btn btn-warning" type="submit">{{__('custom.nav7')}}</button>
             </form>
 
             <ul class="navbar-nav">
                 @guest
                     <div class="nav-item">
-                        <a class="btn btn-warning m-2" href="{{ route('login') }}">Accedi</a>
+                        <a class="btn btn-warning m-2" href="{{ route('login') }}">{{__('custom.nav8')}}</a>
                     </div>
                 @else
                     <div class="nav-item">
                         <a class="btn btn-warning m-2">
-                            Utente: {{ Auth::user()->name }}
+                            {{__('custom.nav9')}} {{ Auth::user()->name }}
                         </a>
                     </div>
                     <div class="nav-item">
@@ -60,7 +60,7 @@
                             @csrf
                             <button class="btn btn-warning m-2"
                                 onclick="event.preventDefault(); this.closest('form').submit();">
-                                Logout
+                                {{__('custom.nav10')}}
                             </button>
                         </form>
                     </div>
