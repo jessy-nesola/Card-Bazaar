@@ -69,7 +69,7 @@
                 </div>
             </div>
             @guest
-            
+
             @endguest
         </div>
 
@@ -79,7 +79,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-7">
                             <div class="cta_content">
-                                <h3>Voui far parte del nostro team ?</h3>
+                                <h3>Vuoi far parte del nostro team ?</h3>
                                 <p>Contattaci per saperne di più.</p>
                             </div>
                         </div>
