@@ -35,4 +35,23 @@ return [
     'home10' => 'CardBazaar ofrece un servicio de asistencia 24 horas al día, 7 días a la semana, para gestionar sus pedidos, lo que le permite concentrarse en su actividad principal y dejarnos el resto a nosotros.
     concentrarse en su actividad principal y dejarnos el resto a nosotros.',
     'home11' => '¿A qué esperas? ¡Únete a la familia!',
+    //FOOTER
+    'foot1' => 'IDIOMA',
+    'foot2' => 'Italiano',
+    'foot3' => 'Inglés',
+    'foot4' => 'Español',
+    'foot5' => 'LINKS',
+    'foot6' => 'Home',
+    'foot7' => 'Quiénes somos',
+    'foot8' => 'Póngase en contacto con',
+    'foot9' => 'FAQs',
+    'foot10' => 'Su sitio de referencia para comprar y vender juegos de cartas',
+    'foot11' => 'Horario de atención al público',
+    'foot12' => 'Lun - Vie  |  08:00 - 16:00',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
 ];

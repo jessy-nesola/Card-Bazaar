@@ -35,4 +35,23 @@ return [
     'home10' => 'CardBazaar offers a 24/7 support service to handle your orders, allowing you to
     concentrate on your core business and leave the rest to us.',
     'home11' => 'What are you waiting for? Join the family!',
+    //FOOTER
+    'foot1' => 'LANGUAGE',
+    'foot2' => 'Italian',
+    'foot3' => 'English',
+    'foot4' => 'Spanish',
+    'foot5' => 'LINKS',
+    'foot6' => 'Home',
+    'foot7' => 'About Us',
+    'foot8' => 'Contact',
+    'foot9' => 'FAQs',
+    'foot10' => 'Your reference site for buying and selling card games',
+    'foot11' => 'Customer service hours',
+    'foot12' => 'Mon - Fri  |  08:00 A.M. - 04:00 P.M.',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
 ];

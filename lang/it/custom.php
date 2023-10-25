@@ -35,4 +35,23 @@ return [
     'home10' => 'CardBazaar offre un servizio di supporto attivo 24/7 per gestire i tuoi ordini, permettendoti di
     concentrarti sulla tua attività principale e lasciando il resto a noi.',
     'home11' => 'Che aspetti? Entra a far parte della famiglia!',
+    //FOOTER
+    'foot1' => 'LINGUA',
+    'foot2' => 'Italiano',
+    'foot3' => 'Inglese',
+    'foot4' => 'Spagnolo',
+    'foot5' => 'LINKS',
+    'foot6' => 'Home',
+    'foot7' => 'Su di noi',
+    'foot8' => 'Contatti',
+    'foot9' => 'FAQs',
+    'foot10' => 'Il tuo sito di riferimento per comprare e vendere giochi di carte',
+    'foot11' => 'Orari servizio clienti',
+    'foot12' => 'Lun - Ven  |  08:00 - 16:00',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
+    'foot' => '',
 ];
