@@ -11,13 +11,13 @@ return [
     'nav8'=> 'Log in',
     'nav9'=> 'User:',
     'nav10'=> 'Log out',
+    'nav11'=> 'Revisor',
 
 
     // HEADER
     'header1'=>'Welcome to CardBazaar.',
     'header2'=>'Your reference site for buying and selling card games',
     'header3' => 'Join the family!',
-    'header4' => 'Auditor area!',
 
 
     // HOMEPAGE

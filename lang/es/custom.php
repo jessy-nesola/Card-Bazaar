@@ -11,6 +11,7 @@ return [
     'nav8'=> 'Conectarse',
     'nav9'=> 'Usuario:',
     'nav10'=> 'Salida',
+    'nav11'=> 'Revisor',
 
 
     // HEADER

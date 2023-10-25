@@ -69,9 +69,7 @@
                 </div>
             </div>
             @guest
-            <div>
-                <a class="btn btn-secondary rounded font-weight-bold my-5" href="{{ route('register') }}">{{__('custom.home11')}}</a>
-            </div>
+            
             @endguest
         </div>
 

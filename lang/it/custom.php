@@ -11,6 +11,7 @@ return [
     'nav8' => 'Accedi',
     'nav9' => 'Utente:',
     'nav10' => 'Esci',
+    'nav11'=> 'Revisore',
 
 
     // HEADER
