@@ -48,10 +48,4 @@ return [
     'foot10' => 'Your reference site for buying and selling card games',
     'foot11' => 'Customer service hours',
     'foot12' => 'Mon - Fri  |  08:00 A.M. - 04:00 P.M.',
-    'foot' => '',
-    'foot' => '',
-    'foot' => '',
-    'foot' => '',
-    'foot' => '',
-    'foot' => '',
 ];

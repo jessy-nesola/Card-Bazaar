@@ -48,10 +48,4 @@ return [
     'foot10' => 'Su sitio de referencia para comprar y vender juegos de cartas',
     'foot11' => 'Horario de atención al público',
     'foot12' => 'Lun - Vie  |  08:00 - 16:00',
-    'foot' => '',
-    'foot' => '',
-    'foot' => '',
-    'foot' => '',
-    'foot' => '',
-    'foot' => '',
 ];
