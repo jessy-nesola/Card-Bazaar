@@ -22,36 +22,36 @@
                 @if ($announcement_to_check)
                     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
                         <div id="carousel-show" class="carousel carousel-dark slide">
-                            @if ($announcement_to_check->images)
-                                @foreach ($announcement_to_check->images as $image)
-                                {{-- <div class="carousel-indicators">
+                            <div class="carousel-inner">
+                                @if ($announcement_to_check->images)
+                                    @foreach ($announcement_to_check->images as $image)
+                                        {{-- <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="0"
                                          class="active" aria-current="true" aria-label="Slide 1"></button>
                                 </div> --}}
-                                <div class="carousel-inner">
-                                    <div class="carousel-item @if($loop->first) active @endif">
-                                        <img src="{{Storage::url($image->path)}}" class=" w-100"
-                                            style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-                                    </div>
-                                </div>
-                                @endforeach
-                            @else
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="/assets\images\card-1.png" class=" w-100"
-                                            style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/assets\images\card-2.png" class=" w-100"
-                                            style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/assets\images\card-3.png" class=" w-100"
-                                            style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-                                    </div>
-                                </div>
-                            @endif
 
+                                        <div class="carousel-item @if ($loop->first) active @endif">
+                                            <img src="{{ Storage::url($image->path) }}" class=" w-100"
+                                                style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                                        </div>
+                                    @endforeach
+                                @else
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets\images\card-1.png" class=" w-100"
+                                                style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets\images\card-2.png" class=" w-100"
+                                                style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets\images\card-3.png" class=" w-100"
+                                                style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                                        </div>
+                                    </div>
+                                @endif
+                            </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
