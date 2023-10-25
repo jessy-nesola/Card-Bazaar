@@ -4,13 +4,12 @@
     border-radius: 15px;
     margin: auto;
     margin-top: 45px;
-    margin-bottom: -25px;
+    margin-bottom: -5px;
     position: relative;
     background-image: -moz-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
     background-image: -webkit-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
     background-image: -ms-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
     box-shadow: 2.5px 4.33px 15px 0px rgba(254, 176, 0, 0.4);
-    z-index: 1;
 }
 .deneb_cta .cta_wrapper:after {
     content: "";
