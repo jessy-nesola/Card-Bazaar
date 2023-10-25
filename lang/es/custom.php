@@ -11,11 +11,15 @@ return [
     'nav8'=> 'Conectarse',
     'nav9'=> 'Usuario:',
     'nav10'=> 'Salida',
+
+
     // HEADER
     'header1'=>'Bienvenido in CardBazaar.',
     'header2'=>'Su sitio de referencia para comprar y vender juegos de cartas',
     'header3' => '¡Únete a la familia!',
     'header4' => '¡Área del auditor!',
+    
+    
     // HOMEPAGE
     'home1' => 'Es su bazar en línea para los aficionados a los naipes. Descubra una amplia selección
     de cartas coleccionables, barajas personalizadas y accesorios para mejorar tu experiencia de juego.
@@ -35,7 +39,9 @@ return [
     'home10' => 'CardBazaar ofrece un servicio de asistencia 24 horas al día, 7 días a la semana, para gestionar sus pedidos, lo que le permite concentrarse en su actividad principal y dejarnos el resto a nosotros.
     concentrarse en su actividad principal y dejarnos el resto a nosotros.',
     'home11' => '¿A qué esperas? ¡Únete a la familia!',
-    //FOOTER
+
+
+    // FOOTER
     'foot1' => 'IDIOMA',
     'foot2' => 'Italiano',
     'foot3' => 'Inglés',
@@ -48,4 +54,38 @@ return [
     'foot10' => 'Su sitio de referencia para comprar y vender juegos de cartas',
     'foot11' => 'Horario de atención al público',
     'foot12' => 'Lun - Vie  |  08:00 - 16:00',
+
+
+    // ANNOUNCEMENTS.INDEX
+    'ann.ind1' => 'Explore las tarjetas desde aquí',
+    'ann.ind2' => 'Encontrará todas las tarjetas disponibles',
+    'ann.ind3' => 'Actualmente no hay anuncios cargados.',
+    'ann.ind4' => 'Crear anuncio',
+
+
+    // ANNOUNCEMENTS.SHOW
+    'ann.show1' => 'Categoría:',
+    'ann.show2' => 'Publicado por:',
+    'ann.show3' => 'Fecha de publicación:',
+    'ann.show4' => 'Descripción:',
+
+
+    // AUTH.LOGIN
+    'auth.log1' => 'CONECTARSE',
+    'auth.log2' => 'Dirección postal',
+    'auth.log3' => 'Contraseña',
+    'auth.log4' => 'Conectarse',
+    'auth.log5' => '¿No está registrado?',
+    'auth.log6' => 'Pulse aquí',
+
+
+    // AUTH.REGISTER
+    'auth.reg1' => 'REGÍSTRESE EN',
+    'auth.reg2' => 'Nombre de usuario',
+    'auth.reg3' => 'Dirección postal',
+    'auth.reg4' => 'Contraseña',
+    'auth.reg5' => 'Confirmar contraseña',
+    'auth.reg6' => 'Regístrese En',
+    'auth.reg7' => '¿Ya tiene una cuenta?',
+    'auth.reg8' => 'Pulse aquí',
 ];

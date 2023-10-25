@@ -49,13 +49,13 @@
             <div class="shadow-lg dati-scheda">
                 <div class="card-description mx-2">
                     <h2 class="mb-3">{{ $announcement->title }}</h2>
-                    <div><strong>Categoria: <a
+                    <div><strong>{{__('custom.ann.show1')}} <a
                                 href="{{ route('categories.show', ['name' => $announcement->category->name]) }}">{{ $announcement->category->name }}</a></strong>
                     </div>
-                    <div><strong>Pubblicato da: {{ $announcement->user->name }}</strong></div>
-                    <div class="mb-3"><strong>Data pubblicazione:
+                    <div><strong>{{__('custom.ann.show2')}} {{ $announcement->user->name }}</strong></div>
+                    <div class="mb-3"><strong>{{__('custom.ann.show3')}}
                             {{ $announcement->created_at->format('d/m/Y') }}</strong></div>
-                    <div><strong>Descrizione:</strong></div>
+                    <div><strong>{{__('custom.ann.show4')}}</strong></div>
                     <p class="mb-4">{{ $announcement->body }}</p>
                     <h5><strong>{{ $announcement->price }}€</strong></h5>
                     {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}
