@@ -3,18 +3,19 @@
     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
 
       <div id="carousel-show" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
         @if ($announcement->images)
             @foreach ($announcement->images as $image)
             {{-- <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="0"
                      class="active" aria-current="true" aria-label="Slide 1"></button>
             </div> --}}
-            <div class="carousel-inner">
+
                 <div class="carousel-item @if($loop->first) active @endif">
                     <img src="{{Storage::url($image->path)}}" class=" w-100"
                         style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                 </div>
-            </div>
+
             @endforeach
         @else
             <div class="carousel-inner">
@@ -32,7 +33,7 @@
                 </div>
             </div>
         @endif
-
+    </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
