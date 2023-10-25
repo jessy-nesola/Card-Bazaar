@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Config;
 use Symfony\Component\HttpFoundation\Response;
 
 class IsRevisor
@@ -20,6 +21,19 @@ class IsRevisor
         {
             return $next($request);
         }
-        return redirect('/')->with('access.denied', 'Attenzione, solo i revisori hanno accesso a questa pagina!');
+
+        $flash= '';
+        if (Config::get('app.locale') == 'it')
+        {
+            $flash = 'Attenzione, solo i revisori hanno accesso a questa pagina!';
+        } elseif (Config::get('app.locale') == 'en')
+        {
+            $flash = 'Attention, only reviewers have access to this page!';
+        } elseif (Config::get('app.locale') == 'es')
+        {
+            $flash = 'Atención, ¡sólo los revisores tienen acceso a esta página!';
+        }
+
+        return redirect('/')->with('access.denied', $flash);
     }
 }
