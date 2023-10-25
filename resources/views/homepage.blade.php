@@ -84,9 +84,11 @@
                             </div>
                         </div>
                         <div class="col-lg-5">
+                            @if (Auth::user() && !Auth::user()->is_revisor)
                             <div class="button_box">
-                                <a href="#" class="btn btn-warning">Lavora con noi</a>
+                                <a href="{{ route('workWithUs') }}" class="btn btn-warning">Lavora con noi</a>
                             </div>
+                            @endif
                         </div>
                     </div>
                 </div>
