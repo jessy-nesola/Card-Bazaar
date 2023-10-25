@@ -47,21 +47,21 @@
             <ul class="navbar-nav">
                 @guest
                     <div class="nav-item">
-                        <a class="btn btn-warning m-2" href="{{ route('login') }}">{{__('custom.nav8')}}</a>
+                        <a class="btn btn-warning m-2" href="{{ route('login') }}"><i class="fa-regular fa-user fa-lg"></i>{{__('')}}</a>
                     </div>
                 @else
                     <div class="nav-item">
-                        <a class="btn btn-warning m-2">
-                            {{__('custom.nav9')}} {{ Auth::user()->name }}
+                        <a class="btn btn-warning m-2"><i class="fa-regular fa-user fa-lg"></i>
+                            {{__('')}} {{ Auth::user()->name }}
                         </a>
                     </div>
                     <div class="nav-item">
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <button class="btn btn-warning m-2"
+                            <a class="btn btn-warning m-2"
                                 onclick="event.preventDefault(); this.closest('form').submit();">
                                 {{__('custom.nav10')}}
-                            </button>
+                            </a>
                         </form>
                     </div>
                 @endguest
