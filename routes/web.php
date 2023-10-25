@@ -51,3 +51,8 @@ Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rej
 Route::post('/revisor/richiesta', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 
 Route::get('/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
+
+//Rotta provvisoria
+Route::get('/card', function(){
+    return view('components.card');
+});
