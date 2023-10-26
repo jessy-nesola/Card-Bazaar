@@ -50,3 +50,7 @@ Route::post('/revisor/richiesta', [RevisorController::class, 'becomeRevisor'])->
 
 Route::get('/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 
+//Rotta provvisoria
+Route::get('/login-register', function(){
+    return view('auth.login_register');
+});

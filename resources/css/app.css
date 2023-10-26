@@ -213,3 +213,21 @@ bottom: -12%;
     padding-bottom: 1%;
 }
 
+
+.btnRegistrati {
+    background-color: black;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    width: 130px;
+    font-size: 13px;
+    color: white;
+    position: relative;
+    bottom: 8px;
+    transition: 0.5s;
+}
+
+.btnRegistrati :hover {
+    background-color: #4443ee;
+    color: black;
+}

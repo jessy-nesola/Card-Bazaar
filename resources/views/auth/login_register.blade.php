@@ -39,7 +39,7 @@
                         style="width: 100%;height: 40px;background-color: black; color: white; border-radius: 35px;border: 2px solid black ;padding-left: 9px;margin-top: 25px; font-size: 13px;cursor: pointer;"
                         class="btnRegistrati" onclick="loginEmail()">Login</button>
                     <p id="erroreLoginP"
-                        style="display: none; color: red; position: absolute;margin-top: 10px; font-size: 20px;">Le
+                        style="display: none; color: red; position: absolute;margin-top: 10px; font-size: 17px;">Le
                         credenziali sono errate</p>
                 </div>
             </div>
