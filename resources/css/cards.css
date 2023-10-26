@@ -14,7 +14,7 @@
 .custom-card img {
     max-width: 100%; /* L'immagine si adatterà alla larghezza della card */
     height: auto; /* Imposta altezza automatica per mantenere il rapporto originale */
-    object-fit: contain;
+    object-fit: fit;
     border-radius: 5px;
     box-shadow: 0 8px 16px rgba(79, 76, 76, 0.1);
 }
