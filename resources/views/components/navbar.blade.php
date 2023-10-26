@@ -54,7 +54,7 @@
             <form action="{{ route('announcements.search') }}" method="GET" class="d-flex" role="search">
                 <input name="searched" class="form-control me-2" type="search" placeholder="{{ __('custom.nav6') }}"
                     aria-label="Search">
-                <button class="btn btn-warning" type="submit">{{ __('custom.nav7') }}</button>
+                <button class="btn btn-warning" type="submit"><i class="fa-solid fa-magnifying-glass"></i>{{ __('') }}</button>
             </form>
 
             <ul class="navbar-nav">
