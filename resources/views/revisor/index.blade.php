@@ -8,17 +8,19 @@
                 @if (session()->has('accept'))
                     <div class="row">
                         <div class="col-12 text-center mb-5">
-                            <h3 class="text-center mb-4 text-success fw-bold text-decoration-underline">{{ session()->get('accept') }}</h3>
+                            <h3 class="text-center mb-4 text-success fw-bold text-decoration-underline">
+                                {{ session()->get('accept') }}</h3>
                         </div>
                     </div>
                 @endif
                 @if (session()->has('reject'))
-                <div class="row">
-                    <div class="col-12 text-center mb-5">
-                        <h3 class="text-center mb-4 text-danger fw-bold text-decoration-underline">{{ session()->get('reject') }}</h3>
+                    <div class="row">
+                        <div class="col-12 text-center mb-5">
+                            <h3 class="text-center mb-4 text-danger fw-bold text-decoration-underline">
+                                {{ session()->get('reject') }}</h3>
+                        </div>
                     </div>
-                </div>
-            @endif
+                @endif
                 <div class="row">
                     <div class="col-12 text-center mb-5">
                         <h2>
@@ -39,15 +41,15 @@
                                 </div> --}}
 
                                         <div class="carousel-item @if ($loop->first) active @endif">
-                                            <img src="{{ Storage::url($image->path) }}" class=" w-100"
-                                                style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                                            <img src="{{ $image->getUrl(200, 300) }}" class="w-100"
+                                                style="height: 300px; width: 200px; object-fit:contain;" alt="...">
                                         </div>
                                     @endforeach
                                 @else
-                                <div class="carousel-item active">
-                                    <img src="/assets/images/no-image.jfif" class=" w-100"
-                                        style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-                                </div>
+                                    <div class="carousel-item active">
+                                        <img src="/assets/images/no-image.jfif" class=" w-100"
+                                            style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                                    </div>
                                 @endif
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
@@ -83,13 +85,14 @@
                             <div class="shadow-lg dati-scheda">
                                 <div class="card-description mx-2">
                                     <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
-                                    <div><strong>{{__('custom.rev.ind3')}} <a
+                                    <div><strong>{{ __('custom.rev.ind3') }} <a
                                                 href="{{ route('categories.show', ['name' => $announcement_to_check->category->name]) }}">{{ $announcement_to_check->category->name }}</a></strong>
                                     </div>
-                                    <div><strong>{{__('custom.rev.ind4')}} {{ $announcement_to_check->user->name }}</strong></div>
-                                    <div class="mb-3"><strong>{{__('custom.rev.ind5')}}
+                                    <div><strong>{{ __('custom.rev.ind4') }}
+                                            {{ $announcement_to_check->user->name }}</strong></div>
+                                    <div class="mb-3"><strong>{{ __('custom.rev.ind5') }}
                                             {{ $announcement_to_check->created_at->format('d/m/Y') }}</strong></div>
-                                    <div><strong>{{__('custom.rev.ind6')}}</strong></div>
+                                    <div><strong>{{ __('custom.rev.ind6') }}</strong></div>
                                     <p class="mb-4">{{ $announcement_to_check->body }}</p>
                                     <h5><strong>{{ $announcement_to_check->price }}€</strong></h5>
                                     {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}

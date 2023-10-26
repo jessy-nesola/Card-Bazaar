@@ -69,7 +69,7 @@
                     <div class="nav-item">
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <a class="btn btn-warning my-2"
+                            <a class="btn btn-warning m-2"
                                 onclick="event.preventDefault(); this.closest('form').submit();"><i
                                     class="fa-solid fa-arrow-right-from-bracket"></i>
                                 {{ __('custom.nav10') }}

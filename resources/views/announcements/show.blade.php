@@ -12,8 +12,8 @@
             </div> --}}
 
                 <div class="carousel-item @if($loop->first) active @endif">
-                    <img src="{{$image->getUrl(300, 400)}}" class=" w-100"
-                        style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                    <img src="{{$image->getUrl(200, 300)}}" class="w-100"
+                        style="height: 300px; width: 200px; object-fit:contain;" alt="...">
                 </div>
 
             @endforeach

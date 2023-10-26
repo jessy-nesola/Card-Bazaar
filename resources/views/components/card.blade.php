@@ -1,8 +1,8 @@
 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
     <div class="custom-card">
         <div class="custom-card-content d-flex flex-column">
-            <div style="width: 300px; height: 400px;">
-                <img src="{{ !$target->images()->get()->isEmpty()? $target->images()->first()->getUrl(300, 400): '/assets/images/no-image.jfif' }}"
+            <div>
+                <img src="{{ !$target->images()->get()->isEmpty()? $target->images()->first()->getUrl(200, 300): '/assets/images/no-image.jfif' }}"
                     class="img-fluid object-fit-contain product-thumbnail shadow-lg">
             </div>
             <div>
