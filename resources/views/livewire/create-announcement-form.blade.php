@@ -82,7 +82,7 @@
                                 <div class="d-grid">
                                     <button type="submit" class="btn btn-secondary mb-5">{{__('custom.liv.cre10')}}</button>
                                     @if (session()->has('success'))
-                                    <h3 class="text-center mb-4 text-success fw-bold text-decoration-underline">{{ session()->get('success') }}</h3>
+                                    <p class="text-center text-light shadow notifica-verde">{{ session()->get('success') }}</p>
                                 @endif
                                 </div>
                             </form>
