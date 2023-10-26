@@ -75,7 +75,7 @@
                 </div>
             </div>
         </div>
-        @if (Auth::guest() || Auth::user())
+        @if (Auth::guest() || Auth::user() && !Auth::user()->is_revisor)
             <section class="deneb_cta">
                 <div class="container">
                     <div class="cta_wrapper">

@@ -76,7 +76,7 @@
                             <div class="shadow-lg dati-scheda">
                                 <div class="card-description mx-2">
                                     <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
-                                    <div><strong>{{__('custom.rev.ind3')}}<a
+                                    <div><strong>{{__('custom.rev.ind3')}} <a
                                                 href="{{ route('categories.show', ['name' => $announcement_to_check->category->name]) }}">{{ $announcement_to_check->category->name }}</a></strong>
                                     </div>
                                     <div><strong>{{__('custom.rev.ind4')}} {{ $announcement_to_check->user->name }}</strong></div>
