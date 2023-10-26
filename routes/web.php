@@ -26,8 +26,6 @@ Route::post('/language/{lang}', [FrontController::class,'setLanguage'])->name('s
 
 // CATEGORIES
 
-Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
-
 Route::get('/categories/{name}/show', [CategoryController::class, 'show'])->name('categories.show');
 
 // ANNOUNCEMENTS

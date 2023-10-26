@@ -28,11 +28,6 @@
                                     href="{{ route('categories.show', $category->name) }}">{{ $category->name }}</a>
                             </li>
                         @endforeach
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li class="item"><a class="dropdown-item"
-                                href="{{ route('categories.index') }}">{{ __('custom.nav4') }}</a></li>
                     </ul>
                 </li>
                 @auth
