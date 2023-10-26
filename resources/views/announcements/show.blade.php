@@ -20,7 +20,7 @@
         @else
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/assets/images/no-image.jfif" class=" w-100"
+                    <img src="/assets/images/no-image.png" class=" w-100"
                         style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                 </div>
             </div>

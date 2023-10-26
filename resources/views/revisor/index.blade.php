@@ -47,7 +47,7 @@
                                     @endforeach
                                 @else
                                     <div class="carousel-item active">
-                                        <img src="/assets/images/no-image.jfif" class=" w-100"
+                                        <img src="/assets/images/no-image.png" class=" w-100"
                                             style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                                     </div>
                                 @endif
