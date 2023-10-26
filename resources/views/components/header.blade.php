@@ -23,7 +23,7 @@
                         <p class="lead">{{ __('custom.header2') }}</p>
                         @guest
                             <p><a href="{{ route('register') }}" class="btn btn-secondary me-2">{{ __('custom.header3') }}</a>
-                            @endguest
+                        @endguest
                     </div>
                 </div>
                 <div class="col-xl-5 col-xxl-6 text-center">
