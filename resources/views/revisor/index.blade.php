@@ -15,8 +15,8 @@
                 <div class="row">
                     <div class="col-12 text-center mb-5">
                         <h2>
-                            {{ $announcement_to_check ? 'Annuncio da revisionare' : 'Non ci sono annunci da revisionare' }}
-                            {{-- {{ $announcement_to_check ? "{{__('custom.rev.ind1')}}" : "{{__('custom.rev.ind2')}}" }} --}}
+                            {{-- {{ $announcement_to_check ? 'Annuncio da revisionare' : 'Non ci sono annunci da revisionare' }} --}}
+                            {{ $announcement_to_check ? __('custom.rev.ind1') : __('custom.rev.ind2') }}
                         </h2>
                     </div>
                 </div>

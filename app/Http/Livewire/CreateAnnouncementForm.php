@@ -73,6 +73,7 @@ class CreateAnnouncementForm extends Component
                 $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
 
                 dispatch(new ResizeImage($newImage->path, 300, 400));
+                dispatch(new ResizeImage($newImage->path, 600, 600));
             }
 
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
@@ -118,6 +119,7 @@ class CreateAnnouncementForm extends Component
         $this->body = '';
         $this->price = '';
         $this->category = '';
+        $this->temporary_images = null;
         $this->temporary_images = [];
         $this->images = [];
     }
