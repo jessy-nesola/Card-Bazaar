@@ -24,7 +24,10 @@
                     <h3 class="text-center">{{ __('custom.home2') }}</h3>
                 </div>
                 @foreach ($announcements as $announcement)
-                    <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+
+                    <x-card :target='$announcement'/>
+
+                    {{-- <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                         <div class="custom-card">
                             <div class="custom-card-content d-flex flex-column">
                                 <img src="{{ !$announcement->images()->get()->isEmpty()? $announcement->images()->first()->getUrl(300, 400) : 'assets/images/yugioh (1).jpg' }}"
@@ -43,7 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 @endforeach
             </div>
             <hr>

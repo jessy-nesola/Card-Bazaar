@@ -22,23 +22,7 @@
         <div class="container">
             <div class="row">
                 @forelse ($category->orderByAndPaginate() as $announcement)
-                    <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                        <div class="custom-card">
-                            <div class="custom-card-content d-flex flex-column">
-                                <img src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images->first()->path) : '/assets/images/yugioh (1).jpg'}}" class="img-fluid object-fit-contain product-thumbnail shadow-lg">
-                                <div>
-                                    <h3 class="name text-dark">{{ $announcement->title }}</h3>
-                                </div>
-                                <div class="mt-1 mb-3">
-                                    <strong class="product-price">{{ $announcement->price }}€</strong>
-                                </div>
-                                <div>
-                                    <a href="{{ route('announcements.show', $announcement->uri) }}"
-                                        class="btn btn-secondary shadow-lg">Visualizza</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <x-card :target='$announcement'/>
                 @empty
                 <div class="text-center">
                     <h3 class="mt-5 mb-3">{{__('custom.cat.show2')}}</h3>

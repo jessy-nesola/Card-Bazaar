@@ -4,7 +4,7 @@
 
       <div id="carousel-show" class="carousel carousel-dark slide">
         <div class="carousel-inner">
-        @if ($announcement->images)
+        @if (!$announcement->images->isEmpty())
             @foreach ($announcement->images as $image)
             {{-- <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="0"
