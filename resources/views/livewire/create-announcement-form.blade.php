@@ -55,7 +55,7 @@
                                     <label for="temporary_images" class="form-label">{{__('custom.liv.cre7')}}</label>
                                     <input wire:model="temporary_images" type="file" multiple
                                         class="form-control @error('temporary_images.*') is-invalid @enderror"
-                                        id="temporary_images" required>
+                                        id="temporary_images">
                                     @error('temporary_images.*')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
