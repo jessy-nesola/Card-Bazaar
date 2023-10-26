@@ -6,9 +6,6 @@
                     <div class="col-md-6">
                         <div class="login-form">
                             <h2 class="mb-4 text-center">{{__('custom.liv.cre1')}}</h2>
-                            @if (session()->has('success'))
-                                <h3 class="text-center mb-4">{{ session()->get('success') }}</h3>
-                            @endif
                             <form wire:submit.prevent="store">
                                 @csrf
                                 <div class="mb-3">
@@ -83,7 +80,10 @@
 
 
                                 <div class="d-grid">
-                                    <button type="submit" class="btn btn-secondary">{{__('custom.liv.cre10')}}</button>
+                                    <button type="submit" class="btn btn-secondary mb-5">{{__('custom.liv.cre10')}}</button>
+                                    @if (session()->has('success'))
+                                    <h3 class="text-center mb-4 text-success fw-bold text-decoration-underline">{{ session()->get('success') }}</h3>
+                                @endif
                                 </div>
                             </form>
                         </div>
