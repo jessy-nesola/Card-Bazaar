@@ -100,7 +100,7 @@ class CreateAnnouncementForm extends Component
             $flash = 'Annuncement Created';
         } elseif (Config::get('app.locale') == 'es')
         {
-            $flash = 'Annuncios Creatos';
+            $flash = 'Anuncio Creado';
         }
 
         session()->flash('success', $flash);

@@ -40,6 +40,9 @@ return [
     'home10' => 'CardBazaar ofrece un servicio de asistencia 24 horas al día, 7 días a la semana, para gestionar sus pedidos, lo que le permite concentrarse en su actividad principal y dejarnos el resto a nosotros.
     concentrarse en su actividad principal y dejarnos el resto a nosotros.',
     'home11' => '¿A qué esperas? ¡Únete a la familia!',
+    'home12' => '¿Quiere formar parte de nuestro equipo?',
+    'home13' => 'Póngase en contacto con nosotros para obtener más información.',
+    'home14' => 'Trabaja con nosotros',
 
 
     // FOOTER
@@ -89,4 +92,51 @@ return [
     'auth.reg6' => 'Regístrese En',
     'auth.reg7' => '¿Ya tiene una cuenta?',
     'auth.reg8' => 'Pulse aquí',
+
+
+    // CATEGORIES.INDEX
+    'cat.ind1' => '¡Nuestras categorías!',
+    'cat.ind2' => 'Encontrará todo tipo de papel',
+
+
+    // CATEGORIES.SHOW
+    'cat.show1' => 'Todos nuestros',
+    'cat.show2' => 'Actualmente no hay anuncios cargados.',
+    'cat.show3' => 'Publique su anuncio',
+
+
+    // LIVEWIRE.CREATE.ANNONCEMENT
+    'liv.cre1' => 'Cree su propia tarjeta...',
+    'liv.cre2' => 'Nombre',
+    'liv.cre3' => 'Descripción',
+    'liv.cre4' => 'Precio',
+    'liv.cre5' => 'Categoría',
+    'liv.cre6' => 'Seleccionar categoría',
+    'liv.cre7' => 'Seleccionar imágenes',
+    'liv.cre8' => 'Avance fotográfico',
+    'liv.cre9' => 'Borrar',
+    'liv.cre10' => '¡Crea!',
+
+
+    // REVISOR.INDEX
+    'rev.ind1' => 'Anuncio por revisar',
+    'rev.ind2' => 'No hay anuncios que revisar',
+    'rev.ind3' => 'Categoría:',
+    'rev.ind4' => 'Publicado por:',
+    'rev.ind5' => 'Fecha de publicación:',
+    'rev.ind6' => 'Descripción:',
+
+
+    // LAVORA
+    'lav1' => 'Nos alegramos de verle por aquí.',
+    'lav2' => 'Actualmente estamos buscando auditores para nuestro sitio web, para solicitar y trabajar con nosotros por favor rellene el siguiente formulario.',
+    'lav3' => '¡Háblenos de usted!',
+    'lav4' => 'Escribe aquí...',
+    'lav5' => 'Enviar solicitud',
+
+
+    // SEARCH
+    'src1' => 'Estos son los resultados de su búsqueda',
+    'src2' => '¡Actualmente no hay anuncios subidos!',
+    'src3' => 'Publique su anuncio',
 ];

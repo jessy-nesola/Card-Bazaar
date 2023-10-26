@@ -79,13 +79,13 @@
                         <div class="row align-items-center">
                             <div class="col-lg-7">
                                 <div class="cta_content">
-                                    <h3>Vuoi far parte del nostro team ?</h3>
-                                    <p>Contattaci per saperne di più.</p>
+                                    <h3>{{ __('custom.home12') }}</h3>
+                                    <p>{{ __('custom.home13') }}</p>
                                 </div>
                             </div>
                             <div class="col-lg-5">
                                 <div class="button_box">
-                                    <a href="{{ route('workWithUs') }}" class="btn btn-warning">Lavora con noi</a>
+                                    <a href="{{ route('workWithUs') }}" class="btn btn-warning">{{ __('custom.home14') }}</a>
                                 </div>
                             </div>
                         </div>

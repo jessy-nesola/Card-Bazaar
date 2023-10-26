@@ -14,9 +14,9 @@
     </div> --}}
 
     <div class="intro-excerpt text-center" style="margin-top: 4%">
-        <h2 class="animate__animated animate__pulse fs-1">Questi sono i risultati della tua ricerca!</h2>
-        <p class="animate__animated animate__pulse">Che testo mettiamo? Che testo mettiamo? Che testo
-            mettiamo? Che testo mettiamo?</p>
+        <h2 class="animate__animated animate__pulse fs-1">{{__('custom.src1')}}</h2>
+        {{-- <p class="animate__animated animate__pulse">Che testo mettiamo? Che testo mettiamo? Che testo
+            mettiamo? Che testo mettiamo?</p> --}}
     </div>
 
     <div class="product-section">
@@ -42,8 +42,8 @@
                     </div>
                 @empty
                 <div class="text-center">
-                    <h3 class="mt-5 mb-3">Al momento non ci sono annunci caricati!</h3>
-                    <div><a href="{{ route('announcements.create') }}" class="btn btn-celeste btn-sm">Inserisci annuncio</a></div>
+                    <h3 class="mt-5 mb-3">{{__('custom.src2')}}</h3>
+                    <div><a href="{{ route('announcements.create') }}" class="btn btn-celeste btn-sm">{{__('custom.src3')}}</a></div>
                 </div>
                 @endforelse
                 <div class="mb-5"></div>

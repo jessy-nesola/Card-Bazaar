@@ -13,8 +13,8 @@
     </div> --}}
 
     <div class="intro-excerpt text-center" style="margin-top: 4%">
-        <h2 class="animate__animated animate__pulse fs-1">Categorie da questa parte!</h2>
-        <p class="animate__animated animate__pulse">Troverai ogni genere di carta</p>
+        <h2 class="animate__animated animate__pulse fs-1">{{__('custom.cat.ind1')}}</h2>
+        <p class="animate__animated animate__pulse">{{__('custom.cat.ind2')}}</p>
     </div>
 
     <div class="container justify-content-center">

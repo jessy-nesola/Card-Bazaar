@@ -40,7 +40,10 @@ return [
     'home10' => 'CardBazaar offre un servizio di supporto attivo 24/7 per gestire i tuoi ordini, permettendoti di
     concentrarti sulla tua attività principale e lasciando il resto a noi.',
     'home11' => 'Che aspetti? Entra a far parte della famiglia!',
-
+    'home12' => 'Vuoi far parte del nostro team ?',
+    'home13' => 'Contattaci per saperne di più.',
+    'home14' => 'Lavora con noi',
+    
 
     // FOOTER
     'foot1' => 'LINGUA',
@@ -89,4 +92,51 @@ return [
     'auth.reg6' => 'Registrati',
     'auth.reg7' => 'Hai giá un account?',
     'auth.reg8' => 'Clicca qui',
+
+
+    // CATEGORIES.INDEX
+    'cat.ind1' => 'Le nostre categorie!',
+    'cat.ind2' => 'Troverai ogni genere di carta',
+
+
+    // CATEGORIES.SHOW
+    'cat.show1' => 'Tutte le nostre carte di',
+    'cat.show2' => 'Al momento non ci sono annunci caricati!',
+    'cat.show3' => 'Inserisci annuncio',
+
+
+    // LIVEWIRE.CREATE.ANNONCEMENT
+    'liv.cre1' => 'Crea la tua carta...',
+    'liv.cre2' => 'Nome',
+    'liv.cre3' => 'Descrizione',
+    'liv.cre4' => 'Prezzo',
+    'liv.cre5' => 'Categoria',
+    'liv.cre6' => 'Seleziona la categoria',
+    'liv.cre7' => 'Seleziona immagini',
+    'liv.cre8' => 'Anteprima foto',
+    'liv.cre9' => 'Cancella',
+    'liv.cre10' => 'Crea!',
+
+
+    // REVISOR.INDEX
+    'rev.ind1' => 'Annuncio da revisionare',
+    'rev.ind2' => 'Non ci sono annunci da revisionare',
+    'rev.ind3' => 'Categoria:',
+    'rev.ind4' => 'Pubblicato da:',
+    'rev.ind5' => 'Data pubblicazione:',
+    'rev.ind6' => 'Descrizione:',
+
+
+    // LAVORA
+    'lav1' => 'Siamo felici di vederti qui!',
+    'lav2' => 'Al momento siamo alla ricerca di Revisori per il nostro sito, per candidarti e lavorare con noi compila il form qui sotto.',
+    'lav3' => 'Raccontaci di te!',
+    'lav4' => 'Scrivi qui...',
+    'lav5' => 'Invia richiesta',
+
+
+    // SEARCH
+    'src1' => 'Questi sono i risultati della tua ricerca!',
+    'src2' => 'Al momento non ci sono annunci caricati!',
+    'src3' => 'Inserisci annuncio',
 ];

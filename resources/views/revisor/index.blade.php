@@ -16,6 +16,7 @@
                     <div class="col-12 text-center mb-5">
                         <h2>
                             {{ $announcement_to_check ? 'Annuncio da revisionare' : 'Non ci sono annunci da revisionare' }}
+                            {{-- {{ $announcement_to_check ? "{{__('custom.rev.ind1')}}" : "{{__('custom.rev.ind2')}}" }} --}}
                         </h2>
                     </div>
                 </div>
@@ -85,13 +86,13 @@
                             <div class="shadow-lg dati-scheda">
                                 <div class="card-description mx-2">
                                     <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
-                                    <div><strong>Categoria: <a
+                                    <div><strong>{{__('custom.rev.ind3')}}<a
                                                 href="{{ route('categories.show', ['name' => $announcement_to_check->category->name]) }}">{{ $announcement_to_check->category->name }}</a></strong>
                                     </div>
-                                    <div><strong>Pubblicato da: {{ $announcement_to_check->user->name }}</strong></div>
-                                    <div class="mb-3"><strong>Data pubblicazione:
+                                    <div><strong>{{__('custom.rev.ind4')}} {{ $announcement_to_check->user->name }}</strong></div>
+                                    <div class="mb-3"><strong>{{__('custom.rev.ind5')}}
                                             {{ $announcement_to_check->created_at->format('d/m/Y') }}</strong></div>
-                                    <div><strong>Descrizione:</strong></div>
+                                    <div><strong>{{__('custom.rev.ind6')}}</strong></div>
                                     <p class="mb-4">{{ $announcement_to_check->body }}</p>
                                     <h5><strong>{{ $announcement_to_check->price }}€</strong></h5>
                                     {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}

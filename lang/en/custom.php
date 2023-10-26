@@ -39,6 +39,9 @@ return [
     'home10' => 'CardBazaar offers a 24/7 support service to handle your orders, allowing you to
     concentrate on your core business and leave the rest to us.',
     'home11' => 'What are you waiting for? Join the family!',
+    'home12' => 'Do you want to be part of our team?',
+    'home13' => 'Contact us to find out more.',
+    'home14' => 'Work with us',
 
 
     // FOOTER
@@ -88,4 +91,51 @@ return [
     'auth.reg6' => 'Register',
     'auth.reg7' => 'Already have an account?',
     'auth.reg8' => 'Click here',
+
+
+    // CATEGORIES.INDEX
+    'cat.ind1' => 'Our categories!',
+    'cat.ind2' => 'You will find all kinds of paper',
+
+
+    // CATEGORIES.SHOW
+    'cat.show1' => 'All our cards of',
+    'cat.show2' => 'There are currently no announcements uploaded!',
+    'cat.show3' => 'Place your ad',
+
+
+    // LIVEWIRE.CREATE.ANNONCEMENT
+    'liv.cre1' => 'Create your own card...',
+    'liv.cre2' => 'Name',
+    'liv.cre3' => 'Description',
+    'liv.cre4' => 'Price',
+    'liv.cre5' => 'Category',
+    'liv.cre6' => 'Select category',
+    'liv.cre7' => 'Select images',
+    'liv.cre8' => 'Photo Preview',
+    'liv.cre9' => 'Delete',
+    'liv.cre10' => 'Create!',
+
+
+    // REVISOR.INDEX
+    'rev.ind1' => 'Announcement to be reviewed',
+    'rev.ind2' => 'There are no announcements to review',
+    'rev.ind3' => 'Category:',
+    'rev.ind4' => 'Published by:',
+    'rev.ind5' => 'Publication date:',
+    'rev.ind6' => 'Description:',
+
+
+    // LAVORA
+    'lav1' => 'We are happy to see you here!',
+    'lav2' => 'We are currently looking for auditors for our website, to apply and work with us please fill in the form below.',
+    'lav3' => 'Tell us about yourself!',
+    'lav4' => 'Write here...',
+    'lav5' => 'Send request',
+
+
+    // SEARCH
+    'src1' => 'These are the results of your search!',
+    'src2' => 'There are currently no announcements uploaded!',
+    'src3' => 'Place your ad',
 ];
