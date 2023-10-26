@@ -19,6 +19,8 @@ class CreateAnnouncementForm extends Component
 
     public $announcement;
 
+    public $iteration;
+
     protected $rules = [
         'title'=> 'required|min:4',
         'body' => 'required|min:8',
@@ -119,8 +121,8 @@ class CreateAnnouncementForm extends Component
         $this->body = '';
         $this->price = '';
         $this->category = '';
-        $this->temporary_images = null;
         $this->temporary_images = [];
+        $this->iteration++;
         $this->images = [];
     }
 }

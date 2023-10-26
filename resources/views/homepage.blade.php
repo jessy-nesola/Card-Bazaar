@@ -27,7 +27,7 @@
                     <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                         <div class="custom-card">
                             <div class="custom-card-content d-flex flex-column">
-                                <img src="{{ !$announcement->images()->get()->isEmpty()? $announcement->images()->first()->getUrl(300, 400): 'assets/images/yugioh (1).jpg' }}"
+                                <img src="{{ !$announcement->images()->get()->isEmpty()? $announcement->images()->first()->getUrl(300, 400) : 'assets/images/yugioh (1).jpg' }}"
                                     class="img-fluid object-fit-contain product-thumbnail shadow-lg">
                                 <div>
                                     <h3 class="name text-dark"

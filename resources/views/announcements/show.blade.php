@@ -12,7 +12,7 @@
             </div> --}}
 
                 <div class="carousel-item @if($loop->first) active @endif">
-                    <img src="{{Storage::url($image->path)}}" class=" w-100"
+                    <img src="{{$image->getUrl(300, 400)}}" class=" w-100"
                         style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                 </div>
 

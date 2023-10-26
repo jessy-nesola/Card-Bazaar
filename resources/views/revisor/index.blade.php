@@ -24,7 +24,7 @@
                     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
                         <div id="carousel-show" class="carousel carousel-dark slide">
                             <div class="carousel-inner">
-                                @if ($announcement_to_check->images)
+                                @if (!$announcement_to_check->images->isEmpty())
                                     @foreach ($announcement_to_check->images as $image)
                                         {{-- <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="0"
@@ -37,20 +37,18 @@
                                         </div>
                                     @endforeach
                                 @else
-                                    <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="/assets\images\card-1.png" class=" w-100"
+                                            <img src="\assets\images\card-1.png" class=" w-100"
                                                 style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/assets\images\card-2.png" class=" w-100"
+                                            <img src="\assets\images\card-2.png" class=" w-100"
                                                 style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/assets\images\card-3.png" class=" w-100"
+                                            <img src="\assets\images\card-3.png" class=" w-100"
                                                 style="height: 300px; width: 120px; object-fit:contain;" alt="...">
                                         </div>
-                                    </div>
                                 @endif
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
