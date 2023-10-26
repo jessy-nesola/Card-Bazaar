@@ -204,13 +204,22 @@ bottom: -12%;
     padding-bottom: 1%;
 }
 
-.notifica-rossa {
-    background-color: red;
-    border-radius: 15px;
-    margin-left: 28%;
-    margin-right: 28%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+.notifica-rossa-revisor {
+    background-color: rgb(212, 37, 37);
+    border-radius: 20px;
+    margin-left: 42%;
+    margin-right: 42%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.notifica-verde-revisor {
+    background-color: green;
+    border-radius: 20px;
+    margin-left: 42%;
+    margin-right: 42%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 

@@ -8,16 +8,16 @@
                 @if (session()->has('accept'))
                     <div class="row">
                         <div class="col-12 text-center mb-5">
-                            <h3 class="text-center mb-4 text-success fw-bold text-decoration-underline">
-                                {{ session()->get('accept') }}</h3>
+                            <p class="text-center text-light shadow notifica-verde-revisor">
+                                {{ session()->get('accept') }}</p>
                         </div>
                     </div>
                 @endif
                 @if (session()->has('reject'))
                     <div class="row">
                         <div class="col-12 text-center mb-5">
-                            <h3 class="text-center mb-4 text-danger fw-bold text-decoration-underline">
-                                {{ session()->get('reject') }}</h3>
+                            <p class="text-center text-light shadow notifica-rossa-revisor">
+                                {{ session()->get('reject') }}</p>
                         </div>
                     </div>
                 @endif
