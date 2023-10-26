@@ -67,7 +67,7 @@
                     </div>
                 @else
                     <div class="nav-item">
-                        <a class="btn btn-warning m-2"><i class="fa-regular fa-user"></i>
+                        <a class="btn btn-warning m-2"><i class="fa-solid fa-user"></i>
                             {{ __('') }} {{ Auth::user()->name }}
                         </a>
                     </div>
