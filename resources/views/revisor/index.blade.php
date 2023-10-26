@@ -37,18 +37,10 @@
                                         </div>
                                     @endforeach
                                 @else
-                                        <div class="carousel-item active">
-                                            <img src="\assets\images\card-1.png" class=" w-100"
-                                                style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="\assets\images\card-2.png" class=" w-100"
-                                                style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="\assets\images\card-3.png" class=" w-100"
-                                                style="height: 300px; width: 120px; object-fit:contain;" alt="...">
-                                        </div>
+                                <div class="carousel-item active">
+                                    <img src="/assets/images/no-image.jfif" class=" w-100"
+                                        style="height: 300px; width: 120px; object-fit:contain;" alt="...">
+                                </div>
                                 @endif
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
