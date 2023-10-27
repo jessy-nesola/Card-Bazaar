@@ -3,7 +3,8 @@
         <div class="custom-card-content d-flex flex-column">
             <div>
                 <img src="{{ !$target->images()->get()->isEmpty()? $target->images()->first()->getUrl(200, 300): '/assets/images/no-image.png' }}"
-                    class="img-fluid object-fit-contain product-thumbnail shadow-lg">
+                    class="img-fluid product-thumbnail shadow-lg"
+                    style="width: 200px; height: 300px;">
             </div>
             <div>
                 <h3 class="name text-dark"

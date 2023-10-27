@@ -18,13 +18,13 @@
     /* background-color: #2866b1; */
     transition: transform 0.3s ease-in-out;
     transform: translateY(0);
-  }
+}
 
-  .navbar.navbar-hidden {
+.navbar.navbar-hidden {
     transform: translateY(-100%);
-  }
+}
 
-  .navbar.navbar-expand-lg {
+.navbar.navbar-expand-lg {
     background-color: #2866b1;
 }
 
@@ -50,7 +50,8 @@ body {
     /* SERVE PER TENERE IL FOOTER BASSO */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Altezza minima del corpo pari al 100% della viewport height */
+    min-height: 100vh;
+    /* Altezza minima del corpo pari al 100% della viewport height */
 }
 
 * {
@@ -156,9 +157,9 @@ footer {
     background-image: -moz-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
     background-image: -webkit-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
     background-image: -ms-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
-  /* background-color: #2866b1; */
-  /* SERVE PER TENERE IL FOOTER BASSO */
-  flex-shrink: 0;
+    /* background-color: #2866b1; */
+    /* SERVE PER TENERE IL FOOTER BASSO */
+    flex-shrink: 0;
 }
 
 .border-footer {
@@ -239,4 +240,12 @@ bottom: -12%;
 .btnRegistrati :hover {
     background-color: #4443ee;
     color: black;
+}
+
+.bg-prew {
+    height: 300px;
+    width: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200px 300px;
 }
