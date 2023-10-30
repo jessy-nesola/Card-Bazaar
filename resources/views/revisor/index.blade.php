@@ -30,6 +30,8 @@
                     </div>
                 </div>
 
+                @if ($announcement_to_check)
+
                 <div class="row justify-content-center mt-1">
                     <form class=" col-4 d-flex justify-content-end"
                         action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
@@ -47,7 +49,6 @@
                     </form>
                 </div>
 
-                @if ($announcement_to_check)
                     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
                         <div id="carousel-show" class="col-6 carousel carousel-dark slide">
                             <div class="carousel-inner">
