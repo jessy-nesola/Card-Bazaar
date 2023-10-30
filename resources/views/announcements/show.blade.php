@@ -4,7 +4,7 @@
 
         <section id="gallery-single" class="gallery-single d-flex flex-column">
 
-            <div class="container">
+            <div class="container mb-5">
                 @if ($announcement)
                     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
                         <div id="carousel-show" class="carousel carousel-dark slide col-6">
