@@ -31,15 +31,10 @@
                 </div>
                 @if ($announcement_to_check)
                     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
-                        <div id="carousel-show" class="carousel carousel-dark slide">
+                        <div id="carousel-show" class="col-6 carousel carousel-dark slide">
                             <div class="carousel-inner">
                                 @if (!$announcement_to_check->images->isEmpty())
                                     @foreach ($announcement_to_check->images as $image)
-                                        {{-- <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="0"
-                                         class="active" aria-current="true" aria-label="Slide 1"></button>
-                                </div> --}}
-
                                         <div class="carousel-item @if ($loop->first) active @endif">
                                             <img src="{{ $image->getUrl(200, 300) }}" class="w-100"
                                                 style="height: 300px; width: 200px; object-fit:contain;" alt="...">
@@ -63,7 +58,25 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
+                        <div class="card-description mx-2 col pt-5">
+                            <h2 class="mb-3">Tags</h2>
+                            <br>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                        </div>
+                        <div class="shadow dati-scheda col pt-5 bg-body-secondary">
+                        <div class="card-description mx-2">
+                            <h2 class="mb-3">Revisione immagini</h2>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Adulti</strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Satira</strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Medicina</strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Violenza</strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Contenuto ammiccante</strong></div>
+                        </div>
+                        </div>
                         <div class="row justify-content-center mt-5">
                             <form class=" col-4 d-flex justify-content-end"
                                 action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
