@@ -7,7 +7,7 @@
             <div class="container">
                 @if ($announcement)
                     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
-                        <div id="carousel-show" class="carousel carousel-dark slide">
+                        <div id="carousel-show" class="carousel carousel-dark slide col-6">
                             <div class="carousel-inner">
                                 @if (!$announcement->images->isEmpty())
                                     @foreach ($announcement->images as $image)
@@ -40,7 +40,7 @@
                             </button>
                         </div>
 
-                        <div class="col-12 my-5 d-flex justify-content-center">
+                        <div class="col-6 my-5 d-flex justify-content-center">
                             <div class="shadow-lg dati-scheda">
                                 <div class="card-description mx-2">
                                     <h2 class="mb-3">{{ $announcement->title }}</h2>
