@@ -42,7 +42,7 @@
                 {{-- Utenza, Revisor --}}
                 @if (Auth::user() && Auth::user()->is_revisor)
                     <a href="{{ route('revisor.index') }}"
-                        class="btn btn-warning m-2"><i class="fa-solid fa-user-secret fa-lg"></i> {{ __('') }}</a>
+                        class="btn btn-warning mb-3 mt-md-2 m-md-2"><i class="fa-solid fa-user-secret fa-lg"></i> {{ __('') }}</a>
                 @endif
             </div>
             {{-- Elementi della Navbar a DESTRA --}}
@@ -57,19 +57,19 @@
                 {{-- Utenza, Login e Logout --}}
                 @guest
                     <div class="nav-item">
-                        <a class="btn btn-warning m-2" href="{{ route('login') }}">{{ __('custom.nav8') }} <i
+                        <a class="btn btn-warning mt-2 mt-md-2 m-md-2" href="{{ route('login') }}">{{ __('custom.nav8') }} <i
                                 class="fa-solid fa-arrow-right-to-bracket"></i></a>
                     </div>
                 @else
                     <div class="nav-item">
-                        <a class="btn btn-warning m-2"><i class="fa-solid fa-user"></i>
+                        <a class="btn btn-warning mt-2 mt-md-2 m-md-2"><i class="fa-solid fa-user"></i>
                             {{ __('') }} {{ Auth::user()->name }}
                         </a>
                     </div>
                     <div class="nav-item">
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <a class="btn btn-warning m-2"
+                            <a class="btn btn-warning mt-3 mb-2 mt-md-2 m-md-2"
                                 onclick="event.preventDefault(); this.closest('form').submit();"><i
                                     class="fa-solid fa-arrow-right-from-bracket"></i>
                                 {{ __('custom.nav10') }}
