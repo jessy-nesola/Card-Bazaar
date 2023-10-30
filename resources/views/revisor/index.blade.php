@@ -29,6 +29,24 @@
                         </h2>
                     </div>
                 </div>
+
+                <div class="row justify-content-center mt-1">
+                    <form class=" col-4 d-flex justify-content-end"
+                        action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
+                        method="POST">
+                        @csrf
+                        @method('PATCH')
+                        <button type="submit" class="btn btn-secondary btn-sm shadow">Accetta</button>
+                    </form>
+                    <form class=" col-4"
+                        action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
+                        method="POST">
+                        @csrf
+                        @method('PATCH')
+                        <button type="submit" class="btn btn-secondary bnt-sm shadow">Rifiuta</button>
+                    </form>
+                </div>
+
                 @if ($announcement_to_check)
                     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
                         <div id="carousel-show" class="col-6 carousel carousel-dark slide">
@@ -58,43 +76,8 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <div class="card-description mx-2 col pt-5">
-                            <h2 class="mb-3">Tags</h2>
-                            <br>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
-                        </div>
-                        <div class="shadow dati-scheda col pt-5 bg-body-secondary">
-                        <div class="card-description mx-2">
-                            <h2 class="mb-3">Revisione immagini</h2>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Adulti</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Satira</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Medicina</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Violenza</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Contenuto ammiccante</strong></div>
-                        </div>
-                        </div>
-                        <div class="row justify-content-center mt-5">
-                            <form class=" col-4 d-flex justify-content-end"
-                                action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
-                                method="POST">
-                                @csrf
-                                @method('PATCH')
-                                <button type="submit" class="btn btn-secondary btn-sm shadow">Accetta</button>
-                            </form>
-                            <form class=" col-4"
-                                action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
-                                method="POST">
-                                @csrf
-                                @method('PATCH')
-                                <button type="submit" class="btn btn-secondary bnt-sm shadow">Rifiuta</button>
-                            </form>
-                        </div>
 
-                        <div class="col-12 my-5 d-flex justify-content-center">
+                        <div class="col-6 my-5 d-flex justify-content-center">
                             <div class="shadow-lg dati-scheda">
                                 <div class="card-description mx-2">
                                     <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
@@ -113,6 +96,29 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="row justify-content-center mb-5">
+                        <div class="card-description mx-1 col-5">
+                            <h2 class="mb-3">Tags</h2>
+                            <br>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong></strong></div>
+                        </div>
+                        <div class="shadow dati-scheda col-4 bg-body-secondary">
+                        <div class="card-description mx-1">
+                            <h2 class="mb-3">Revisione immagini</h2>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Adulti</strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Satira</strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Medicina</strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Violenza</strong></div>
+                            <div class="mb-2"><i class="bi bi-circle"></i>  <strong>Contenuto ammiccante</strong></div>
+                        </div>
+                        </div>
+                        </div>
+
             </div>
             @endif
     </div>
