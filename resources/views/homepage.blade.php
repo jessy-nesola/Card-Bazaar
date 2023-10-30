@@ -2,10 +2,10 @@
     <x-header />
 
     <div class="container col-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 flex justify-content-center">
             <div class="col-lg-6">
                 <h3></h3>
-                <p class="lead">{{ __('custom.home1') }}</p>
+                <p class="lead text-center">{{ __('custom.home1') }}</p>
             </div>
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="/assets/images/Cards Shop.jpg" class="d-block mx-lg-auto img-fluid" alt="Mixed Cards"
