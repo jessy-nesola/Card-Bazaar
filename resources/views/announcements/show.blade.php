@@ -59,18 +59,19 @@
             </div>
         </section>
 
-        <section class="my-5">
-            @forelse ($relatedAnnouncements as $relatedAnnouncement)
-                <div class="product-section">
-                    <div class="contain">
-                        <div class="row">
-                            <x-card :target='$relatedAnnouncement' />
-                        </div>
+        <div class="product-section">
+            <div class="container">
+                <div class="row">
+                    @forelse ($relatedAnnouncements as $relatedAnnouncement)
+                        <x-card :target='$relatedAnnouncement' />
+                    @empty
+                        <h3 class="my-3">Al momento non ci sono altri annunci correlati!</h3>
+                        <div class="mb-5"><a href="{{ route('announcements.create') }}"
+                                class="btn btn-secondary btn-sm">Crea Annuncio</a></div>
+                    @endforelse
                     </div>
                 </div>
-            @empty
-                <h2>Titolo di prova</h2>
-            @endforelse
-        </section>
+            </div>
+        </div>
     </div>
 </x-layout>
