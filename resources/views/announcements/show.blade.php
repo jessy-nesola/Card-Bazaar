@@ -5,12 +5,11 @@
         <section id="gallery-single" class="gallery-single d-flex flex-column">
             <div class="container mb-5">
                 @if ($announcement)
-                    <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
-                        <div id="carousel-show" class="carousel carousel-dark slide col-12 col-lg-6">
+                    <div class="row d-flex justify-content-center gy-2 mt-3 px-1" style="width:100%;">
+                        <div id="carousel-show" class="col-12 col-lg-6 carousel carousel-dark slide">
+
                             <div class="carousel-inner">
-
                                 @if (!$announcement->images->isEmpty())
-
                                     @foreach ($announcement->images as $image)
                                         <div class="carousel-item @if ($loop->first) active @endif">
                                             <img src="{{ $image->getUrl(200, 300) }}" class="w-100"
@@ -24,6 +23,7 @@
                                     </div>
                                 @endif
                             </div>
+
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -36,7 +36,7 @@
                             </button>
                         </div>
 
-                        <div class="col-12 col-lg--6 my-5 d-flex justify-content-center">
+                        <div class="col-12 col-lg-6 my-5 my-lg-0 d-flex justify-content-center align-items-center mx-0">
                             <div class="shadow-lg dati-scheda">
                                 <div class="card-description mx-2">
                                     <h2 class="mb-3">{{ $announcement->title }}</h2>
@@ -54,13 +54,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                @endif
-            </div>
+                        @endif
         </section>
 
         <div class="product-section">
-            <div class="container">
+            <div class="container dati-scheda">
+                <h2>Articoli correlati</h2>
                 <div class="row">
                     @forelse ($relatedAnnouncements as $relatedAnnouncement)
                         <x-card :target='$relatedAnnouncement' />
@@ -69,9 +68,9 @@
                         <div class="mb-5"><a href="{{ route('announcements.create') }}"
                                 class="btn btn-secondary btn-sm">Crea Annuncio</a></div>
                     @endforelse
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </x-layout>
