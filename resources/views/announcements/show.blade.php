@@ -5,8 +5,9 @@
         <section id="gallery-single" class="gallery-single d-flex flex-column">
             <div class="container mb-5">
                 @if ($announcement)
-                    <div class="row d-flex justify-content-center gy-2 mt-3 px-1" style="width:100%;">
-                        <div id="carousel-show" class="col-12 col-lg-6 carousel carousel-dark slide">
+                    <div class="row d-flex justify-content-center gy-2 mt-3">
+                        <div id="carousel-show"
+                            class="col-12 col-lg-6 d-flex justify-content-center carousel carousel-dark slide">
 
                             <div class="carousel-inner">
                                 @if (!$announcement->images->isEmpty())
@@ -36,9 +37,9 @@
                             </button>
                         </div>
 
-                        <div class="col-12 col-lg-6 my-5 my-lg-0 d-flex justify-content-center align-items-center mx-0">
-                            <div class="shadow-lg dati-scheda">
-                                <div class="card-description mx-2">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center my-5">
+                            <div class="shadow-lg dati-scheda p-2">
+                                <div class="card-description">
                                     <h2 class="mb-3">{{ $announcement->title }}</h2>
                                     <div><strong>{{ __('custom.rev.ind3') }} <a
                                                 href="{{ route('categories.show', ['name' => $announcement->category->name]) }}">{{ $announcement->category->name }}</a></strong>
@@ -46,7 +47,8 @@
                                     <div><strong>{{ __('custom.rev.ind4') }}
                                             {{ $announcement->user->name }}</strong></div>
                                     <div class="mb-3"><strong>{{ __('custom.rev.ind5') }}
-                                            {{ $announcement->created_at->format('d/m/Y') }}</strong></div>
+                                            {{ $announcement->created_at->format('d/m/Y') }}</strong>
+                                    </div>
                                     <div><strong>{{ __('custom.rev.ind6') }}</strong></div>
                                     <p class="mb-4">{{ $announcement->body }}</p>
                                     <h5><strong>{{ $announcement->price }}€</strong></h5>
@@ -54,7 +56,9 @@
                                 </div>
                             </div>
                         </div>
-                        @endif
+                    </div>
+                @endif
+            </div>
         </section>
 
 
