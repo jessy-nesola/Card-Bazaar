@@ -1,35 +1,34 @@
 <x-layout>
-    <div class="col-12 gy-4 mt-4">
+    <div class="col-12 gy-4">
         <section id="gallery-single" class="gallery-single d-flex flex-column">
-            <div class="container">
-                @if (session()->has('accept'))
-                    <div class="row">
-                        <div class="col-12 text-center mb-5">
-                            <p class="text-center text-light shadow notifica-verde-revisor">
-                                {{ session()->get('accept') }}</p>
-                        </div>
-                    </div>
-                @endif
-                @if (session()->has('reject'))
-                    <div class="row">
-                        <div class="col-12 text-center mb-5">
-                            <p class="text-center text-light shadow notifica-rossa-revisor">
-                                {{ session()->get('reject') }}</p>
-                        </div>
-                    </div>
-                @endif
+            <div class="container my-5">
                 <div class="row">
-                    <div class="col-12 text-center mb-5">
+                    <div class="col-12 text-center">
                         <h2 class="fs-1">
                             {{-- {{ $announcement_to_check ? 'Annuncio da revisionare' : 'Non ci sono annunci da revisionare' }} --}}
                             {{ $announcement_to_check ? __('custom.rev.ind1') : __('custom.rev.ind2') }}
                         </h2>
                     </div>
                 </div>
-
+                @if (session()->has('accept'))
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <p class="text-center text-light shadow notifica-verde-revisor">
+                            {{ session()->get('accept') }}</p>
+                    </div>
+                </div>
+            @endif
+            @if (session()->has('reject'))
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <p class="text-center text-light shadow notifica-rossa-revisor">
+                            {{ session()->get('reject') }}</p>
+                    </div>
+                </div>
+            @endif
                 @if ($announcement_to_check)
 
-                    <div class="row d-flex justify-content-center">
+                    <div class="row d-flex justify-content-center mt-4">
                         <form class=" col-6 col-lg-3 d-flex justify-content-center"
                             action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
                             method="POST">
@@ -46,7 +45,7 @@
                         </form>
                     </div>
 
-                    <div class="row d-flex justify-content-center gy-2 mt-3">
+                    <div class="row d-flex justify-content-center gy-2 mt-5">
                         <div id="carousel-show"
                             class="col-12 col-lg-6 d-flex justify-content-center carousel carousel-dark slide">
 
