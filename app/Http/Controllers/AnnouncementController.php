@@ -45,8 +45,12 @@ class AnnouncementController extends Controller
         foreach ($announcements as $announcement)
         {
             if ($announcement->uri == $uri)
-            {
-                return view('announcements.show', compact('announcement'));
+            {   
+                $relatedAnnouncements = Announcement::where('category_id', $announcement->category_id)
+                ->where('id', '!=', $announcement->id)
+                ->where('is_accepted', true)->latest()->take(4)->get();
+
+                return view('announcements.show', compact('announcement', 'relatedAnnouncements'));
             }
         }
         abort(404);

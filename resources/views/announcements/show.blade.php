@@ -3,7 +3,6 @@
     <div class="row justify-content-between gy-4 mt-3 mx-1">
 
         <section id="gallery-single" class="gallery-single d-flex flex-column">
-
             <div class="container mb-5">
                 @if ($announcement)
                     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
@@ -13,15 +12,12 @@
                                 @if (!$announcement->images->isEmpty())
 
                                     @foreach ($announcement->images as $image)
-
                                         <div class="carousel-item @if ($loop->first) active @endif">
                                             <img src="{{ $image->getUrl(200, 300) }}" class="w-100"
                                                 style="height: 300px; width: 200px; object-fit:contain;" alt="...">
                                         </div>
                                     @endforeach
-
                                 @else
-
                                     <div class="carousel-item active">
                                         <img src="/assets/images/no-image.png" class=" w-100"
                                             style="height: 300px; width: 120px; object-fit:contain;" alt="...">
@@ -59,9 +55,22 @@
                             </div>
                         </div>
                     </div>
+                @endif
             </div>
-            @endif
-    </div>
-    </section>
+        </section>
+
+        <section class="my-5">
+            @forelse ($relatedAnnouncements as $relatedAnnouncement)
+                <div class="product-section">
+                    <div class="contain">
+                        <div class="row">
+                            <x-card :target='$relatedAnnouncement' />
+                        </div>
+                    </div>
+                </div>
+            @empty
+                <h2>Titolo di prova</h2>
+            @endforelse
+        </section>
     </div>
 </x-layout>
