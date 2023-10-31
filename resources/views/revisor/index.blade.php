@@ -1,6 +1,6 @@
 <x-layout>
     <div style="margin:80px;"></div>
-    <div class="row justify-content-between gy-4 mt-3 mx-0">
+    <div class="row col-12 justify-content-center gy-4 mt-3 mx-0 " style="padding: 0.5%;">
 
         <section id="gallery-single" class="gallery-single d-flex flex-column">
 
@@ -32,15 +32,15 @@
 
                 @if ($announcement_to_check)
 
-                    <div class="row justify-content-center mt-1">
-                        <form class=" col-4 d-flex justify-content-center"
+                    <div class="row d-flex justify-content-center mt-1">
+                        <form class=" col-6 d-flex justify-content-center"
                             action="{{ route('revisor.accept_announcement', ['announcement' => $announcement_to_check]) }}"
                             method="POST">
                             @csrf
                             @method('PATCH')
                             <button type="submit" class="btn btn-secondary btn-sm shadow">Accetta</button>
                         </form>
-                        <form class=" col-4 d-flex justify-content-center"
+                        <form class=" col-6 d-flex justify-content-center"
                             action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
                             method="POST">
                             @csrf
@@ -80,7 +80,7 @@
                 </button>
             </div>
 
-            <div class="col-12 col-lg-6 my-5 d-flex justify-content-center">
+            <div class="col-12 col-lg-6 my-5 d-flex justify-content-center mx-0">
                 <div class="shadow-lg dati-scheda">
                     <div class="card-description mx-2">
                         <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
@@ -100,7 +100,7 @@
             </div>
     </div>
 
-    <div class="row shadow dati-scheda col-12 justify-content-center mx-2 mb-5 pt-4 pb-4">
+    <div class="row col-12 shadow dati-scheda justify-content-center mx-0 mb-5 pt-4 pb-4">
         <div class="card-description mx-1 col-5">
             <h2 class="mb-3">Tags</h2>
             <br>
@@ -121,8 +121,6 @@
             <div class="mb-2"><i class="bi bi-circle"></i> <strong>Contenuto ammiccante</strong></div>
         </div>
     </div>
-
-
     </div>
     @endif
     </div>
