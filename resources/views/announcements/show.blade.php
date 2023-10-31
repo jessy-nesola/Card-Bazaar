@@ -1,6 +1,6 @@
 <x-layout>
     <div style="margin:80px;"></div>
-    <div class="row justify-content-between gy-4 mt-3 px-1">
+    <div class="row justify-content-between gy-4 mt-3 mx-1">
 
         <section id="gallery-single" class="gallery-single d-flex flex-column">
 
@@ -9,19 +9,19 @@
                     <div class="row justify-content-center gy-2 mt-3 px-1" style="width:100%;">
                         <div id="carousel-show" class="carousel carousel-dark slide col-12 col-lg-6">
                             <div class="carousel-inner">
+
                                 @if (!$announcement->images->isEmpty())
+
                                     @foreach ($announcement->images as $image)
-                                        {{-- <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carousel-show" data-bs-slide-to="0"
-                                         class="active" aria-current="true" aria-label="Slide 1"></button>
-                                </div> --}}
 
                                         <div class="carousel-item @if ($loop->first) active @endif">
                                             <img src="{{ $image->getUrl(200, 300) }}" class="w-100"
                                                 style="height: 300px; width: 200px; object-fit:contain;" alt="...">
                                         </div>
                                     @endforeach
+
                                 @else
+
                                     <div class="carousel-item active">
                                         <img src="/assets/images/no-image.png" class=" w-100"
                                             style="height: 300px; width: 120px; object-fit:contain;" alt="...">

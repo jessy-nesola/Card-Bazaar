@@ -46,7 +46,7 @@ class GoogleVisionSafeSearch implements ShouldQueue
         $imageAnnotator->close();
 
         $safe = $response->getSafeSearchAnnotation();
-        
+
         $adult = $safe->getAdult();
         $medical = $safe->getMedical();
         $spoof = $safe->getSpoof();
@@ -54,7 +54,7 @@ class GoogleVisionSafeSearch implements ShouldQueue
         $racy = $safe->getRacy();
 
         $likelihoodName = [
-            'text-secondary fas fa-circle', 'text-success fas fa-circle', 'text-success fas fa-circle', 'text-warning fas fa-circle', 'text-warning fas fa-circle', 'text-danger fas fa-circle' 
+            'text-secondary fas fa-circle', 'text-success fas fa-circle', 'text-success fas fa-circle', 'text-warning fas fa-circle', 'text-warning fas fa-circle', 'text-danger fas fa-circle'
         ];
 
         $i->adult = $likelihoodName[$adult];

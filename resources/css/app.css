@@ -249,3 +249,10 @@ bottom: -12%;
     background-repeat: no-repeat;
     background-size: 200px 300px;
 }
+
+@media (max-width: 760px) {
+    #carousel-show .carousel-control-prev,
+    #carousel-show .carousel-control-next {
+        display: none;
+    }
+}
