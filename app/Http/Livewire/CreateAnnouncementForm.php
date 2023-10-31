@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
 use Livewire\Component;
 use App\Models\Category;
@@ -75,8 +76,9 @@ class CreateAnnouncementForm extends Component
                 $newFileName = "announcements/{$this->announcement->id}";
                 $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
 
-                dispatch(new ResizeImage($newImage->path, 200, 300));
                 dispatch(new GoogleVisionSafeSearch($newImage->id));
+                dispatch(new GoogleVisionLabelImage($newImage->id));
+                dispatch(new ResizeImage($newImage->path, 200, 300));
 
                 // RemoveFaces::withChain([
                 //     new ResizeImage($newImage->path, 200, 300),

@@ -103,11 +103,13 @@
                         <div class="card-description mx-1 col-5">
                             <h2 class="mb-3">Tags</h2>
                             <br>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
+                            <ul>
+                                @if ($image->labels)
+                                    @foreach ($image->labels as $label)
+                                        <li>{{$label}}</li>
+                                    @endforeach
+                                @endif
+                            </ul>
                         </div>
 
                         <div class="card-description mx-1 col-6">
