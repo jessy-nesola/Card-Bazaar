@@ -59,6 +59,7 @@
             </div>
         </section>
 
+
         <div class="product-section">
             <div class="container">
                 <div class="row">
@@ -69,7 +70,6 @@
                         <div class="mb-5"><a href="{{ route('announcements.create') }}"
                                 class="btn btn-secondary btn-sm">Crea Annuncio</a></div>
                     @endforelse
-                    </div>
                 </div>
             </div>
         </div>
