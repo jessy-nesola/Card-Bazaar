@@ -7,7 +7,7 @@
                 <h3></h3>
                 <p class="lead text-center">{{ __('custom.home1') }}</p>
             </div>
-            <div class="col-10 col-sm-8 col-lg-6">
+            <div class="col-12 col-lg-6">
                 <img src="/assets/images/Cards Shop.jpg" class="d-block mx-lg-auto img-fluid" alt="Mixed Cards"
                     width="600" height="500" loading="lazy">
             </div>
@@ -27,26 +27,6 @@
 
                     <x-card :target='$announcement'/>
 
-                    {{-- <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                        <div class="custom-card">
-                            <div class="custom-card-content d-flex flex-column">
-                                <img src="{{ !$announcement->images()->get()->isEmpty()? $announcement->images()->first()->getUrl(300, 400) : 'assets/images/yugioh (1).jpg' }}"
-                                    class="img-fluid object-fit-contain product-thumbnail shadow-lg">
-                                <div>
-                                    <h3 class="name text-dark"
-                                        style="height: 50px; display:flex; align-items:center; justify-content:center;">
-                                        {{ $announcement->title }}</h3>
-                                </div>
-                                <div class="mt-1 mb-3">
-                                    <strong class="product-price">{{ $announcement->price }}€</strong>
-                                </div>
-                                <div>
-                                    <a href="{{ route('announcements.show', $announcement->uri) }}"
-                                        class="btn btn-secondary shadow-lg">{{ __('custom.home3') }}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
                 @endforeach
             </div>
             <hr>
