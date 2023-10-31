@@ -68,61 +68,61 @@
                                 @endif
                             </div>
 
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-show"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-
-                        <div class="col-12 col-lg-6 my-5 d-flex justify-content-center mx-0">
-                            <div class="shadow-lg dati-scheda">
-                                <div class="card-description mx-2">
-                                    <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
-                                    <div><strong>{{ __('custom.rev.ind3') }} <a
-                                                href="{{ route('categories.show', ['name' => $announcement_to_check->category->name]) }}">{{ $announcement_to_check->category->name }}</a></strong>
-                                    </div>
-                                    <div><strong>{{ __('custom.rev.ind4') }}
-                                            {{ $announcement_to_check->user->name }}</strong></div>
-                                    <div class="mb-3"><strong>{{ __('custom.rev.ind5') }}
-                                            {{ $announcement_to_check->created_at->format('d/m/Y') }}</strong></div>
-                                    <div><strong>{{ __('custom.rev.ind6') }}</strong></div>
-                                    <p class="mb-4">{{ $announcement_to_check->body }}</p>
-                                    <h5><strong>{{ $announcement_to_check->price }}€</strong></h5>
-                                    {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row col-12 shadow dati-scheda justify-content-center mx-0 mb-5 pt-4 pb-4">
-                        <div class="card-description mx-1 col-5">
-                            <h2 class="mb-3">Tags</h2>
-                            <br>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
-                        </div>
-
-                        <div class="card-description mx-1 col-6">
-                            <h2 class="mb-3">Revisione immagini</h2>
-                            <br>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Adulti</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Satira</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Medicina</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Violenza</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Contenuto ammiccante</strong></div>
-                        </div>
-                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-show"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            @endif
+
+            <div class="col-12 col-lg-6 my-5 d-flex justify-content-center mx-0">
+                <div class="shadow-lg dati-scheda">
+                    <div class="card-description mx-2">
+                        <h2 class="mb-3">{{ $announcement_to_check->title }}</h2>
+                        <div><strong>{{ __('custom.rev.ind3') }} <a
+                                    href="{{ route('categories.show', ['name' => $announcement_to_check->category->name]) }}">{{ $announcement_to_check->category->name }}</a></strong>
+                        </div>
+                        <div><strong>{{ __('custom.rev.ind4') }}
+                                {{ $announcement_to_check->user->name }}</strong></div>
+                        <div class="mb-3"><strong>{{ __('custom.rev.ind5') }}
+                                {{ $announcement_to_check->created_at->format('d/m/Y') }}</strong></div>
+                        <div><strong>{{ __('custom.rev.ind6') }}</strong></div>
+                        <p class="mb-4">{{ $announcement_to_check->body }}</p>
+                        <h5><strong>{{ $announcement_to_check->price }}€</strong></h5>
+                        {{-- <p><a href="{{ route('register') }}" class="btn btn-warning me-2">Contatta il venditore</a> --}}
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="row col-12 shadow dati-scheda justify-content-center mx-0 mb-5 pt-4 pb-4">
+        <div class="card-description mx-1 col-5">
+            <h2 class="mb-3">Tags</h2>
+            <br>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong></strong></div>
+        </div>
+
+        <div class="card-description mx-1 col-6">
+            <h2 class="mb-3">Revisione immagini</h2>
+            <br>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Adulti</strong></div>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Satira</strong></div>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Medicina</strong></div>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Violenza</strong></div>
+            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Contenuto ammiccante</strong></div>
+        </div>
+    </div>
+    </div>
+    @endif
     </div>
     </section>
     {{-- <div class="testimonial-item">
