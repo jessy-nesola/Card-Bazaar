@@ -1,4 +1,5 @@
 <x-layout>
+
     <div class="col-12 gy-4">
         <section id="gallery-single" class="gallery-single d-flex flex-column">
             <div class="container my-5">
@@ -11,21 +12,21 @@
                     </div>
                 </div>
                 @if (session()->has('accept'))
-                <div class="row">
-                    <div class="col-12 text-center mt-3">
-                        <p class="text-center text-light shadow notifica-verde-revisor">
-                            {{ session()->get('accept') }}</p>
+                    <div class="row">
+                        <div class="col-12 text-center mt-3">
+                            <p class="text-center text-light shadow notifica-verde-revisor">
+                                {{ session()->get('accept') }}</p>
+                        </div>
                     </div>
-                </div>
-            @endif
-            @if (session()->has('reject'))
-                <div class="row">
-                    <div class="col-12 text-center mt-3">
-                        <p class="text-center text-light shadow notifica-rossa-revisor">
-                            {{ session()->get('reject') }}</p>
+                @endif
+                @if (session()->has('reject'))
+                    <div class="row">
+                        <div class="col-12 text-center mt-3">
+                            <p class="text-center text-light shadow notifica-rossa-revisor">
+                                {{ session()->get('reject') }}</p>
+                        </div>
                     </div>
-                </div>
-            @endif
+                @endif
                 @if ($announcement_to_check)
 
                     <div class="row d-flex justify-content-center mt-4">
@@ -112,30 +113,16 @@
                         <div class="card-description mx-1 col-6">
                             <h2 class="mb-3">Revisione immagini</h2>
                             <br>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Adulti</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Satira</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Medicina</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Violenza</strong></div>
-                            <div class="mb-2"><i class="bi bi-circle"></i> <strong>Contenuto ammiccante</strong>
+                            <div class="mb-2"><strong><span class="{{$image->adult}}"></span> Adulti</strong></div>
+                            <div class="mb-2"><strong><span class="{{$image->spoof}}"></span> Satira</strong></div>
+                            <div class="mb-2"><strong><span class="{{$image->medical}}"></span> Medicina</strong></div>
+                            <div class="mb-2"><strong><span class="{{$image->violence}}"></span> Violenza</strong></div>
+                            <div class="mb-2"><strong><span class="{{$image->racy}}"></span> Contenuto ammiccante</strong>
                             </div>
                         </div>
                     </div>
                 @endif
             </div>
         </section>
-    </div>
-    {{-- <div class="testimonial-item">
-                    <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                        cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
-                        legam anim culpa.
-                        <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <div>
-                        <img src="/assets/images/person_3.jpg" class="testimonial-img" alt="">
-                        <h4>Note del venditore</h4>
-                    </div>
-                </div> --}}
     </div>
 </x-layout>
