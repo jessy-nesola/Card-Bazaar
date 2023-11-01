@@ -31,29 +31,24 @@
         }
 
         .content {
-            height: 380px;
-            width: 70%;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            margin-left: 15%;
-            border-radius: 10px;
+            width: 50%;
+            margin: 5% 30%;
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: center;
-            background-color: rgb(201, 195, 195);
         }
 
         .info {
             display: flex;
-            justify-content: flex-start;
+            justify-content: start;
             margin-left: 30px;
             align-items: center;
             margin-bottom: 10px;
         }
 
         .label {
-            color: #5933b1;
+            color: #000;
             font-size: 20px;
         }
 
@@ -91,9 +86,9 @@
     </div>
 
     <div class="content">
-        <div class="info">
-            <p class="label"><strong>Mail inviata da: </strong></p>
-            <p class="value">{{$user->name}}</p>
+        <div class="info centrato">
+            <p class="label"><strong>L'utente {{$user->name}} ha chiesto di diventare un revisore.</strong></p>
+
         </div>
         <div class="info">
             <p class="label"><strong>eMail: </strong></p>
@@ -109,7 +104,7 @@
         </div>
         <div class="info">
             <button class="make-revisor-button"><a href="{{route('make.revisor', compact('user'))}}"
-                    style="color: #fff">Rendi revisore</a></button>
+                    style="color:#fff;">Rendi revisore</a></button>
         </div>
     </div>
         <div class="footer">
