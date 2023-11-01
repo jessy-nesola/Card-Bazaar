@@ -10,9 +10,10 @@
                 @forelse ($announcements as $announcement)
                     <x-card :target='$announcement' />
                 @empty
-                    <h3 class="my-3">{{ __('custom.ann.ind3') }}</h3>
-                    <div><a href="{{ route('announcements.create') }}"
-                            class="btn btn-secondary btn-sm">{{ __('custom.ann.ind4') }}</a></div>
+                <div class="text-center mt-5">
+                    <h3 class="my-3">{{__('custom.cat.show2')}}</h3>
+                    <div><a href="{{ route('announcements.create') }}" class="btn btn-warning btn-sm">{{__('custom.cat.show3')}}</a></div>
+                </div>
                 @endforelse
                 <div class="mt-2 mb-5">
                     {{-- MENUNAVIGAZIONE --}}

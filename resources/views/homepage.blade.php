@@ -18,18 +18,22 @@
     <section class="product-section">
 
         <div class="container-fluid text-center col-12 col-lg-10 mb-5">
-            <hr style="margin-bottom: 3%">
+            <hr style="margin-bottom: 6%">
             <div class="row d-flex justify-content-center mb-5">
                 <div>
                     <h3 class="text-center">{{ __('custom.home2') }}</h3>
                 </div>
-                @foreach ($announcements as $announcement)
-
-                    <x-card :target='$announcement'/>
-
-                @endforeach
+                @forelse ($announcements as $announcement)
+                    <x-card :target='$announcement' />
+                @empty
+                    <div class="text-center mt-5">
+                        <h3 class="my-3">{{ __('custom.cat.show2') }}</h3>
+                        <div><a href="{{ route('announcements.create') }}"
+                                class="btn btn-warning btn-sm">{{ __('custom.cat.show3') }}</a></div>
+                    </div>
+                @endforelse
             </div>
-            <hr>
+            <hr style="margin-top: 5%;">
         </div>
     </section>
 
@@ -55,7 +59,7 @@
                 </div>
             </div>
         </div>
-        @if (Auth::guest() || Auth::user() && !Auth::user()->is_revisor)
+        @if (Auth::guest() || (Auth::user() && !Auth::user()->is_revisor))
             <section class="deneb_cta">
                 <div class="container">
                     <div class="cta_wrapper">
@@ -68,7 +72,8 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="button_box">
-                                    <a href="{{ route('workWithUs') }}" class="btn btn-warning">{{ __('custom.home14') }}</a>
+                                    <a href="{{ route('workWithUs') }}"
+                                        class="btn btn-warning">{{ __('custom.home14') }}</a>
                                 </div>
                             </div>
                         </div>

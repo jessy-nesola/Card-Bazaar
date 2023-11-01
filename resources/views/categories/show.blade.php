@@ -10,7 +10,7 @@
                 @forelse ($category->orderByAndPaginate() as $announcement)
                 <x-card :target='$announcement'/>
                 @empty
-                <div class="text-center">
+                <div class="text-center mt-5">
                     <h3 class="my-3">{{__('custom.cat.show2')}}</h3>
                     <div><a href="{{ route('announcements.create') }}" class="btn btn-warning btn-sm">{{__('custom.cat.show3')}}</a></div>
                 </div>
