@@ -10,7 +10,6 @@
             background-image: url('../../../public/assets/images/background.png');
             background-size: cover;
             background-repeat: repeat;
-
         }
 
         .header {
@@ -23,15 +22,16 @@
             background-color: #5933b1;
             height: 60px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #FFC107;
         }
 
         h3 {
-            color: #FFC107;
+            color: #fff;
             font-size: 28px;
         }
 
         .content {
-            height: 400px;
+            height: 380px;
             width: 70%;
             margin-top: 30px;
             margin-bottom: 30px;
@@ -40,6 +40,7 @@
             display: flex;
             flex-direction: column;
             align-items: start;
+            justify-content: center;
             background-color: rgb(201, 195, 195);
         }
 
@@ -79,13 +80,14 @@
             color: #fff;
             text-align: center;
             padding: 10px;
+            border-top: solid 5px #FFC107;
         }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <h3>CardBazaar</h3>
+        <h3>CardBazaar.</h3>
     </div>
 
     <div class="content">
@@ -107,7 +109,7 @@
         </div>
         <div class="info">
             <button class="make-revisor-button"><a href="{{route('make.revisor', compact('user'))}}"
-                    style="color: #FFC107">Rendi revisore</a></button>
+                    style="color: #fff">Rendi revisore</a></button>
         </div>
     </div>
         <div class="footer">
