@@ -47,14 +47,20 @@
             margin-bottom: 10px;
         }
 
+        .centrato {
+            text-decoration: underline;
+        }
+
         .label {
             color: #000;
             font-size: 20px;
+            margin: 0;
         }
 
         .value {
             color: #000;
             font-size: 18px;
+            margin: 0;
         }
 
         .make-revisor-button {
@@ -70,6 +76,7 @@
         .make-revisor-button a {
             text-decoration: none;
         }
+
         .footer {
             background-color: #5933b1;
             color: #fff;
@@ -86,30 +93,28 @@
     </div>
 
     <div class="content">
-        <div class="info centrato">
+        <div class="info centrato" style="margin-bottom: 30px;">
             <p class="label"><strong>L'utente {{$user->name}} ha chiesto di diventare un revisore.</strong></p>
 
         </div>
-        <div class="info">
-            <p class="label"><strong>eMail: </strong></p>
-            <p class="value">{{$user->email}}</p>
+        <div class="info label" style="margin-bottom: 15px;"><strong>Mail:</strong>
+            <span class="value">{{$user->email}}</span>
         </div>
-        <div class="info">
-            <p class="label"><strong>Utente registrato il: </strong></p>
-            <p class="value">{{$user->created_at->format('d/m/Y')}}</p>
+        <div class="info label" style="margin-bottom: 15px;"><strong>Utente registrato il: </strong>
+            <span class="value">{{$user->created_at->format('d/m/Y')}}</span>
         </div>
-        <div class="info">
-            <p class="label"><strong>Messaggio: </strong></p>
-            <p class="value">{{$content['aboutYou']}}</p>
-        </div>
-        <div class="info">
-            <button class="make-revisor-button"><a href="{{route('make.revisor', compact('user'))}}"
+
+        <div class="info label" style="margin-bottom: 5px;"><strong>Messaggio: </strong></div>
+
+        <div class="info value" style="margin-bottom: 30px;">{{$content['aboutYou']}}</div>
+        <div class="info label">
+            <button class="make-revisor-button "><a href="{{route('make.revisor', compact('user'))}}"
                     style="color:#fff;">Rendi revisore</a></button>
         </div>
     </div>
-        <div class="footer">
-            <p>Copyright &copy; Designed by DevelHopers, 2023</p>
-          </div>
+    <div class="footer">
+        <p>Copyright &copy; Designed by DevelHopers, 2023</p>
+    </div>
 </body>
 
 </html>
