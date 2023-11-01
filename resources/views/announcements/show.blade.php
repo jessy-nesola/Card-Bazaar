@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="col-12 col-lg-6 d-flex justify-content-center my-5">
-                            <div class="shadow-lg dati-scheda p-2">
+                            <div class="shadow dati-scheda p-2">
                                 <div class="card-description">
                                     <h2 class="mb-3">{{ $announcement->title }}</h2>
                                     <div><strong>{{ __('custom.rev.ind3') }} <a
@@ -62,7 +62,7 @@
         </section>
 
 
-        <div class="product-section">
+        <div class="product-section mx-0 mb-5 pt-4 pb-4">
             <div class="container dati-scheda">
                 <h2>Articoli correlati</h2>
                 <div class="row">

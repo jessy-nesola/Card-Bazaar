@@ -14,7 +14,7 @@
                 @if (session()->has('accept'))
                     <div class="row">
                         <div class="col-12 text-center mt-3">
-                            <p class="text-center text-light shadow notifica-verde-revisor">
+                            <p class="text-center fw-bolder shadow alert alert-success" role="alert">
                                 {{ session()->get('accept') }}</p>
                         </div>
                     </div>
@@ -22,7 +22,7 @@
                 @if (session()->has('reject'))
                     <div class="row">
                         <div class="col-12 text-center mt-3">
-                            <p class="text-center text-light shadow notifica-rossa-revisor">
+                            <p class="text-center fw-bolder shadow alert alert-success" role="alert">
                                 {{ session()->get('reject') }}</p>
                         </div>
                     </div>

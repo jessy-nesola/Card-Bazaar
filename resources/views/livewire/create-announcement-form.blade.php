@@ -81,7 +81,7 @@
                                     <button type="submit"
                                         class="btn btn-secondary mb-5">{{ __('custom.liv.cre10') }}</button>
                                     @if (session()->has('success'))
-                                        <p class="text-center text-light shadow notifica-verde">
+                                        <p class="text-center fw-bolder shadow alert alert-success" role="alert">
                                             {{ session()->get('success') }}</p>
                                     @endif
                                 </div>

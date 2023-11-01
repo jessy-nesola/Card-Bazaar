@@ -1,16 +1,16 @@
-<header class="shadow-lg">
+<header class="shadow">
     <div class="px-5">
         @if (session()->has('access.denied'))
             <div>
                 <div class="text-center pt-5">
-                    <h3 class="text-decoration-underline">{{ session()->get('access.denied') }}</h3>
+                    <h3 class="text-center fw-bolder shadow alert alert-success" role="alert">{{ session()->get('access.denied') }}</h3>
                 </div>
             </div>
         @endif
         @if (session()->has('send.ok'))
             <div>
                 <div class="text-center pt-5">
-                    <h3 class="text-decoration-underline">{{ session()->get('send.ok') }}</h3>
+                    <h3 class="text-center fw-bolder shadow alert alert-success" role="alert">{{ session()->get('send.ok') }}</h3>
                 </div>
             </div>
         @endif

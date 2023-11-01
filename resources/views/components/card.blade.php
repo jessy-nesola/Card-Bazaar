@@ -3,7 +3,7 @@
         <div class="custom-card-content d-flex flex-column">
             <div>
                 <img src="{{ !$target->images()->get()->isEmpty()? $target->images()->first()->getUrl(200, 300): '/assets/images/no-image.png' }}"
-                    class="img-fluid product-thumbnail shadow-lg"
+                    class="img-fluid product-thumbnail shadow"
                     style="width: 200px; height: 300px;">
             </div>
             <div>
@@ -16,7 +16,7 @@
             </div>
             <div>
                 <a href="{{ route('announcements.show', $target->uri) }}"
-                    class="btn btn-secondary shadow-lg">{{ __('custom.home3') }}</a>
+                    class="btn btn-secondary shadow">{{ __('custom.home3') }}</a>
             </div>
         </div>
     </div>

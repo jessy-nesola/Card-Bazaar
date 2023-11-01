@@ -1,7 +1,7 @@
 <x-layout>
     <!-- SEZIONE REGISTRAZIONE -->
     <div style="margin: 5%" >
-    <div class="register-section shadow-lg">
+    <div class="register-section shadow">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
