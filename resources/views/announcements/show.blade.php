@@ -63,7 +63,7 @@
 
 
         <div class="product-section mx-0 mb-5 pt-4 pb-4">
-            <div class="container dati-scheda">
+            <div class="container dati-scheda shadow">
                 <h2>Articoli correlati</h2>
                 <div class="row">
                     @forelse ($relatedAnnouncements as $relatedAnnouncement)
