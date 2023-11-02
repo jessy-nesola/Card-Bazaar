@@ -12,31 +12,35 @@
     text-align: center;
 }
 
+#log-reg{
+    width: 300px; 
+    background-color: #5933b1; 
+    height: 40px;
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;"
+}
+
 #btnLogin{
  flex:1;
  background-color: white;
  display: flex;
  align-items: center;
  justify-content: center;
- border-radius: 35px;
- border: 1px solid black;
+ border-radius: 15px;
+ border: 2px solid #5933b1;
  cursor: pointer;
 }
 
 #btnRegistrazione{
     flex:1;
-    background-color: black;
+    background-color: #5933b1;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 35px;
     cursor: pointer;
-}
-
-#textBtnRegistrazione{
-    text-align: center;
-    font-size: 14px;
-    color: white;
 }
 
 #inputUsername{
@@ -104,6 +108,17 @@
     justify-content: center;
     border-radius: 35px;
     cursor: pointer;"
+}
+
+#textBtnLogin{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+#textBtnRegistrazione{
+    font-size: 14px; 
+    border-radius:15px;
 }
 
 #inputNomeRegistrazione{

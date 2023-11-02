@@ -1,82 +1,98 @@
 <x-layout>
-    <!-- SEZIONE LOGIN/Register -->
-    <div style=" justify-content-center; height: 110vh; width:100%;">
-
-        <div
-            style="height: 100%; display: flex; justify-content: center;align-items: center;">
-
-            <div id="divLogin">
-                <div>
-                    <h3>Accedi</h3>
-                    <div
-                        style="width: 300px; background-color: black; height: 35px;border-radius: 25px; display: flex;flex-direction: row;margin-top: 5px;">
-                        <div id="btnLogin" onclick="toggleLogin()">
-                            <h5 id="textBtnLogin" style="text-align: center;font-size: 14px;">Login</h5>
+<!-- SEZIONE Login -->
+<div id="loginSection"style="margin: 5%">
+        <div class="login-section shadow">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="login-form">
+                            <h2 class="mb-5 text-center">{{__('custom.auth.log1')}}</h2>
+                            <form action="{{ route('login') }}" method="POST">
+                                @csrf
+                                @method('POST')
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">{{__('custom.auth.log2')}}</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">{{__('custom.auth.log3')}}</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-secondary">{{__('custom.auth.log4')}}</button>
+                                </div>
+                            </form>
+                            {{-- <p class="mt-3"><a href="#">Forgot your password?</a></p> --}}
+                            <p class="mt-3 text-center">{{__('custom.auth.log5')}} <button onclick="showSection('registerSection')">{{__('custom.auth.log6')}}</button></p>
                         </div>
-                        <div id="btnRegistrazione" onclick="toggleRegistrazione()">
-                            <h5 id="textBtnRegistrazione">Registrati</h5>
-                        </div>
-                    </div>
-                    <div style="width: 100%; margin-top: 15px;">
-                        <p style="font-size: 13px;">Username</p>
-                        <div style="width: 100%; border: 2px solid black; height: 35px; border-radius:30px;">
-                            <input placeholder="Username" id="inputUsername" type="text">
-                        </div>
-                    </div>
-                    <div style="width: 100%; margin-top: 15px;">
-                        <p style="font-size: 13px;">Password</p>
-                        <div style="width: 100%; border: 2px solid black; height: 35px; border-radius:30px">
-                            <input placeholder="Password" id="inputPassword" type="password">
-                        </div>
-                    </div>
-                    <button class="btnRegistrati" onclick="loginEmail()">Login</button>
-                    <p id="erroreLoginP">Le
-                        credenziali sono errate</p>
-                </div>
-            </div>
-            <div id="divRegistrazione">
-                <div>
-                    <h3 style="font-weight: 800; text-align: center;">Registrazione</h3>
-                    <div
-                        style="width: 300px; background-color: black; height: 35px;border-radius: 35px; display: flex;flex-direction: row;margin-top: 5px;">
-                        <div id="btnLogin" onclick="toggleLogin()">
-                            <h5 id="textBtnLogin" style="text-align: center;font-size: 14px;">Login</h5>
-                        </div>
-                        <div id="btnRegistrazione" onclick="toggleRegistrazione()">
-                            <h5 id="textBtnRegistrazione" style="text-align: center; font-size: 14px; color: white;">
-                                Registrati</h5>
-                        </div>
-                    </div>
-                    <div style="width: 100%; margin-top: 35px;">
-                        <p style="font-size: 13px;">Nome</p>
-                        <div style="width: 100%; border: 2px solid black; height: 35px; border-radius:30px">
-                            <input placeholder="Nome" id="inputNomeRegistrazione" type="text">
-                        </div>
-                        <div style="width: 100%; margin-top: 15px;">
-                            <p style="font-size: 13px;">Email</p>
-                            <div style="width: 100%; border: 2px solid black; height: 35px; border-radius:30px;">
-                                <input placeholder="Email" id="inputEmailRegistrazione" type="text">
-                            </div>
-                        </div>
-                        <div style="width: 100%; margin-top: 15px;">
-                            <p style="font-size: 13px;">Password</p>
-                            <div style="width: 100%; border: 2px solid black; height: 35px; border-radius:30px">
-                                <input placeholder="Password" id="inputPasswordRegistrazione" type="password">
-                            </div>
-                        </div>
-                        <div style="width: 100%; margin-top: 15px;">
-                            <p style="font-size: 13px;">Conferma Password</p>
-                            <div style="width: 100%; border: 2px solid black; height: 35px; border-radius:30px">
-                                <input placeholder="Password" id="inputConfermaPasswordRegistrazione" type="password">
-                            </div>
-                        </div>
-                        <button
-                            style="width: 100%;height: 40px;background-color: black; color: white; border-radius: 35px;border: 2px solid black ;padding-left: 9px;margin-top: 25px; font-size: 13px;cursor: pointer;"
-                            class="btnRegistrati">Registrati</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Login Section/Register -->
+    </div>  
+   
+    <!-- SEZIONE Registrazione -->
+    <div id="RegisterSection" style="margin: 5%;" class="hidden">
+        <div class="register-section shadow">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="register-form">
+                            <h2 class="mb-5 text-center">{{__('custom.auth.reg1')}}</h2>
+                            <form action="{{ route('register') }}" method="POST">
+                                @csrf
+                                @method('POST')
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">{{__('custom.auth.reg2')}}</label>
+                                    <input type="text" class="form-control @error('name') is-invalid @enderror"
+                                        id="name" name="name" value="{{old('name')}}" required>
+                                    @error('name')
+                                        <span class="text-danger">
+                                            {{ $message }}
+                                        </span>
+                                    @enderror
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">{{__('custom.auth.reg3')}}</label>
+                                    <input type="email" class="form-control @error('email') is-invalid @enderror"
+                                        id="email" name="email" value="{{old('email')}}" required>
+                                    @error('email')
+                                        <span class="text-danger">
+                                            {{ $message }}
+                                        </span>
+                                    @enderror
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">{{__('custom.auth.reg4')}}</label>
+                                    <input type="password" class="form-control @error('password') is-invalid @enderror"
+                                        id="password" name="password" value="{{old('password')}}" required>
+                                    @error('password')
+                                        <span class="text-danger">
+                                            {{ $message }}
+                                        </span>
+                                    @enderror
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password_confirmation" class="form-label">{{__('custom.auth.reg5')}}</label>
+                                    <input type="password"
+                                        class="form-control @error('password_confirmation') is-invalid @enderror"
+                                        id="password_confirmation" name="password_confirmation" value="{{old('password_confirmation')}}" required>
+                                    @error('password_confirmation')
+                                        <span class="text-danger">
+                                            {{ $message }}
+                                        </span>
+                                    @enderror
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-secondary">{{__('custom.auth.reg6')}}</button>
+                                </div>
+                            </form>
+                            <p class="mt-3 text-center">{{__('custom.auth.reg7')}} <a onclick="showSection('loginSection')">{{__('custom.auth.reg8')}}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- End Register Section -->   
 </x-layout>
