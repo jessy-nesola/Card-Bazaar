@@ -172,12 +172,17 @@ footer {
 }
 
 .nav-item .nav-link {
-    color: white;
+    color: #fff;
 }
 
 .nav-item:hover .nav-link {
     color: #FFC107;
 }
+
+.nav-item.active .nav-link,
+    .nav-item.current .nav-link {
+        color: #FFC107;
+    }
 /* sezione Show Announcements */
 /* .carousel-indicators{
 position:asoblute;
