@@ -138,4 +138,9 @@ return [
     'src1' => 'These are the results of your search!',
     'src2' => 'There are currently no announcements uploaded!',
     'src3' => 'Place your ad',
+
+
+    // USER_INDEX
+    'user_ind1' => 'Your announcements',
+    'user_ind2' => 'You have not yet uploaded any advertisements',
 ];

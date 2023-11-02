@@ -98,31 +98,38 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row shadow dati-scheda justify-content-center mx-0 mb-5 pt-4 pb-4">
-                        <div class="card-description mx-1 col-5">
-                            <h2 class="mb-3">Tags</h2>
-                            <br>
-                            <ul>
-                                @if ($image->labels)
-                                    @foreach ($image->labels as $label)
-                                        <li>{{$label}}</li>
-                                    @endforeach
-                                @endif
-                            </ul>
+                    @if (!$announcement_to_check->images->isEmpty())
+                        <div class="row shadow dati-scheda justify-content-center mx-0 mb-5 pt-4 pb-4">
+                            @foreach ($announcement_to_check->images as $image)
+                                <div class="card-description mx-1 col-5">
+                                    <h2 class="mb-3">Tags</h2>
+                                    <br>
+                                    <ul>
+                                        @if ($image->labels)
+                                            @foreach ($image->labels as $label)
+                                                <li>{{ $label }}</li>
+                                            @endforeach
+                                        @endif
+                                    </ul>
+                                </div>
+                                <div class="card-description mx-1 col-6">
+                                    <h2 class="mb-3">Revisione immagini</h2>
+                                    <br>
+                                    <div class="mb-2"><strong><span class="{{ $image->adult }}"></span>
+                                            Adulti</strong></div>
+                                    <div class="mb-2"><strong><span class="{{ $image->spoof }}"></span>
+                                            Satira</strong></div>
+                                    <div class="mb-2"><strong><span class="{{ $image->medical }}"></span>
+                                            Medicina</strong></div>
+                                    <div class="mb-2"><strong><span class="{{ $image->violence }}"></span>
+                                            Violenza</strong></div>
+                                    <div class="mb-2"><strong><span class="{{ $image->racy }}"></span> Contenuto
+                                            ammiccante</strong>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
-
-                        <div class="card-description mx-1 col-6">
-                            <h2 class="mb-3">Revisione immagini</h2>
-                            <br>
-                            <div class="mb-2"><strong><span class="{{$image->adult}}"></span> Adulti</strong></div>
-                            <div class="mb-2"><strong><span class="{{$image->spoof}}"></span> Satira</strong></div>
-                            <div class="mb-2"><strong><span class="{{$image->medical}}"></span> Medicina</strong></div>
-                            <div class="mb-2"><strong><span class="{{$image->violence}}"></span> Violenza</strong></div>
-                            <div class="mb-2"><strong><span class="{{$image->racy}}"></span> Contenuto ammiccante</strong>
-                            </div>
-                        </div>
-                    </div>
+                    @endif
                 @endif
             </div>
         </section>

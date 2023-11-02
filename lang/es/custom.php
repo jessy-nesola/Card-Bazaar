@@ -139,4 +139,9 @@ return [
     'src1' => 'Estos son los resultados de su búsqueda',
     'src2' => '¡Actualmente no hay anuncios subidos!',
     'src3' => 'Publique su anuncio',
+
+
+    // USER_INDEX
+    'user_ind1' => 'Tus anuncios',
+    'user_ind2' => 'Aún no has subido ningún anuncio',
 ];

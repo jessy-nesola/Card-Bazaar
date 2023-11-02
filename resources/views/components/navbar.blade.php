@@ -62,7 +62,7 @@
                     </div>
                 @else
                     <div class="nav-item">
-                        <a class="btn btn-warning mt-2 mt-md-2 m-md-2"><i class="fa-solid fa-user"></i>
+                        <a class="btn btn-warning mt-2 mt-md-2 m-md-2" href="{{route('user_announcements')}}"><i class="fa-solid fa-user"></i>
                             {{ __('') }} {{ Auth::user()->name }}
                         </a>
                     </div>

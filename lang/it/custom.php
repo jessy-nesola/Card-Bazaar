@@ -139,4 +139,9 @@ return [
     'src1' => 'Questi sono i risultati della tua ricerca!',
     'src2' => 'Al momento non ci sono annunci caricati!',
     'src3' => 'Inserisci annuncio',
+    
+    
+    // USER_INDEX
+    'user_ind1' => 'I tuoi annunci',
+    'user_ind2' => 'Al momento non hai ancora caricato nessun annuncio',
 ];

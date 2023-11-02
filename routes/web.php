@@ -24,6 +24,8 @@ Route::get('/lavora-con-noi', [FrontController::class, 'workWithUs'])->middlewar
 
 Route::post('/language/{lang}', [FrontController::class,'setLanguage'])->name('set_language');
 
+Route::get('/user/announcements', [FrontController::class,'userAnnouncements'])->middleware('auth')->name('user_announcements');
+
 // CATEGORIES
 
 Route::get('/categories/{name}/show', [CategoryController::class, 'show'])->name('categories.show');
