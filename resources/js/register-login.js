@@ -8,9 +8,9 @@ function toggleLogin() {
 
     btnLogin.style.transition = "background-color 0.4s"
     btnLogin.style.backgroundColor = "white"
-    textBtnLogin.style.color = "black"
+    textBtnLogin.style.color = " #5933b1"
     btnRegistrazione.style.transition = "background-color 0.1s"
-    btnRegistrazione.style.backgroundColor = "black"
+    btnRegistrazione.style.backgroundColor = " #5933b1"
     textBtnRegistrazione.style.color = "white"
 
     let divLogin = document.getElementById("divLogin")
@@ -40,9 +40,9 @@ function toggleRegistrazione() {
 
     btnRegistrazione.style.transition = "background-color 0.1s"
     btnRegistrazione.style.backgroundColor = "white"
-    textBtnRegistrazione.style.color = "black"
+    textBtnRegistrazione.style.color = " #5933b1"
     btnLogin.style.transition = "background-color 0.4s"
-    btnLogin.style.backgroundColor = "black"
+    btnLogin.style.backgroundColor = " #5933b1"
     textBtnLogin.style.color = "white"
 
     let divLogin = document.getElementById("divLogin")
