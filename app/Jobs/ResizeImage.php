@@ -19,7 +19,7 @@ class ResizeImage implements ShouldQueue
      * Create a new job instance.
      */
 
-     private $w, $h, $fileName, $path;
+    private $w, $h, $fileName, $path;
 
     public function __construct($filePath, $w, $h)
     {
@@ -39,6 +39,12 @@ class ResizeImage implements ShouldQueue
         $srcPath = storage_path() . '/app/public/' . $this->path . '/' . $this->fileName;
         $destPath = storage_path() . '/app/public/' . $this->path . "/crop_{$w}x{$h}_" . $this->fileName;
 
-        $croppedImage = Image::load($srcPath)->fit(Manipulations::FIT_STRETCH ,$w,$h)->save($destPath);
+        $croppedImage = Image::load($srcPath)
+            ->watermark('resources/Img/Watermark_Face_1.jpeg')
+            ->watermarkHeight(20, Manipulations::UNIT_PERCENT)
+            ->watermarkWidth(20, Manipulations::UNIT_PERCENT)
+            ->watermarkPadding(10)
+            ->fit(Manipulations::FIT_STRETCH, $w, $h)
+            ->save($destPath);
     }
 }
