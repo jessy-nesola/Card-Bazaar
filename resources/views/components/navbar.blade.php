@@ -8,16 +8,16 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item @if (Route::currentRouteName() == 'homepage')  @endif">
-                    <a class="nav-link text-white-50" aria-current="page"
+                <li class="nav-item @if (Route::currentRouteName() == 'homepage') @endif">
+                    <a class="nav-link" aria-current="page"
                         href="{{ route('homepage') }}">{{ __('custom.nav1') }}</a>
                 </li>
-                <li class="nav-item @if (Route::currentRouteName() == 'announcements.index')  @endif">
-                    <a class="nav-link text-white-50"
+                <li class="nav-item @if (Route::currentRouteName() == 'announcements.index') @endif">
+                    <a class="nav-link"
                         href="{{ route('announcements.index') }}">{{ __('custom.nav2') }}</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white-50 @if (Route::currentRouteName() == 'categories.index')  @endif"
+                    <a class="nav-link dropdown-toggle @if (Route::currentRouteName() == 'categories.index')  @endif"
                         href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         {{ __('custom.nav3') }}
@@ -32,7 +32,7 @@
                 </li>
                 @auth
                     <li class="nav-item">
-                        <a class="nav-link text-white-50 @if (Route::currentRouteName() == 'announcements.create')  @endif"
+                        <a class="nav-link @if (Route::currentRouteName() == 'announcements.create')  @endif"
                             href="{{ route('announcements.create') }}" tabindex="-1"
                             aria-disabled="true">{{ __('custom.nav5') }}</a>
                     </li>
