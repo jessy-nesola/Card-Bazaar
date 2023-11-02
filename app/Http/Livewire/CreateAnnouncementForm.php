@@ -77,15 +77,15 @@ class CreateAnnouncementForm extends Component
                 $newFileName = "announcements/{$this->announcement->id}";
                 $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
 
-                // dispatch(new GoogleVisionSafeSearch($newImage->id));
-                // dispatch(new GoogleVisionLabelImage($newImage->id));
-                // dispatch(new ResizeImage($newImage->path, 200, 300));
+                dispatch(new GoogleVisionSafeSearch($newImage->id));
+                dispatch(new GoogleVisionLabelImage($newImage->id));
+                dispatch(new ResizeImage($newImage->path, 200, 300));
 
-                RemoveFaces::withChain([
-                    new GoogleVisionSafeSearch($newImage->id),
-                    new GoogleVisionLabelImage($newImage->id),
-                    new ResizeImage($newImage->path, 200, 300)
-                ])->dispatch($newImage->id);
+                // RemoveFaces::withChain([
+                //     new GoogleVisionSafeSearch($newImage->id),
+                //     new GoogleVisionLabelImage($newImage->id),
+                //     new ResizeImage($newImage->path, 200, 300)
+                // ])->dispatch($newImage->id);
             }
 
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
