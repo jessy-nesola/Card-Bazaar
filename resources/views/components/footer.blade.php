@@ -35,7 +35,7 @@
 
 		<div class="col-md-5 offset-md-1 mb-3">
 		  <form>
-			<h3 class="text-light">CardBazaar.</h3>
+			<h3 class="text-light"><img src="/assets/images/logo_CB.png" alt="Logo_img" width="15px" height="auto" class="d-inline-block align-text-bottom"> CardBazaar.</h3>
 			<p class="text-white-50">{{__('custom.foot10')}}</p>
 			<hr style="color: white">
 			<p class="text-white-50">{{__('custom.foot11')}}</p>
