@@ -15,7 +15,7 @@
             </div>
             <div>
                 <a href="{{ route('announcements.show', $target->uri) }}"
-                    class="btn btn-secondary shadow">{{ __('custom.home3') }}</a>
+                    class="btn btn-warning shadow">{{ __('custom.home3') }}</a>
             </div>
             @if (Route::currentRouteName() == 'user_announcements')
                 <form class="mt-1 mb-3" action="{{ route('user_announcements_delete', $target->id)}}" method="POST">
