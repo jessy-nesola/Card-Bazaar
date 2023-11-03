@@ -2,29 +2,51 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Announcement;
 use Livewire\Component;
+use App\Models\Announcement;
+use Illuminate\Support\Facades\Config;
 
 class IndexRevisor extends Component
 {
     public $search;
 
+    protected $announcements_to_check;
+
     public function destroy(Announcement $announcement_to_check)
     {
-        $announcement_to_check->delete;
-        session()->flash('success', 'Annuncio Eliminato');
+        $flash= '';
+        if (Config::get('app.locale') == 'it')
+        {
+            $flash = 'Annuncio Eliminato';
+        } elseif (Config::get('app.locale') == 'en')
+        {
+            $flash = 'Announcement Deleted';
+        } elseif (Config::get('app.locale') == 'es')
+        {
+            $flash = 'Anuncio Eliminado';
+        }
+
+        $announcement_to_check->delete();
+        session()->flash('success', $flash);
     }
 
     public function render()
+    {   
+        return view('livewire.index-revisor', ['announcements_to_check' => $this->announcements_to_check]);
+    }
+
+    public function updatedSearch()
     {
         if ($this->search) {
-            $announcements_to_check = Announcement::where('title', 'LIKE', '%' . $this->search . '%')
-                ->orWhere('category', 'LIKE', '%' . $this->search . '%')
-                ->get();
+            $this->announcements_to_check = Announcement::search($this->search)->orderBy('created_at', 'DESC')->paginate(8);
         } else {
-            $announcements_to_check=Announcement::all();
+            $this->announcements_to_check=Announcement::all()->toQuery()->orderBy('created_at', 'DESC')->paginate(8);
         }
+    }
 
-        return view('livewire.index-revisor', compact('announcements_to_check'));
+    public function mount()
+    {
+        $var = Announcement::all()->toQuery()->orderBy('created_at', 'DESC')->paginate(8);
+        $this->announcements_to_check= $var;
     }
 }

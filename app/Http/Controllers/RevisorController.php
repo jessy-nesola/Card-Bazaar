@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Artisan;
 class RevisorController extends Controller
 {
     public function index()
-    {
+    {   
         return view('revisor.index');
     }
 
