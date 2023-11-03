@@ -3,8 +3,7 @@
         <div class="custom-card-content d-flex flex-column">
             <div>
                 <img src="{{ !$target->images()->get()->isEmpty()? $target->images()->first()->getUrl(200, 300): '/assets/images/no-image.png' }}"
-                    class="img-fluid product-thumbnail shadow"
-                    style="width: 200px; height: 300px;">
+                    class="img-fluid product-thumbnail shadow" style="width: 200px; height: 300px;">
             </div>
             <div>
                 <h3 class="name text-dark"
@@ -18,6 +17,14 @@
                 <a href="{{ route('announcements.show', $target->uri) }}"
                     class="btn btn-secondary shadow">{{ __('custom.home3') }}</a>
             </div>
+            @if (Route::currentRouteName() == 'user_announcements')
+                <form class="mt-1 mb-3" action="{{ route('user_announcements_delete', $target->id)}}" method="POST">
+                    @csrf
+                    <div>
+                        <button type="submit" class="btn btn-danger shadow">Richiesta eliminazione</button>
+                    </div>
+                </form>
+            @endif
         </div>
     </div>
 </div>

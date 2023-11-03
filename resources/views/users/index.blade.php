@@ -6,9 +6,19 @@
     <div class="product-section">
         <div class="container">
             <div class="row">
+                <div class="col-12">
+                    @if (session()->has('send.ok'))
+                        <div class="row">
+                            <div class="col-12 text-center mt-3">
+                                <p class="text-center fw-bolder shadow alert alert-success" role="alert">
+                                    {{ session()->get('send.ok') }}</p>
+                            </div>
+                        </div>
+                    @endif
+                </div>
                 @forelse ($announcements as $announcement)
                     @if ($announcement->is_accepted)
-                        <x-card :target='$announcement'/>
+                        <x-card :target='$announcement' />
                     @endif
                 @empty
                     <div class="text-center mt-5">

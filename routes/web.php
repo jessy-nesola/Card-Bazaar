@@ -26,6 +26,8 @@ Route::post('/language/{lang}', [FrontController::class,'setLanguage'])->name('s
 
 Route::get('/user/announcements', [FrontController::class,'userAnnouncements'])->middleware('auth')->name('user_announcements');
 
+Route::post('/user/announcements/{id}/delete', [FrontController::class,'userAnnouncementsDelete'])->middleware('auth')->name('user_announcements_delete');
+
 // CATEGORIES
 
 Route::get('/categories/{name}/show', [CategoryController::class, 'show'])->name('categories.show');
@@ -43,6 +45,8 @@ Route::get('/announcements/search', [FrontController::class, 'searchAnnouncement
 // REVISOR
 
 Route::get('/revisor', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
+
+Route::get('/revisor/{uri}/show', [RevisorController::class, 'show'])->middleware('isRevisor')->name('revisor.show');
 
 Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->middleware('isRevisor')->name('revisor.accept_announcement');
 
