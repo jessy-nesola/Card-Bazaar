@@ -44,9 +44,10 @@ class ResizeImage implements ShouldQueue
         $image->fit(Manipulations::FIT_STRETCH, $w, $h)->save($destPath);
 
         $image->watermark(base_path ('resources/Img/Watermark_Face_1.jpeg'))
-        ->watermarkHeight(20, Manipulations::UNIT_PERCENT)
-        ->watermarkWidth(20, Manipulations::UNIT_PERCENT)
-        ->watermarkPadding(10)
+        ->watermarkPosition(Manipulations::POSITION_BOTTOM_LEFT)
+        ->watermarkHeight(10, Manipulations::UNIT_PERCENT)
+        ->watermarkWidth(10, Manipulations::UNIT_PERCENT)
+        ->watermarkPadding(5)
         ->save($destPath);
         
     }
