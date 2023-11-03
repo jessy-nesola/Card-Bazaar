@@ -6,11 +6,11 @@
     <div class="product-section">
         <div class="container">
             <div class="row">
-                @if (session()->has('send.ok'))
+                @if (session()->has('success'))
                     <div class="row">
                         <div class="col-12 text-center mt-3">
                             <p class="text-center fw-bolder shadow alert alert-success" role="alert">
-                                {{ session()->get('send.ok') }}</p>
+                                {{ session()->get('success') }}</p>
                         </div>
                     </div>
                 @endif
@@ -20,7 +20,6 @@
                 <table class="table border mt-2">
                     <thead>
                         <tr>
-                            <th scope="col"></th>
                             <th scope="col">Nome</th>
                             <th scope="col">Categoria</th>
                             <th scope="col">Status</th>
@@ -30,7 +29,6 @@
                     <tbody>
                         @forelse ($announcements_to_check as $announcement_to_check)
                             <tr>
-                                <th scope="row">{{ $announcement_to_check->id }}</th>
                                 <td>{{ $announcement_to_check->title }}</td>
                                 <td>{{ $announcement_to_check->category->name }}</td>
                                 <td>
@@ -47,7 +45,7 @@
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                         <a href="{{ route('revisor.show', ['uri' => $announcement_to_check->uri]) }}"
                                             class="btn btn-secondary me-md-2">Visualizza</a>
-                                        <button wire:click="destroy({{ $announcement_to_check }})"
+                                        <button wire:click="destroy({{ $announcement_to_check->id }})"
                                             class="btn btn-danger me-md-2">Elimina</button>
                                     </div>
                                 </td>

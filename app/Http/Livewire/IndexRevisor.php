@@ -28,6 +28,7 @@ class IndexRevisor extends Component
 
         $announcement_to_check->delete();
         session()->flash('success', $flash);
+        $this->mount();
     }
 
     public function render()
