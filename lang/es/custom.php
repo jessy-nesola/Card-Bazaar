@@ -60,6 +60,10 @@ return [
     'foot12' => 'Lun - Vie  |  08:00 - 16:00',
 
 
+    // COMPONENT.CARD
+    'card' => 'Eliminación',
+
+
     // ANNOUNCEMENTS.INDEX
     'ann.ind1' => 'Explore las tarjetas desde aquí',
     'ann.ind2' => 'Encontrará todas las tarjetas disponibles',
@@ -133,10 +137,19 @@ return [
     // REVISOR.SHOW
     'rev.ind1' => 'Anuncio por revisar',
     'rev.ind2' => 'No hay anuncios que revisar',
+    'rev.ind2.1' => 'Acepte',
+    'rev.ind2.2' => 'Rechazar',
     'rev.ind3' => 'Categoría:',
     'rev.ind4' => 'Publicado por:',
     'rev.ind5' => 'Fecha de publicación:',
     'rev.ind6' => 'Descripción:',
+    'rev.ind7' => 'Etiquetas',
+    'rev.ind8' => 'Revisión de imágenes',
+    'rev.ind9' => 'Adultos',
+    'rev.ind10' => 'Sátira',
+    'rev.ind11' => 'Médico',
+    'rev.ind12' => 'Violencia',
+    'rev.ind13' => 'Guiños de contenido',
 
 
     // LAVORA

@@ -59,6 +59,10 @@ return [
     'foot12' => 'Mon - Fri  |  08:00 A.M. - 04:00 P.M.',
 
 
+    // COMPONENT.CARD
+    'card' => 'Elimination',
+
+
     // ANNOUNCEMENTS.INDEX
     'ann.ind1' => 'Explore the cards from here!',
     'ann.ind2' => 'You will find all available cards',
@@ -133,10 +137,19 @@ return [
     // REVISOR.SHOW
     'rev.ind1' => 'Announcement to be reviewed',
     'rev.ind2' => 'There are no announcements to review',
+    'rev.ind2.1' => 'Accept',
+    'rev.ind2.2' => 'Reject',
     'rev.ind3' => 'Category:',
     'rev.ind4' => 'Published by:',
     'rev.ind5' => 'Publication date:',
     'rev.ind6' => 'Description:',
+    'rev.ind7' => 'Labels',
+    'rev.ind8' => 'Image review',
+    'rev.ind9' => 'Adults',
+    'rev.ind10' => 'Spoof',
+    'rev.ind11' => 'Medical',
+    'rev.ind12' => 'Violence',
+    'rev.ind13' => 'Racy',
 
 
     // LAVORA

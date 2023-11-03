@@ -60,6 +60,10 @@ return [
     'foot12' => 'Lun - Ven  |  08:00 - 16:00',
 
 
+    // COMPONENT.CARD
+    'card' => 'Eliminazione',
+
+
     // ANNOUNCEMENTS.INDEX
     'ann.ind1' => 'Esplora da qui le carte!',
     'ann.ind2' => 'Troverai tutte le carte disponibili',
@@ -134,10 +138,19 @@ return [
     // REVISOR.SHOW
     'rev.ind1' => 'Annuncio da revisionare',
     'rev.ind2' => 'Non ci sono annunci da revisionare',
+    'rev.ind2.1' => 'Accetta',
+    'rev.ind2.2' => 'Rifiuta',
     'rev.ind3' => 'Categoria:',
     'rev.ind4' => 'Pubblicato da:',
     'rev.ind5' => 'Data pubblicazione:',
     'rev.ind6' => 'Descrizione:',
+    'rev.ind7' => 'Etichette',
+    'rev.ind8' => 'Revisione immagini',
+    'rev.ind9' => 'Adulti',
+    'rev.ind10' => 'Satira',
+    'rev.ind11' => 'Medico',
+    'rev.ind12' => 'Violenza',
+    'rev.ind13' => 'Contenuto ammiccante',
 
 
     // LAVORA

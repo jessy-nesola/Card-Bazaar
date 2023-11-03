@@ -21,7 +21,7 @@
                 <form class="mt-1 mb-3" action="{{ route('user_announcements_delete', $target->id)}}" method="POST">
                     @csrf
                     <div>
-                        <button type="submit" class="btn btn-danger shadow">Richiesta eliminazione</button>
+                        <button type="submit" class="btn btn-danger shadow">{{__('custom.card')}}</button>
                     </div>
                 </form>
             @endif
