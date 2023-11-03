@@ -119,6 +119,18 @@ return [
 
 
     // REVISOR.INDEX
+    'rev.tab1' => 'Anuncios',
+    'rev.tab1.1' => 'Buscar anuncio...',
+    'rev.tab2' => 'Nombre',
+    'rev.tab3' => 'Categoría',
+    'rev.tab4' => 'Estado',
+    'rev.tab5' => 'Aceptado',
+    'rev.tab6' => 'Por comprobar',
+    'rev.tab7' => 'Rechazado',
+    'rev.tab8' => 'Ver',
+    'rev.tab9' => 'Borrar',
+  
+    // REVISOR.SHOW
     'rev.ind1' => 'Anuncio por revisar',
     'rev.ind2' => 'No hay anuncios que revisar',
     'rev.ind3' => 'Categoría:',

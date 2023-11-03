@@ -49,7 +49,7 @@ class RevisorController extends Controller
         }
 
         $announcement->setAccepted(true);
-        return redirect()->back()->with('accept', $flash);
+        return redirect()->route('revisor.index')->with('success', $flash);
     }
 
     public function rejectAnnouncement(Announcement $announcement)
@@ -67,7 +67,7 @@ class RevisorController extends Controller
         }
 
         $announcement->setAccepted(false);
-        return redirect()->back()->with('reject', $flash);
+        return redirect()->route('revisor.index')->with('success', $flash);
     }
 
     public function becomeRevisor(Request $request)

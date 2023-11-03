@@ -5,7 +5,7 @@ return [
     'nav2'=> 'Explore',
     'nav3'=> 'Categories',
     'nav4'=> 'View all',
-    'nav5'=> 'Create announcemet',
+    'nav5'=> 'Create announcement',
     'nav6'=> 'Card name...',
     'nav7'=> 'Search!',
     'nav8'=> 'Log in',
@@ -118,6 +118,19 @@ return [
 
 
     // REVISOR.INDEX
+    'rev.tab1' => 'Announcements',
+    'rev.tab1.1' => 'Search ad...',
+    'rev.tab2' => 'Name',
+    'rev.tab3' => 'Category',
+    'rev.tab4' => 'Status',
+    'rev.tab5' => 'Accepted',
+    'rev.tab6' => 'To be checked',
+    'rev.tab7' => 'Rejected',
+    'rev.tab8' => 'View',
+    'rev.tab9' => 'Delete',
+
+
+    // REVISOR.SHOW
     'rev.ind1' => 'Announcement to be reviewed',
     'rev.ind2' => 'There are no announcements to review',
     'rev.ind3' => 'Category:',

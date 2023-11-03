@@ -1,6 +1,6 @@
 <div>
     <div class="intro-excerpt text-center mt-5">
-        <h2 class="animate__animated animate__pulse fs-1">Annunci {{ $search }}</h2>
+        <h2 class="animate__animated animate__pulse fs-1">{{__('custom.rev.tab1')}}</h2>
     </div>
 
     <div class="product-section">
@@ -15,14 +15,14 @@
                     </div>
                 @endif
                 <div class="input-group my-3">
-                    <input wire:model="search" type="text" class="form-control" placeholder="Cerca annuncio...">
+                    <input wire:model="search" type="text" class="form-control" placeholder="{{__('custom.rev.tab1.1')}}">
                 </div>
                 <table class="table border mt-2">
                     <thead>
                         <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Categoria</th>
-                            <th scope="col">Status</th>
+                            <th scope="col">{{__('custom.rev.tab2')}}</th>
+                            <th scope="col">{{__('custom.rev.tab3')}}</th>
+                            <th scope="col">{{__('custom.rev.tab4')}}</th>
                             <th scope="col"></th>
                         </tr>
                     </thead>
@@ -33,20 +33,20 @@
                                 <td>{{ $announcement_to_check->category->name }}</td>
                                 <td>
                                     @if ($announcement_to_check->is_accepted == true)
-                                        <span>Annuncio accettato</span>
+                                        <span>{{__('custom.rev.tab5')}}</span>
                                     @elseif (is_null($announcement_to_check->is_accepted))
-                                        <span>Annuncio da controllare</span>
+                                        <span>{{__('custom.rev.tab6')}}</span>
                                     @elseif ($announcement_to_check->is_accepted == false)
-                                        <span>Annuncio rifiutato</span>
+                                        <span>{{__('custom.rev.tab7')}}</span>
                                     @endif
                                 </td>
 
                                 <td>
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                         <a href="{{ route('revisor.show', ['uri' => $announcement_to_check->uri]) }}"
-                                            class="btn btn-secondary me-md-2">Visualizza</a>
+                                            class="btn btn-secondary me-md-2">{{__('custom.rev.tab8')}}</a>
                                         <button wire:click="destroy({{ $announcement_to_check->id }})"
-                                            class="btn btn-danger me-md-2">Elimina</button>
+                                            class="btn btn-danger me-md-2">{{__('custom.rev.tab9')}}</button>
                                     </div>
                                 </td>
                             </tr>
