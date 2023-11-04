@@ -64,14 +64,14 @@
         </section>
 
 
-        <div class="product-section mx-0 mb-5 pt-4 pb-4">
+        <div class="product-section mx-0 mb-5 py-4">
             <div class="container dati-scheda shadow">
-                <h2 class="d-flex justify-content-center">Articoli correlati</h2>
+                <h2 class="d-flex justify-content-center mt-4">{{ __('custom.ann.show5') }}</h2>
                 <div class="row d-flex">
                     @forelse ($relatedAnnouncements as $relatedAnnouncement)
                         <x-card :target='$relatedAnnouncement' />
                     @empty
-                        <h3 class="my-3 mx-1 d-flex justify-content-center">Al momento non ci sono altri annunci correlati!</h3>
+                        <h3 class="my-3 mx-1 d-flex justify-content-center">{{ __('custom.ann.show6') }}</h3>
                         <div class="mb-5 d-flex justify-content-center"><a href="{{ route('announcements.create') }}"
                                 class="btn btn-secondary col-4" style="background-color:#FFC107; border:none;color:#000; width:200px" >Crea Annuncio</a></div>
                     @endforelse

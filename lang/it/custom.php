@@ -76,6 +76,8 @@ return [
     'ann.show2' => 'Pubblicato da:',
     'ann.show3' => 'Data pubblicazione:',
     'ann.show4' => 'Descrizione:',
+    'ann.show5' => 'Articoli correlati',
+    'ann.show6' => 'Al momento non ci sono altri annunci correlati!',
 
 
     // AUTH.LOGIN

@@ -75,6 +75,8 @@ return [
     'ann.show2' => 'Published by:',
     'ann.show3' => 'Publication date:',
     'ann.show4' => 'Description:',
+    'ann.show5' => 'Related articles',
+    'ann.show6' => 'There are currently no other related announcements!',
 
     
     // AUTH.LOGIN

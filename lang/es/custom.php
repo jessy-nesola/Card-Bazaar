@@ -76,6 +76,8 @@ return [
     'ann.show2' => 'Publicado por:',
     'ann.show3' => 'Fecha de publicación:',
     'ann.show4' => 'Descripción:',
+    'ann.show5' => 'Artículos relacionados',
+    'ann.show6' => 'Actualmente no hay otros anuncios relacionados.',
 
 
     // AUTH.LOGIN
