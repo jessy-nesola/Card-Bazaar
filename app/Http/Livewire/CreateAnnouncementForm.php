@@ -30,7 +30,7 @@ class CreateAnnouncementForm extends Component
         'price' => 'required|numeric',
         'category' => 'required',
         'temporary_images.*' => 'image',
-        'images.*' => 'image'
+        'images.*' => 'image|mimes:png,jpeg,jpg,bmp|max:1024'
     ];
 
     public function updated($propertyName)

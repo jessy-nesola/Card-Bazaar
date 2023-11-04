@@ -33,11 +33,11 @@
                                 <td>{{ $announcement_to_check->category->name }}</td>
                                 <td>
                                     @if ($announcement_to_check->is_accepted == true)
-                                        <span>{{__('custom.rev.tab5')}}</span>
+                                        <span class="badge bg-success text-wrap" style="width: 7rem">{{__('custom.rev.tab5')}}</span>
                                     @elseif (is_null($announcement_to_check->is_accepted))
-                                        <span>{{__('custom.rev.tab6')}}</span>
+                                        <span class="badge bg-primary text-wrap" style="width: 7rem">{{__('custom.rev.tab6')}}</span>
                                     @elseif ($announcement_to_check->is_accepted == false)
-                                        <span>{{__('custom.rev.tab7')}}</span>
+                                        <span class="badge bg-danger text-wrap" style="width: 7rem">{{__('custom.rev.tab7')}}</span>
                                     @endif
                                 </td>
 
@@ -46,7 +46,7 @@
                                         <a href="{{ route('revisor.show', ['uri' => $announcement_to_check->uri]) }}"
                                             class="btn btn-secondary me-md-2">{{__('custom.rev.tab8')}}</a>
                                         <button wire:click="destroy({{ $announcement_to_check->id }})"
-                                            class="btn btn-danger me-md-2">{{__('custom.rev.tab9')}}</button>
+                                            class="btn btn-dark me-md-2">{{__('custom.rev.tab9')}}</button>
                                     </div>
                                 </td>
                             </tr>

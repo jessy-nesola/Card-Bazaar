@@ -103,7 +103,7 @@
                     @if (!$announcement_to_check->images->isEmpty())
                         <div class="row shadow dati-scheda justify-content-center mx-0 mb-5 pt-4 pb-4">
                             @foreach ($announcement_to_check->images as $image)
-                                <div class="card-description mx-1 col-5">
+                                <div class="card-description col-12 mb-3 col-lg-6">
                                     <h2 class="mb-3">{{ __('custom.rev.ind7') }}</h2>
                                     <br>
                                     <ul>
@@ -114,7 +114,7 @@
                                         @endif
                                     </ul>
                                 </div>
-                                <div class="card-description mx-1 col-6">
+                                <div class="card-description col-12 mb-3 col-lg-6">
                                     <h2 class="mb-3">{{ __('custom.rev.ind8') }}</h2>
                                     <br>
                                     <div class="mb-2"><strong><span class="{{ $image->adult }}"></span>
