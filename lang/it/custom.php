@@ -51,13 +51,14 @@ return [
     'foot3' => 'Inglese',
     'foot4' => 'Spagnolo',
     'foot5' => 'LINKS',
-    'foot6' => 'Home',
-    'foot7' => 'Su di noi',
-    'foot8' => 'Contatti',
-    'foot9' => 'FAQs',
+    'foot6' => 'Pagina iniziale',
+    'foot7' => 'Chi siamo',
+    // 'foot8' => 'Contatti',
+    // 'foot9' => 'FAQs',
     'foot10' => 'Il tuo sito di riferimento per comprare e vendere giochi di carte',
     'foot11' => 'Orari servizio clienti',
-    'foot12' => 'Lun - Ven  |  08:00 - 16:00',
+    'foot12' => 'Lun - Ven  |  8:00 - 16:00',
+    'foot13' => 'Progettato da',
 
 
     // COMPONENT.CARD
@@ -78,6 +79,8 @@ return [
     'ann.show4' => 'Descrizione:',
     'ann.show5' => 'Articoli correlati',
     'ann.show6' => 'Al momento non ci sono altri annunci correlati!',
+    'ann.show7' => 'Crea annuncio',
+
 
 
     // AUTH.LOGIN

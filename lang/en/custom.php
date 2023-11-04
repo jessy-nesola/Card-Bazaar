@@ -50,13 +50,14 @@ return [
     'foot3' => 'English',
     'foot4' => 'Spanish',
     'foot5' => 'LINKS',
-    'foot6' => 'Home',
+    'foot6' => 'Home page',
     'foot7' => 'About Us',
-    'foot8' => 'Contact',
-    'foot9' => 'FAQs',
+    // 'foot8' => 'Contact',
+    // 'foot9' => 'FAQs',
     'foot10' => 'Your reference site for buying and selling card games',
     'foot11' => 'Customer service hours',
-    'foot12' => 'Mon - Fri  |  08:00 A.M. - 04:00 P.M.',
+    'foot12' => 'Mon - Fri  |  8:00 A.M. - 4:00 P.M.',
+    'foot13' => 'Designed by',
 
 
     // COMPONENT.CARD
@@ -77,6 +78,7 @@ return [
     'ann.show4' => 'Description:',
     'ann.show5' => 'Related articles',
     'ann.show6' => 'There are currently no other related announcements!',
+    'ann.show7' => 'Create ad',
 
     
     // AUTH.LOGIN

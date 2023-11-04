@@ -17,9 +17,9 @@
 		  <h5 class="text-light">{{__('custom.foot5')}}</h5>
 		  <ul class="nav flex-column">
 			<li class="nav-item mb-2"><a href="{{route('homepage')}}" class="nav-link p-0 text-white-50">{{__('custom.foot6')}}</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">{{__('custom.foot7')}}</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">{{__('custom.foot8')}}</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">{{__('custom.foot9')}}</a></li>
+			<li class="nav-item mb-2"><a href="{{route('homepage')}}" class="nav-link p-0 text-white-50">{{__('custom.foot7')}}</a></li>
+			{{-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">{{__('custom.foot8')}}</a></li>
+			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">{{__('custom.foot9')}}</a></li> --}}
 		  </ul>
 		</div>
 
@@ -48,7 +48,7 @@
 	  <hr style="color: white">
 
 	  <div class="d-flex justify-content-center py-1 my-4">
-		<p class="text-white-50">Copyright &copy; Designed by DevelHopers, 2023</p>
+		<p class="text-white-50">Copyright &copy; {{__('custom.foot13')}} DevelHopers, 2023</p>
 	  </div>
 	</div>
 	</footer>

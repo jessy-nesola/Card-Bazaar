@@ -12,9 +12,10 @@
 
 /* sezione NAVBAR */
 .navbar {
-    background-image: -moz-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
+    /* background-image: -moz-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
     background-image: -webkit-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
-    background-image: -ms-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
+    background-image: -ms-linear-gradient(0deg, #5933b1 0%, #7941d4 100%); */
+    background: linear-gradient(91.7deg, rgb(66, 33, 104) -4.3%, rgb(116, 93, 146) 101.8%);
     /* background-color: #2866b1; */
     transition: transform 0.3s ease-in-out;
     transform: translateY(0);
@@ -154,9 +155,10 @@ article p {
 }
 
 footer {
-    background-image: -moz-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
+    /* background-image: -moz-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
     background-image: -webkit-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
-    background-image: -ms-linear-gradient(0deg, #5933b1 0%, #7941d4 100%);
+    background-image: -ms-linear-gradient(0deg, #5933b1 0%, #7941d4 100%); */
+    background: linear-gradient(91.7deg, rgb(66, 33, 104) -4.3%, rgb(116, 93, 146) 101.8%);
     /* background-color: #2866b1; */
     /* SERVE PER TENERE IL FOOTER BASSO */
     flex-shrink: 0;

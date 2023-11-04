@@ -42,7 +42,7 @@
                         <div class="col-12 col-lg-6 d-flex justify-content-center my-5">
                             <div class="shadow dati-scheda p-2">
                                 <div class="card-description">
-                                    <h2 class="mb-3">{{ $announcement->title }}</h2>
+                                    <h3 class="mb-3">{{ $announcement->title }}</h3>
                                     <div><strong>{{ __('custom.rev.ind3') }} <a
                                                 href="{{ route('categories.show', ['name' => $announcement->category->name]) }}">{{ $announcement->category->name }}</a></strong>
                                     </div>
@@ -71,9 +71,9 @@
                     @forelse ($relatedAnnouncements as $relatedAnnouncement)
                         <x-card :target='$relatedAnnouncement' />
                     @empty
-                        <h3 class="my-3 mx-1 d-flex justify-content-center">{{ __('custom.ann.show6') }}</h3>
+                        <h4 class="my-3 mx-1 d-flex justify-content-center">{{ __('custom.ann.show6') }}</h4>
                         <div class="mb-5 d-flex justify-content-center"><a href="{{ route('announcements.create') }}"
-                                class="btn btn-secondary col-4" style="background-color:#FFC107; border:none;color:#000; width:200px" >Crea Annuncio</a></div>
+                                class="btn btn-secondary col-4" style="background-color:#FFC107; border:none;color:#000; width:200px" >{{ __('custom.ann.show7') }}</a></div>
                     @endforelse
                 </div>
             </div>

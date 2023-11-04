@@ -56,6 +56,12 @@ Route::post('/revisor/richiesta', [RevisorController::class, 'becomeRevisor'])->
 
 Route::get('/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 
+// Rotta chi siamo del footer
+
+Route::get('/about-us', function(){
+    return view('about_us');
+});
+
 //Rotta provvisoria
 Route::get('/login-register', function(){
     return view('login_register');
