@@ -47,7 +47,7 @@
 
 	  <hr style="color: white">
 
-	  <div class="d-flex flex-column flex-sm-row justify-content-between py-1 my-4">
+	  <div class="d-flex justify-content-center py-1 my-4">
 		<p class="text-white-50">Copyright &copy; Designed by DevelHopers, 2023</p>
 	  </div>
 	</div>
