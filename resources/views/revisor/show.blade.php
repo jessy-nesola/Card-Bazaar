@@ -46,6 +46,7 @@
                                 class="btn btn-secondary bnt-sm shadow">{{ __('custom.rev.ind2.2') }}</button>
                         </form>
                     </div>
+
                     <div class="row d-flex justify-content-center gy-2 mt-5">
                         <div id="carousel-show"
                             class="col-12 col-lg-6 d-flex justify-content-center carousel carousel-dark slide">
@@ -77,6 +78,7 @@
                                 </button>
                             @endif
                         </div>
+
                         <div class="col-12 col-lg-6 d-flex justify-content-center my-5">
                             <div class="shadow-lg dati-scheda p-2">
                                 <div class="card-description">
@@ -100,10 +102,10 @@
                     @if (!$announcement_to_check->images->isEmpty())
                         <div class="row shadow dati-scheda justify-content-center mx-0 mb-5 pt-4 pb-4">
                             @foreach ($announcement_to_check->images as $image)
-                                <div class="card-description col-12 mb-3 col-lg-6">
+                                <div class="card-description col-12 mb-3 col-lg-6 data-block">
                                     <h2 class="mb-3">{{ __('custom.rev.ind7') }}</h2>
                                     <br>
-                                    <ul id="imageLabels">
+                                    <ul>
                                         @if ($image->labels)
                                             @foreach ($image->labels as $label)
                                                 <li>{{ $label }}</li>
