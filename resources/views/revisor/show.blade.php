@@ -1,5 +1,4 @@
 <x-layout>
-
     <div class="col-12 gy-4">
         <section id="gallery-single" class="gallery-single d-flex flex-column">
             <div class="container my-5">
@@ -35,21 +34,21 @@
                             method="POST">
                             @csrf
                             @method('PATCH')
-                            <button type="submit" class="btn btn-secondary btn-sm shadow">{{__('custom.rev.ind2.1')}}</button>
+                            <button type="submit"
+                                class="btn btn-secondary btn-sm shadow">{{ __('custom.rev.ind2.1') }}</button>
                         </form>
                         <form class=" col-6 col-lg-3 d-flex justify-content-center"
                             action="{{ route('revisor.reject_announcement', ['announcement' => $announcement_to_check]) }}"
                             method="POST">
                             @csrf
                             @method('PATCH')
-                            <button type="submit" class="btn btn-secondary bnt-sm shadow">{{__('custom.rev.ind2.2')}}</button>
+                            <button type="submit"
+                                class="btn btn-secondary bnt-sm shadow">{{ __('custom.rev.ind2.2') }}</button>
                         </form>
                     </div>
-
                     <div class="row d-flex justify-content-center gy-2 mt-5">
                         <div id="carousel-show"
                             class="col-12 col-lg-6 d-flex justify-content-center carousel carousel-dark slide">
-
                             <div class="carousel-inner">
                                 @if (!$announcement_to_check->images->isEmpty())
                                     @foreach ($announcement_to_check->images as $image)
@@ -65,7 +64,6 @@
                                     </div>
                                 @endif
                             </div>
-
                             @if ($announcement_to_check->images->count() > 1)
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show"
                                     data-bs-slide="prev">
@@ -79,7 +77,6 @@
                                 </button>
                             @endif
                         </div>
-
                         <div class="col-12 col-lg-6 d-flex justify-content-center my-5">
                             <div class="shadow-lg dati-scheda p-2">
                                 <div class="card-description">
@@ -106,7 +103,7 @@
                                 <div class="card-description col-12 mb-3 col-lg-6">
                                     <h2 class="mb-3">{{ __('custom.rev.ind7') }}</h2>
                                     <br>
-                                    <ul>
+                                    <ul id="imageLabels">
                                         @if ($image->labels)
                                             @foreach ($image->labels as $label)
                                                 <li>{{ $label }}</li>
@@ -118,17 +115,17 @@
                                     <h2 class="mb-3">{{ __('custom.rev.ind8') }}</h2>
                                     <br>
                                     <div class="mb-2"><strong><span class="{{ $image->adult }}"></span>
-                                        {{ __('custom.rev.ind9') }}</strong></div>
+                                            {{ __('custom.rev.ind9') }}</strong></div>
                                     <div class="mb-2"><strong><span class="{{ $image->spoof }}"></span>
-                                        {{ __('custom.rev.ind10') }}</strong></div>
+                                            {{ __('custom.rev.ind10') }}</strong></div>
                                     <div class="mb-2"><strong><span class="{{ $image->medical }}"></span>
-                                        {{ __('custom.rev.ind11') }}</strong></div>
+                                            {{ __('custom.rev.ind11') }}</strong></div>
                                     <div class="mb-2"><strong><span class="{{ $image->violence }}"></span>
-                                        {{ __('custom.rev.ind12') }}</strong></div>
-                                    <div class="mb-2"><strong><span class="{{ $image->racy }}"></span> 
-                                        {{ __('custom.rev.ind13') }}</strong>
-                                    </div>
-                                </div>
+                                            {{ __('custom.rev.ind12') }}</strong></div>
+                                    <div class="mb-2"><strong><span class="{{ $image->racy }}"></span>
+                                            {{ __('custom.rev.ind13') }}</strong>
+                                                                    </div>
+                            </div>
                             @endforeach
                         </div>
                     @endif
