@@ -28,6 +28,8 @@ Route::get('/user/announcements', [FrontController::class,'userAnnouncements'])-
 
 Route::post('/user/announcements/{id}/delete', [FrontController::class,'userAnnouncementsDelete'])->middleware('auth')->name('user_announcements_delete');
 
+Route::get('/about-us2', [FrontController::class, 'AboutUs'])->name('about_us');
+
 // CATEGORIES
 
 Route::get('/categories/{name}/show', [CategoryController::class, 'show'])->name('categories.show');

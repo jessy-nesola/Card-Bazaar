@@ -18,6 +18,11 @@ class FrontController extends Controller
         return view('homepage', compact('announcements'));
     }
 
+    public function AboutUs()
+    {
+        return view('about_us2');
+    }
+
     public function workWithUs(){
         return view('lavora');
     }

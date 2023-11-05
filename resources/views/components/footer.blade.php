@@ -12,12 +12,14 @@
 			  </li>
 			</ul>
 		  </div>
+		
+		{{-- LINKS --}}
 
 		<div class="col-6 col-md-2 mb-3">
 		  <h5 class="text-light">{{__('custom.foot5')}}</h5>
 		  <ul class="nav flex-column">
 			<li class="nav-item mb-2"><a href="{{route('homepage')}}" class="nav-link p-0 text-white-50">{{__('custom.foot6')}}</a></li>
-			<li class="nav-item mb-2"><a href="{{route('homepage')}}" class="nav-link p-0 text-white-50">{{__('custom.foot7')}}</a></li>
+			<li class="nav-item mb-2"><a href="{{route('about_us')}}" class="nav-link p-0 text-white-50">{{__('custom.foot7')}}</a></li>
 			{{-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">{{__('custom.foot8')}}</a></li>
 			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">{{__('custom.foot9')}}</a></li> --}}
 		  </ul>
@@ -40,6 +42,7 @@
 			<hr style="color: white">
 			<p class="text-white-50">{{__('custom.foot11')}}</p>
 			<p class="text-white-50">{{__('custom.foot12')}}</p>
+			<p class="text-white-50">+39 3317649307</p>
 			<p class="text-white-50">info@cardbazaar.it</p>
 		  </form>
 		</div>
