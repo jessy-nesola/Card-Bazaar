@@ -23,25 +23,25 @@
             <div class="row my-5">
                 <div class="col-12 col-lg-3">
                     <div class="rounded-circle" style="border: 5px solid #FFC107">
-                        <img class="img-fluid rounded-circle" style="border: 5px solid rgb(66, 33, 104)" src="storage/staff/Alessandro-Mascellini.jpg" alt="">
+                        <img class="img-fluid rounded-circle" style="border: 5px solid rgb(66, 33, 104)" src="assets/images/staff/Alessandro-Mascellini.jpg" alt="">
                     </div>
                     <div class="text-center mb-5 mt-2 fs-4 fw-bold text-decoration-underline">Alessandro Mascellini</div>
                 </div>
                 <div class="col-12 col-lg-3">
                     <div class="rounded-circle" style="border: 5px solid #FFC107">
-                        <img class="img-fluid rounded-circle" style="border: 5px solid rgb(66, 33, 104)" src="storage/staff/Alessandro-Mascellini.jpg" alt="">
+                        <img class="img-fluid rounded-circle" style="border: 5px solid rgb(66, 33, 104)" src="assets/images/staff/Alessandro-Mascellini.jpg" alt="">
                     </div>
                     <div class="text-center mb-5 mt-2 fs-4 fw-bold text-decoration-underline">Alessandro Mascellini</div>
                 </div>
                 <div class="col-12 col-lg-3">
                     <div class="rounded-circle" style="border: 5px solid #FFC107">
-                        <img class="img-fluid rounded-circle" style="border: 5px solid rgb(66, 33, 104)" src="storage/staff/Alessandro-Mascellini.jpg" alt="">
+                        <img class="img-fluid rounded-circle" style="border: 5px solid rgb(66, 33, 104)" src="assets/images/staff/Alessandro-Mascellini.jpg" alt="">
                     </div>
                     <div class="text-center mb-5 mt-2 fs-4 fw-bold text-decoration-underline">Alessandro Mascellini</div>
                 </div>
                 <div class="col-12 col-lg-3">
                     <div class="rounded-circle" style="border: 5px solid #FFC107">
-                        <img class="img-fluid rounded-circle" style="border: 5px solid rgb(66, 33, 104)" src="storage/staff/Alessandro-Mascellini.jpg" alt="">
+                        <img class="img-fluid rounded-circle" style="border: 5px solid rgb(66, 33, 104)" src="assets/images/staff/Alessandro-Mascellini.jpg" alt="">
                     </div>
                     <div class="text-center mb-5 mt-2 fs-4 fw-bold text-decoration-underline">Alessandro Mascellini</div>
                 </div>
