@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg fixed-top border-nav">
-    <div class="container-fluid col-10">
+    <div class="container-fluid col-11">
         {{-- Elementi della Navbar a SINISTRA --}}
         <a class="navbar-brand text-light" href="{{ route('homepage') }}"> <img src="/assets/images/logo_CB.png"
                 alt="Logo_img" width="15px" height="auto" class="d-inline-block align-text-bottom"> CardBazaar.</a>
