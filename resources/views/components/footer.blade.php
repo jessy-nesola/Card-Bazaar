@@ -42,7 +42,6 @@
 			<hr style="color: white">
 			<p class="text-white-50">{{__('custom.foot11')}}</p>
 			<p class="text-white-50">{{__('custom.foot12')}}</p>
-			<p class="text-white-50">+39 3317649307</p>
 			<p class="text-white-50">info@cardbazaar.it</p>
 		  </form>
 		</div>
