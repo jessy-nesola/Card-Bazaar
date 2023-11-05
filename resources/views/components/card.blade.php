@@ -18,9 +18,16 @@
                     class="btn btn-warning shadow">{{ __('custom.home3') }}</a>
             </div>
             @if (Route::currentRouteName() == 'user_announcements')
+                <form class="mt-1 mb-3" action="{{ route('user_announcements_delete', $target->id) }}" method="POST">
+                    @csrf
+                    <div>
+                        <button type="submit" class="btn btn-danger shadow">{{ __('custom.card') }}</button>
+                    </div>
+                </form>
+
+                {{-- <!-- Modal -->
                 <button class="btn btn-danger shadow mt-1 mb-3" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">{{ __('custom.card') }}</button>
-                <!-- Modal -->
+                    data-bs-target="#exampleModal">{{ __('custom.card') }}</button>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
@@ -38,18 +45,27 @@
                                 {{ $target->title }}
                             </div>
                             <div class="modal-footer">
-                                <form action="{{ route('user_announcements_delete', $target->id) }}"
-                                    method="POST">
+                                <form action="{{ route('user_announcements_delete', $target->id) }}" method="POST">
                                     @csrf
                                     <div>
-                                        <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Si, confermo</button>
+                                        <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Si,
+                                            confermo</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             @endif
         </div>
     </div>
 </div>
+
+{{-- <div class="card d-flex" style="width: 18rem; background-color:transparent; border:none;">
+        <img src="assets/images/card-1.png" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div> --}}

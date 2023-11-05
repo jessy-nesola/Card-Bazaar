@@ -50,10 +50,14 @@
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                         <a href="{{ route('revisor.show', ['uri' => $announcement_to_check->uri]) }}"
                                             class="btn btn-secondary me-md-2">{{ __('custom.rev.tab8') }}</a>
+
+                                        <button wire:click="destroy({{ $announcement_to_check->id }})" 
+                                            class="btn btn-dark me-md-2">{{ __('custom.rev.tab9') }}</button>
+
+                                        {{-- <!-- Modal -->
+
                                         <button class="btn btn-dark me-md-2" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal">{{ __('custom.rev.tab9') }}</button>
-
-                                        <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="-1"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -71,15 +75,14 @@
                                                         {{ $announcement_to_check->title }}
                                                     </div>
                                                     <div class="modal-footer">
-                                                        {{-- <button class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">No</button> --}}
+
                                                         <button wire:click="destroy({{ $announcement_to_check->id }})"
-                                                        class="btn btn-dark"
-                                                        data-bs-dismiss="modal">Si, confermo</button>
+                                                            class="btn btn-dark" data-bs-dismiss="modal">Si,
+                                                            confermo</button>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </td>
                             </tr>
