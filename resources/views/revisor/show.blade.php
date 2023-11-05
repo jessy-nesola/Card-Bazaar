@@ -8,6 +8,11 @@
                             {{-- {{ $announcement_to_check ? 'Annuncio da revisionare' : 'Non ci sono annunci da revisionare' }} --}}
                             {{ $announcement_to_check ? __('custom.rev.ind1') : __('custom.rev.ind2') }}
                         </h2>
+                        <a type="submit" href="{{route('revisor.index')}}"
+                        class="btn btn-warning btn-sm shadow my-3">
+                            <i class="fa-solid fa-left-long"></i>
+                            {{-- <i class="fa-solid fa-arrow-left-long"></i> --}}
+                            Indietro</a>
                     </div>
                 </div>
                 @if (session()->has('accept'))
