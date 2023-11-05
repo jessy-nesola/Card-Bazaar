@@ -107,13 +107,13 @@ class CreateAnnouncementForm extends Component
         $flash= '';
         if (Config::get('app.locale') == 'it')
         {
-            $flash = 'Annuncio Creato';
+            $flash = 'Creato, attendi la conferma';
         } elseif (Config::get('app.locale') == 'en')
         {
-            $flash = 'Annuncement Created';
+            $flash = 'Created, wait for confirmation';
         } elseif (Config::get('app.locale') == 'es')
         {
-            $flash = 'Anuncio Creado';
+            $flash = 'Creado, esperar confirmación';
         }
 
         session()->flash('success', $flash);
