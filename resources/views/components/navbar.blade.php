@@ -40,10 +40,10 @@
                 @if (Auth::user() && Auth::user()->is_revisor)
                     <a href="{{ route('revisor.index') }}" class="btn btn-warning mb-3 mt-md-2 m-md-2"><i
                             class="fa-solid fa-user-secret fa-lg"></i> {{ __('') }}</a>
-                    <span class="revisorCounter translate-middle badge rounded-pill bg-dark text-warning">
+                    {{-- <span class="revisorCounter translate-middle badge rounded-pill bg-dark text-warning">
                         {{ app\Models\Announcement::toBeRevisionedCount() }}
                         <span class="visually-hidden">messaggi non letti</span>
-                    </span>
+                    </span> --}}
                 @endif
             </div>
             {{-- Elementi della Navbar a DESTRA --}}
