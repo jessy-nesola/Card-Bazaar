@@ -62,7 +62,7 @@ return [
 
 
     // COMPONENT.CARD
-    'card' => 'Eliminazione',
+    'card' => 'Elimina',
 
 
     // ANNOUNCEMENTS.INDEX
@@ -175,5 +175,6 @@ return [
     
     // USER_INDEX
     'user_ind1' => 'I tuoi annunci',
+    'user_ind1.1' => 'Qui puoi vedere gli annunci approvati nel nostro sito, cliccando sul tasto elimina invierai una richiesta ai nostri revisori',
     'user_ind2' => 'Al momento non hai ancora caricato nessun annuncio',
 ];

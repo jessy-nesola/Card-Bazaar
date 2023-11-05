@@ -1,7 +1,7 @@
 <x-layout>
     <div class="intro-excerpt text-center mt-5">
         <h2 class="animate__animated animate__pulse fs-1">{{ __('custom.user_ind1') }}</h2>
-        <p class="animate__animated animate__pulse">Testo segnaposto da sostituire</p>
+        <p class="animate__animated animate__pulse">{{ __('custom.user_ind1.1') }}</p>
     </div>
 
     <div class="product-section">
