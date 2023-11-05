@@ -134,8 +134,8 @@ return [
     'rev.tab5' => 'accepted',
     'rev.tab6' => 'to verify',
     'rev.tab7' => 'rejected',
-    'rev.tab8' => 'view',
-    'rev.tab9' => 'delete',
+    'rev.tab8' => 'View',
+    'rev.tab9' => 'Delete',
 
 
     // REVISOR.SHOW

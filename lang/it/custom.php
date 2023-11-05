@@ -136,8 +136,8 @@ return [
     'rev.tab5' => 'accettato',
     'rev.tab6' => 'da verificare',
     'rev.tab7' => 'rifiutato',
-    'rev.tab8' => 'visualizza',
-    'rev.tab9' => 'elimina',
+    'rev.tab8' => 'Visualizza',
+    'rev.tab9' => 'Elimina',
 
 
     // REVISOR.SHOW
