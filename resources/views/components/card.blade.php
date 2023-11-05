@@ -18,18 +18,48 @@
                     class="btn btn-warning shadow">{{ __('custom.home3') }}</a>
             </div>
             @if (Route::currentRouteName() == 'user_announcements')
-                <form class="mt-1 mb-3" action="{{ route('user_announcements_delete', $target->id)}}" method="POST">
+                <form class="mt-1 mb-3" action="{{ route('user_announcements_delete', $target->id) }}" method="POST">
                     @csrf
                     <div>
-                        <button type="submit" class="btn btn-danger shadow">{{__('custom.card')}}</button>
+                        <button type="submit" class="btn btn-danger shadow">{{ __('custom.card') }}</button>
                     </div>
                 </form>
+
+                {{-- <!-- Modal -->
+                <button class="btn btn-danger shadow mt-1 mb-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">{{ __('custom.card') }}</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminazione
+                                    Articolo</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Sei sicuro di voler elimianare questo articolo?
+                            </div>
+                            <div class="modal-body">
+                                {{ $target->title }}
+                            </div>
+                            <div class="modal-footer">
+                                <form action="{{ route('user_announcements_delete', $target->id) }}" method="POST">
+                                    @csrf
+                                    <div>
+                                        <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Si,
+                                            confermo</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> --}}
             @endif
         </div>
     </div>
 </div>
-
-
 
 {{-- <div class="card d-flex" style="width: 18rem; background-color:transparent; border:none;">
         <img src="assets/images/card-1.png" class="card-img-top" alt="...">
