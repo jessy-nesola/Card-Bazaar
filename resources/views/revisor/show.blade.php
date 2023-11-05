@@ -12,7 +12,7 @@
                         class="btn btn-warning btn-sm shadow my-3">
                             <i class="fa-solid fa-left-long"></i>
                             {{-- <i class="fa-solid fa-arrow-left-long"></i> --}}
-                            Indietro</a>
+                            {{ __('custom.rev.ind14') }}</a>
                     </div>
                 </div>
                 @if (session()->has('accept'))

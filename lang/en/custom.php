@@ -154,6 +154,7 @@ return [
     'rev.ind11' => 'Medical',
     'rev.ind12' => 'Violence',
     'rev.ind13' => 'Racy',
+    'rev.ind14' => 'Go back',
 
 
     // LAVORA

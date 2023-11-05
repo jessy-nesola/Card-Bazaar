@@ -141,7 +141,7 @@ return [
     // REVISOR.SHOW
     'rev.ind1' => 'Anuncio por revisar',
     'rev.ind2' => 'No hay anuncios que revisar',
-    'rev.ind2.1' => 'Acepte',
+    'rev.ind2.1' => 'Aceptar',
     'rev.ind2.2' => 'Rechazar',
     'rev.ind3' => 'Categoría:',
     'rev.ind4' => 'Publicado por:',
@@ -154,6 +154,7 @@ return [
     'rev.ind11' => 'Médico',
     'rev.ind12' => 'Violencia',
     'rev.ind13' => 'Guiños de contenido',
+    'rev.ind14' => 'Volver atrás',
 
 
     // LAVORA

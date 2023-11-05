@@ -156,6 +156,7 @@ return [
     'rev.ind11' => 'Medico',
     'rev.ind12' => 'Violenza',
     'rev.ind13' => 'Contenuto ammiccante',
+    'rev.ind14' => 'Indietro',
 
 
     // LAVORA
