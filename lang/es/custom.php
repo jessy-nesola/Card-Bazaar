@@ -132,11 +132,11 @@ return [
     'rev.tab2' => 'Nombre',
     'rev.tab3' => 'Categoría',
     'rev.tab4' => 'Estado',
-    'rev.tab5' => 'Aceptado',
-    'rev.tab6' => 'Por comprobar',
-    'rev.tab7' => 'Rechazado',
-    'rev.tab8' => 'Ver',
-    'rev.tab9' => 'Borrar',
+    'rev.tab5' => 'aceptado',
+    'rev.tab6' => 'a verificar',
+    'rev.tab7' => 'refutado',
+    'rev.tab8' => 'véase',
+    'rev.tab9' => 'eliminar',
   
     // REVISOR.SHOW
     'rev.ind1' => 'Anuncio por revisar',

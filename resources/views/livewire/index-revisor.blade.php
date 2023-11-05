@@ -33,11 +33,11 @@
                                 <td>{{ $announcement_to_check->category->name }}</td>
                                 <td>
                                     @if ($announcement_to_check->is_accepted == true)
-                                        <span class="badge bg-success text-wrap" style="width: 5rem">{{__('custom.rev.tab5')}}</span>
+                                        <span class="badge bg-success text-wrap" style="width: 6rem">{{__('custom.rev.tab5')}}</span>
                                     @elseif (is_null($announcement_to_check->is_accepted))
-                                        <span class="badge bg-primary text-wrap" style="width: 5rem">{{__('custom.rev.tab6')}}</span>
+                                        <span class="badge bg-primary text-wrap" style="width: 6rem">{{__('custom.rev.tab6')}}</span>
                                     @elseif ($announcement_to_check->is_accepted == false)
-                                        <span class="badge bg-danger text-wrap" style="width: 5rem">{{__('custom.rev.tab7')}}</span>
+                                        <span class="badge bg-danger text-wrap" style="width: 6rem">{{__('custom.rev.tab7')}}</span>
                                     @endif
                                 </td>
 

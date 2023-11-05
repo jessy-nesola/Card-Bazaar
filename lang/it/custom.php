@@ -133,11 +133,11 @@ return [
     'rev.tab2' => 'Nome',
     'rev.tab3' => 'Categoria',
     'rev.tab4' => 'Stato',
-    'rev.tab5' => 'Accettato',
-    'rev.tab6' => 'Da controllare',
-    'rev.tab7' => 'Rifiutato',
-    'rev.tab8' => 'Visualizza',
-    'rev.tab9' => 'Elimina',
+    'rev.tab5' => 'accettato',
+    'rev.tab6' => 'da verificare',
+    'rev.tab7' => 'rifiutato',
+    'rev.tab8' => 'visualizza',
+    'rev.tab9' => 'elimina',
 
 
     // REVISOR.SHOW

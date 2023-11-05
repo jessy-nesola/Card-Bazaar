@@ -131,11 +131,11 @@ return [
     'rev.tab2' => 'Name',
     'rev.tab3' => 'Category',
     'rev.tab4' => 'Status',
-    'rev.tab5' => 'Accepted',
-    'rev.tab6' => 'To be checked',
-    'rev.tab7' => 'Rejected',
-    'rev.tab8' => 'View',
-    'rev.tab9' => 'Delete',
+    'rev.tab5' => 'accepted',
+    'rev.tab6' => 'to verify',
+    'rev.tab7' => 'rejected',
+    'rev.tab8' => 'view',
+    'rev.tab9' => 'delete',
 
 
     // REVISOR.SHOW
