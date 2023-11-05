@@ -183,5 +183,5 @@ return [
     'about.us3' => 'We offer the perfect place to discover rare playing cards, expand your collection, or sell your unused cards. We offer a large selection of playing cards, from classics to the latest editions. Our platform is designed to simplify the search and trade process, allowing users to find exactly what they need intuitively and quickly.',
     'about.us4' => "We are also a community. We are proud to offer support and resources to playing card enthusiasts, with forums and spaces dedicated to discussion, sharing strategies and discovering the latest industry news.",
     'about.us5' => "Our staff",
-    'about.us6' => "",
+    
 ];

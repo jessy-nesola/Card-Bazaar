@@ -185,5 +185,5 @@ return [
     'about.us3' => "Offriamo il luogo ideale per scoprire carte da gioco rare, ampliare la propria collezione, o vendere le proprie carte inutilizzate. Offriamo una vasta selezione di carte da gioco, dai classici alle ultime edizioni. La nostra piattaforma è progettata per semplificare il processo di ricerca e scambio, consentendo agli utenti di trovare esattamente ciò di cui hanno bisogno in modo intuitivo e veloce.",
     'about.us4' => "Siamo anche una comunità. Siamo orgogliosi di offrire supporto e risorse agli appassionati di carte da gioco, con forum e spazi dedicati alla discussione, alla condivisione di strategie e alla scoperta delle ultime novità del settore.",
     'about.us5' => "Il nostro staff",
-    'about.us6' => "",
+    
 ];
