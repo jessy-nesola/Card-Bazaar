@@ -27,7 +27,7 @@
                 @empty
                 <div class="text-center">
                     <h3 class="mt-5 mb-3">{{__('custom.src2')}}</h3>
-                    <div><a href="{{ route('announcements.create') }}" class="btn btn-celeste btn-sm">{{__('custom.src3')}}</a></div>
+                    <div><a href="{{ route('announcements.create') }}" class="btn btn-warning btn-sm">{{__('custom.src3')}}</a></div>
                 </div>
                 @endforelse
                 <div class="mb-5"></div>

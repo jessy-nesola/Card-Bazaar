@@ -19,7 +19,7 @@
             justify-content: center;
             margin: 0px;
             padding: 0px;
-            background-color: ##422168;
+            background-color: #422168;
             height: 60px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-bottom: 5px solid #FFC107;

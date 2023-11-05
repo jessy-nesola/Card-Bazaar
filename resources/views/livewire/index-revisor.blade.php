@@ -22,6 +22,7 @@
                 <table class="table border mt-2">
                     <thead>
                         <tr>
+                            <th scope="col">#</th>
                             <th scope="col">{{ __('custom.rev.tab2') }}</th>
                             <th scope="col">{{ __('custom.rev.tab3') }}</th>
                             <th scope="col">{{ __('custom.rev.tab4') }}</th>
@@ -31,6 +32,7 @@
                     <tbody>
                         @forelse ($announcements_to_check as $announcement_to_check)
                             <tr>
+                                <th>{{ $announcement_to_check->id }}</th>
                                 <td>{{ $announcement_to_check->title }}</td>
                                 <td>{{ $announcement_to_check->category->name }}</td>
                                 <td>
