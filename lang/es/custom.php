@@ -175,4 +175,13 @@ return [
     'user_ind1' => 'Tus anuncios',
     'user_ind1.1' => 'Aquí puede ver los anuncios aprobados en nuestro sitio, haciendo clic en el botón eliminar enviará una solicitud a nuestros revisores',
     'user_ind2' => 'Aún no has subido ningún anuncio',
+
+
+    // CHI_SIAMO
+    'about.us1' => "Sobre CardBazaar",
+    'about.us2' => "Our Mission is simple: we want to provide playing card enthusiasts with an online space dedicated to a vast range of games and collectible cards. We are committed to providing a safe, reliable and friendly environment for buying, selling and trading cards, allowing enthusiasts to connect, discover new treasures and share their collections.",
+    'about.us3' => "Ofrecemos el lugar perfecto para descubrir naipes raros, ampliar su colección o vender sus naipes no utilizados. Ofrecemos una gran selección de naipes, desde clásicos hasta las últimas ediciones. Nuestra plataforma está diseñada para simplificar el proceso de búsqueda y comercio, permitiendo a los usuarios encontrar exactamente lo que necesitan de forma intuitiva y rápida.",
+    'about.us4' => "También somos una comunidad. Estamos orgullosos de ofrecer apoyo y recursos a los entusiastas de los naipes, con foros y espacios dedicados a la discusión, el intercambio de estrategias y el descubrimiento de las últimas noticias de la industria.",
+    'about.us5' => "Nuestro equipo",
+    'about.us6' => "",
 ];

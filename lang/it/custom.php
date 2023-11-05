@@ -177,4 +177,13 @@ return [
     'user_ind1' => 'I tuoi annunci',
     'user_ind1.1' => 'Qui puoi vedere gli annunci approvati nel nostro sito, cliccando sul tasto elimina invierai una richiesta ai nostri revisori',
     'user_ind2' => 'Al momento non hai ancora caricato nessun annuncio',
+    
+
+    // CHI_SIAMO
+    'about.us1' => "Su CardBazaar",
+    'about.us2' => "La Nostra Missione è semplice: vogliamo mettere a disposizione degli appassionati di carte da gioco uno spazio online dedicato a una vasta gamma di giochi e carte collezionabili. Siamo impegnati a fornire un ambiente sicuro, affidabile e amichevole per l'acquisto, la vendita e lo scambio di carte, consentendo agli appassionati di connettersi, scoprire nuovi tesori e condividere le proprie collezioni.",
+    'about.us3' => "Offriamo il luogo ideale per scoprire carte da gioco rare, ampliare la propria collezione, o vendere le proprie carte inutilizzate. Offriamo una vasta selezione di carte da gioco, dai classici alle ultime edizioni. La nostra piattaforma è progettata per semplificare il processo di ricerca e scambio, consentendo agli utenti di trovare esattamente ciò di cui hanno bisogno in modo intuitivo e veloce.",
+    'about.us4' => "Siamo anche una comunità. Siamo orgogliosi di offrire supporto e risorse agli appassionati di carte da gioco, con forum e spazi dedicati alla discussione, alla condivisione di strategie e alla scoperta delle ultime novità del settore.",
+    'about.us5' => "Il nostro staff",
+    'about.us6' => "",
 ];
