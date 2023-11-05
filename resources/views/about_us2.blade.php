@@ -49,15 +49,15 @@
                 <div class="col-12 col-lg-3 d-flex align-items-center flex-column">
                     <img class="object-fit-cover rounded-circle"
                         style="border: 5px solid rgb(66, 33, 104); width: 200px; height: 200px;"
-                        src="assets/images/staff/Alessandro-Mascellini.jpg" alt="">
-                    <div class="mb-5 mt-2 fs-4 fw-bold">Alessandro Mascellini <i class="fa-brands fa-linkedin"></i>
+                        src="assets/images/staff/Emanuele-Papale.jpg" alt="">
+                    <div class="mb-5 mt-2 fs-4 fw-bold">Emanuele Papale <i class="fa-brands fa-linkedin"></i>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 d-flex align-items-center flex-column">
                     <img class="object-fit-cover rounded-circle"
                         style="border: 5px solid rgb(66, 33, 104); width: 200px; height: 200px;"
-                        src="assets/images/staff/Jessy-Nesola.jpg" alt="">
-                    <div class="mb-5 mt-2 fs-4 fw-bold">Jessy Nesola <i class="fa-brands fa-linkedin"></i></div>
+                        src="assets/images/staff/Pierluigi-Perrino.png" alt="">
+                    <div class="mb-5 mt-2 fs-4 fw-bold">Pierluigi Perrino <i class="fa-brands fa-linkedin"></i></div>
                 </div>
             </div>
         </div>
