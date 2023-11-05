@@ -2,7 +2,7 @@
 return [
     // NAVBAR
     'nav1'=>'Home',
-    'nav2'=> 'Explore',
+    'nav2'=> 'Explora',
     'nav3'=> 'Categorías',
     'nav4'=> 'Ver todos',
     'nav5'=> 'Crear anuncio',
@@ -50,7 +50,7 @@ return [
     'foot2' => 'Italiano',
     'foot3' => 'Inglés',
     'foot4' => 'Español',
-    'foot5' => 'LINKS',
+    'foot5' => 'ENLACES',
     'foot6' => 'Página inicial',
     'foot7' => 'Sobre nosotros',
     // 'foot8' => 'Póngase en contacto con',
