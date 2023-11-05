@@ -61,7 +61,7 @@ return [
 
 
     // COMPONENT.CARD
-    'card' => 'Elimination',
+    'card' => 'Delete',
 
 
     // ANNOUNCEMENTS.INDEX
@@ -173,5 +173,6 @@ return [
 
     // USER_INDEX
     'user_ind1' => 'Your announcements',
+    'user_ind1.1' => 'Here you can see the approved ads on our site, clicking on the delete button will send a request to our reviewers',
     'user_ind2' => 'You have not yet uploaded any advertisements',
 ];
